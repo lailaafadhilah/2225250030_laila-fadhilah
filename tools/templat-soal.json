@@ -1,0 +1,108 @@
+{
+  "keterangan": "Templat bank soal. Jalankan: python tools/generate_soal.py → app/content/bank-soal.json",
+  "tokoh": ["Dimas", "Sari", "Kak Nisa", "Pak Rudi", "Bu Rina", "Kak Tono", "Ayu", "Fajar", "Bu Wati", "Pak Made", "Ucok", "Lina", "Kadek", "Bayu", "Siti", "Pak Hasan", "Bu Yanti", "Rizky", "Putu", "Mega"],
+  "ongkos": [
+    { "nama": "ongkos kirim", "min": 2000, "max": 15000 },
+    { "nama": "ongkos ojek", "min": 5000, "max": 15000 },
+    { "nama": "biaya plastik", "min": 1000, "max": 5000 },
+    { "nama": "ongkos angkot", "min": 3000, "max": 10000 },
+    { "nama": "biaya parkir", "min": 2000, "max": 5000 }
+  ],
+  "pengecoh": [
+    "Perjalanan ke pasar memakan waktu {x} menit.",
+    "Hari itu ada {x} pembeli yang mampir.",
+    "Lapaknya berada di los nomor {x}."
+  ],
+  "templat": [
+    {
+      "id": "w2-selisih", "wilayah": 2, "ditanya": "selisih", "kenali": "tampil",
+      "jenis": ["untung", "rugi"], "persen": [10, 20, 25, 30, 40], "jumlah_ongkos": [0],
+      "cerita": {
+        "untung": ["{tokoh} membeli {barang} seharga {hb}. Beberapa hari kemudian, {benda} itu laku {hj}.", "{tokoh} membeli {barang} seharga {hb} lalu menjualnya {hj}."],
+        "rugi": ["{tokoh} membeli {barang} seharga {hb}. Karena agak rusak, {benda} itu hanya laku {hj}.", "{tokoh} membeli {barang} seharga {hb}, tetapi terpaksa menjualnya {hj}."]
+      },
+      "barang": [
+        { "nama": "sebuah tas", "benda": "tas", "ikon": "🎒", "min": 50000, "max": 150000, "kelipatan": 5000 },
+        { "nama": "sepasang sepatu", "benda": "sepatu", "ikon": "👟", "min": 80000, "max": 250000, "kelipatan": 5000 },
+        { "nama": "sebuah jam tangan", "benda": "jam tangan", "ikon": "⌚", "min": 60000, "max": 200000, "kelipatan": 5000 },
+        { "nama": "setumpuk komik bekas", "benda": "komik", "ikon": "📚", "min": 20000, "max": 60000, "kelipatan": 1000 },
+        { "nama": "sebuah gitar bekas", "benda": "gitar", "ikon": "🎸", "min": 200000, "max": 500000, "kelipatan": 10000 },
+        { "nama": "sebuah kipas angin", "benda": "kipas angin", "ikon": "🌀", "min": 100000, "max": 250000, "kelipatan": 5000 }
+      ]
+    },
+    {
+      "id": "w3-persen", "wilayah": 3, "ditanya": "persen", "kenali": "tampil", "pembagi": true,
+      "jenis": ["untung", "rugi"], "persen": [10, 20, 25, 40, 50], "jumlah_ongkos": [0],
+      "cerita": {
+        "untung": ["{tokoh} membeli {barang} seharga {hb} dan menjualnya {hj}.", "{tokoh} membeli {barang} seharga {hb}. Lalu {benda} itu dijual {hj}."],
+        "rugi": ["{tokoh} membeli {barang} seharga {hb}. Karena butuh uang, {benda} itu dijual {hj}.", "{tokoh} membeli {barang} seharga {hb}, tetapi hanya laku {hj}."]
+      },
+      "barang": [
+        { "nama": "sebuah kerudung", "benda": "kerudung", "ikon": "🧕", "min": 30000, "max": 90000, "kelipatan": 5000 },
+        { "nama": "sebuah kaos", "benda": "kaos", "ikon": "👕", "min": 30000, "max": 80000, "kelipatan": 5000 },
+        { "nama": "sebuah sepeda bekas", "benda": "sepeda", "ikon": "🚲", "min": 300000, "max": 800000, "kelipatan": 10000 },
+        { "nama": "sebuah boneka", "benda": "boneka", "ikon": "🧸", "min": 20000, "max": 80000, "kelipatan": 2000 },
+        { "nama": "sebuah bola basket", "benda": "bola", "ikon": "🏀", "min": 60000, "max": 160000, "kelipatan": 5000 },
+        { "nama": "sebuah lampu meja", "benda": "lampu", "ikon": "💡", "min": 40000, "max": 120000, "kelipatan": 5000 }
+      ]
+    },
+    {
+      "id": "w4-ongkos", "wilayah": 4, "ditanya": "persen", "kenali": "tampil",
+      "jenis": ["untung", "rugi"], "persen": [10, 20, 25, 40], "jumlah_ongkos": [1, 2],
+      "cerita": {
+        "untung": ["{tokoh} membeli {barang} seharga {hb}. Ia membayar {ongkos}. Semua {benda} itu laku {hj}."],
+        "rugi": ["{tokoh} membeli {barang} seharga {hb}. Ia membayar {ongkos}. Sayangnya, semua {benda} itu hanya laku {hj}."]
+      },
+      "barang": [
+        { "nama": "10 kg jeruk", "benda": "jeruk", "ikon": "🍊", "min": 80000, "max": 200000, "kelipatan": 1000 },
+        { "nama": "2 lusin pensil", "benda": "pensil", "ikon": "✏️", "min": 30000, "max": 80000, "kelipatan": 1000 },
+        { "nama": "1 kodi kaos kaki", "benda": "kaos kaki", "ikon": "🧦", "min": 60000, "max": 150000, "kelipatan": 1000 },
+        { "nama": "5 kg telur", "benda": "telur", "ikon": "🥚", "min": 100000, "max": 160000, "kelipatan": 1000 },
+        { "nama": "1 pak buku tulis", "benda": "buku tulis", "ikon": "📓", "min": 40000, "max": 120000, "kelipatan": 1000 }
+      ]
+    },
+    {
+      "id": "w5-cerita", "wilayah": 5, "ditanya": "persen", "kenali": "tandai", "pengecoh": true,
+      "jenis": ["untung", "rugi"], "persen": [10, 12.5, 20, 25, 40], "jumlah_ongkos": [1, 2],
+      "cerita": {
+        "untung": ["Pagi ini {tokoh} membeli {barang} seharga {hb}. {pengecoh} Ia juga membayar {ongkos}. Sore harinya, semua {benda} laku {hj}."],
+        "rugi": ["Pagi ini {tokoh} membeli {barang} seharga {hb}. {pengecoh} Ia juga membayar {ongkos}. Karena sepi pembeli, semua {benda} hanya laku {hj}."]
+      },
+      "barang": [
+        { "nama": "sekeranjang tomat", "benda": "tomat", "ikon": "🍅", "min": 80000, "max": 200000, "kelipatan": 1000 },
+        { "nama": "3 ikat bunga", "benda": "bunga", "ikon": "💐", "min": 60000, "max": 150000, "kelipatan": 1000 },
+        { "nama": "2 karung bawang", "benda": "bawang", "ikon": "🧅", "min": 150000, "max": 300000, "kelipatan": 1000 },
+        { "nama": "20 bungkus roti", "benda": "roti", "ikon": "🍞", "min": 60000, "max": 120000, "kelipatan": 1000 },
+        { "nama": "1 dus air mineral", "benda": "air mineral", "ikon": "💧", "min": 40000, "max": 90000, "kelipatan": 1000 }
+      ]
+    },
+    {
+      "id": "w6-hj", "wilayah": 6, "ditanya": "hj", "kenali": "tampil",
+      "jenis": ["untung", "rugi"], "persen": [10, 15, 20, 25, 30, 40], "jumlah_ongkos": [0],
+      "cerita": {
+        "untung": ["{tokoh} punya modal {hb} untuk {barang}. Ia ingin untung {persen}. Berapa harga jualnya?"],
+        "rugi": ["{tokoh} ingin cepat menghabiskan {barang}. Modalnya {hb} dan ia rela rugi {persen}. Berapa harga jualnya?"]
+      },
+      "barang": [
+        { "nama": "sekeranjang mangga", "benda": "mangga", "ikon": "🥭", "min": 80000, "max": 200000, "kelipatan": 10000 },
+        { "nama": "stok jaket", "benda": "jaket", "ikon": "🧥", "min": 150000, "max": 400000, "kelipatan": 10000 },
+        { "nama": "sekotak donat", "benda": "donat", "ikon": "🍩", "min": 40000, "max": 100000, "kelipatan": 10000 },
+        { "nama": "stok sandal", "benda": "sandal", "ikon": "🩴", "min": 100000, "max": 300000, "kelipatan": 10000 }
+      ]
+    },
+    {
+      "id": "w6-modal", "wilayah": 6, "ditanya": "modal", "kenali": "tampil",
+      "jenis": ["untung", "rugi"], "persen": [10, 20, 25, 50], "jumlah_ongkos": [0],
+      "cerita": {
+        "untung": ["{tokoh} menjual {barang} seharga {hj} dan mendapat untung {persen}. Berapa modalnya?"],
+        "rugi": ["{tokoh} menjual {barang} seharga {hj} dan rugi {persen}. Berapa modalnya?"]
+      },
+      "barang": [
+        { "nama": "seekor kambing", "benda": "kambing", "ikon": "🐐", "min": 1500000, "max": 3000000, "kelipatan": 100000 },
+        { "nama": "ponsel bekas", "benda": "ponsel", "ikon": "📱", "min": 800000, "max": 2000000, "kelipatan": 100000 },
+        { "nama": "sepeda motor bekas", "benda": "motor", "ikon": "🛵", "min": 4000000, "max": 9000000, "kelipatan": 500000 },
+        { "nama": "lemari kayu", "benda": "lemari", "ikon": "🗄️", "min": 500000, "max": 1500000, "kelipatan": 100000 }
+      ]
+    }
+  ]
+}

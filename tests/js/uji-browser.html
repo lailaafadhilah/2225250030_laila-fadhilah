@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Uji JS di Browser</title>
+  <!-- Alternatif jika Node.js tidak ada:
+       1) dari folder proyek: python -m http.server 8765
+       2) buka http://localhost:8765/tests/js/uji-browser.html -->
+  <style>body{font-family:system-ui;padding:1rem} .lulus{color:green} .gagal{color:#b91c1c}</style>
+</head>
+<body>
+<h1>Uji rumus JS</h1>
+<pre id="hasil">Menjalankan…</pre>
+<script type="module">
+import { hitungModal, tentukanJenis, hitungSelisih, hitungPersen, hargaJualDariPersen, modalDariHargaJual, kunciSoal } from '../../app/js/core/hitung.js';
+import { formatRupiah, formatPersen, bacaRupiah, bacaPersen } from '../../app/js/core/format.js';
+import { diagnosaPersen, diagnosaSelisih, diagnosaKeranjang, diagnosaHasil } from '../../app/js/core/diagnosa.js';
+import { susunLangkah } from '../../app/js/soal/langkah.js';
+
+const log = [];
+let gagal = 0;
+const sama = (a, b, ket) => {
+  const ok = JSON.stringify(a) === JSON.stringify(b);
+  if (!ok) { gagal++; log.push(`✖ ${ket}: dapat ${JSON.stringify(a)}, harus ${JSON.stringify(b)}`); }
+};
+const ambil = (u) => fetch(u).then((r) => r.json());
+
+const v = await ambil('../test-vectors.json');
+for (const k of v.untung_rugi) {
+  const m = hitungModal(k.hb, k.ongkos);
+  sama(m, k.modal, 'modal'); sama(tentukanJenis(m, k.hj), k.jenis, 'jenis');
+  const s = hitungSelisih(m, k.hj); sama(s, k.selisih, 'selisih'); sama(hitungPersen(s, m), k.persen, `persen ${k.hb}`);
+}
+for (const k of v.harga_jual_dari_persen) sama(hargaJualDariPersen(k.modal, k.persen, k.jenis), k.hj, 'hj dari persen');
+for (const k of v.modal_dari_harga_jual) sama(modalDariHargaJual(k.hj, k.persen, k.jenis), k.modal, 'modal dari hj');
+for (const k of v.format) { sama(formatRupiah(k.angka), k.rupiah, 'rupiah'); sama(formatPersen(k.persen_masuk), k.persen, 'persen'); sama(bacaRupiah(k.rupiah), k.angka, 'baca'); }
+sama(bacaPersen('12,5%'), 12.5, 'bacaPersen');
+
+const s = { hb: 36000, ongkos: [{ nama: 'ongkos kirim', nilai: 4000 }], hj: 50000, ditanya: 'persen' };
+sama(diagnosaPersen(s, 25).benar, true, 'diag benar'); sama(diagnosaPersen(s, 20).kode, 'M1', 'M1');
+sama(diagnosaPersen(s, 38.89).kode, 'M2', 'M2'); sama(diagnosaPersen(s, 0.25).kode, 'M4', 'M4');
+sama(diagnosaSelisih(s, 14000).kode, 'M2', 'M2 selisih'); sama(diagnosaKeranjang(s, ['hb']).kode, 'M2', 'keranjang');
+sama(diagnosaHasil({ hb: 120000, ongkos: [], persen: 25, jenis: 'untung', ditanya: 'hj' }, 30000).kode, 'H1', 'H1');
+
+// Uji silang JS ↔ Python: kunci bank soal (dihitung Python) harus sama dengan kunci JS
+const bank = (await ambil('../../app/content/bank-soal.json')).soal;
+let n = 0;
+for (const daftar of Object.values(bank)) for (const soal of daftar) {
+  n++; sama(kunciSoal(soal), soal.kunci, `kunci ${soal.id}`);
+  for (const mode of ['contoh', 'latihan', 'ujian']) {
+    try {
+      const L = susunLangkah(soal, mode);
+      for (const l of L) if (l.opsi && l.opsi.filter((o) => l.periksa(o.nilai).benar).length !== 1) { gagal++; log.push(`✖ ${soal.id}/${l.kode}/${mode}: jumlah opsi benar ≠ 1`); }
+      if (mode !== 'contoh' && L.some((l) => l.jenisInput === 'rupiah' || l.jenisInput === 'persen')) { gagal++; log.push(`✖ ${soal.id}: masih ada isian ketik`); }
+      susunLangkah(soal, mode, { ketik: true });
+    } catch (e) { gagal++; log.push(`✖ susunLangkah ${soal.id} ${mode}: ${e.message}`); }
+  }
+}
+// Soal di berkas wilayah
+const idx = await ambil('../../app/content/wilayah.json');
+for (const w of idx.wilayah) {
+  const isi = await ambil(`../../app/content/${w.berkas}`);
+  for (const a of isi.aktivitas) {
+    const daftar = [a.soal, ...(Array.isArray(a.soal) ? a.soal : [])].filter((x) => x && !Array.isArray(x) && x.cerita);
+    for (const soal of daftar) {
+      n++;
+      for (const mode of ['contoh', 'latihan', 'ujian']) {
+        try {
+          const L = susunLangkah(soal, mode);
+          for (const l of L) if (l.opsi && l.opsi.filter((o) => l.periksa(o.nilai).benar).length !== 1) { gagal++; log.push(`✖ ${soal.id}/${l.kode}/${mode}: jumlah opsi benar ≠ 1`); }
+      if (mode !== 'contoh' && L.some((l) => l.jenisInput === 'rupiah' || l.jenisInput === 'persen')) { gagal++; log.push(`✖ ${soal.id}: masih ada isian ketik`); }
+      susunLangkah(soal, mode, { ketik: true });
+        } catch (e) { gagal++; log.push(`✖ ${soal.id} ${mode}: ${e.message}`); }
+      }
+    }
+  }
+}
+log.unshift(gagal ? `GAGAL: ${gagal} kesalahan` : `LULUS: semua uji JS lulus (${n} soal diperiksa)`);
+const el = document.getElementById('hasil');
+el.textContent = log.join('\n');
+el.className = gagal ? 'gagal' : 'lulus';
+</script>
+</body>
+</html>

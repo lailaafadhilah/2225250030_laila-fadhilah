@@ -1,0 +1,30 @@
+{
+  "keterangan": "Kasus uji bersama untuk app/js/core/hitung.js dan tools/profit_core.py. Keduanya harus lulus.",
+  "untung_rugi": [
+    { "hb": 50000, "ongkos": [], "hj": 60000, "modal": 50000, "jenis": "untung", "selisih": 10000, "persen": 20 },
+    { "hb": 100000, "ongkos": [], "hj": 80000, "modal": 100000, "jenis": "rugi", "selisih": 20000, "persen": 20 },
+    { "hb": 190000, "ongkos": [10000], "hj": 230000, "modal": 200000, "jenis": "untung", "selisih": 30000, "persen": 15 },
+    { "hb": 75000, "ongkos": [], "hj": 75000, "modal": 75000, "jenis": "impas", "selisih": 0, "persen": 0 },
+    { "hb": 36000, "ongkos": [4000], "hj": 50000, "modal": 40000, "jenis": "untung", "selisih": 10000, "persen": 25 },
+    { "hb": 150000, "ongkos": [10000, 20000], "hj": 200000, "modal": 180000, "jenis": "untung", "selisih": 20000, "persen": 11.11 },
+    { "hb": 400000, "ongkos": [], "hj": 340000, "modal": 400000, "jenis": "rugi", "selisih": 60000, "persen": 15 },
+    { "hb": 60000, "ongkos": [], "hj": 70000, "modal": 60000, "jenis": "untung", "selisih": 10000, "persen": 16.67 },
+    { "hb": 80000, "ongkos": [], "hj": 90000, "modal": 80000, "jenis": "untung", "selisih": 10000, "persen": 12.5 },
+    { "hb": 30000, "ongkos": [], "hj": 20000, "modal": 30000, "jenis": "rugi", "selisih": 10000, "persen": 33.33 }
+  ],
+  "harga_jual_dari_persen": [
+    { "modal": 120000, "persen": 25, "jenis": "untung", "hj": 150000 },
+    { "modal": 200000, "persen": 15, "jenis": "rugi", "hj": 170000 },
+    { "modal": 45000, "persen": 12.5, "jenis": "untung", "hj": 50625 }
+  ],
+  "modal_dari_harga_jual": [
+    { "hj": 115000, "persen": 15, "jenis": "untung", "modal": 100000 },
+    { "hj": 160000, "persen": 20, "jenis": "rugi", "modal": 200000 },
+    { "hj": 90000, "persen": 12.5, "jenis": "untung", "modal": 80000 }
+  ],
+  "format": [
+    { "angka": 12500, "rupiah": "Rp12.500", "persen_masuk": 12.5, "persen": "12,5%" },
+    { "angka": 1000000, "rupiah": "Rp1.000.000", "persen_masuk": 20, "persen": "20%" },
+    { "angka": 500, "rupiah": "Rp500", "persen_masuk": 16.666, "persen": "16,67%" }
+  ]
+}

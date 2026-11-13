@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brosur ProfitQuest</title>
+  <style>
+    /* Cetak: buka di Chrome → Ctrl+P → Ukuran A5 → Simpan sebagai PDF */
+    @page { size: A5; margin: 10mm; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, "Segoe UI", Roboto, sans-serif; color: #1A1F2B; background: #e9ecf2; }
+    .halaman { width: 148mm; min-height: 210mm; margin: 10mm auto; padding: 10mm; background: #fff; display: flex; flex-direction: column; gap: 5mm; }
+    .kepala { display: flex; gap: 4mm; align-items: center; }
+    .kepala img { width: 22mm; height: 22mm; border-radius: 5mm; }
+    h1 { margin: 0; font-size: 22pt; color: #1E5FBF; }
+    .tagline { margin: 0; font-size: 11pt; color: #4A5363; }
+    .untuk { background: #E3EDFB; border-radius: 4mm; padding: 3mm 4mm; font-size: 10.5pt; }
+    .fitur { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+    .fitur div { border: 1px solid #D9DEE7; border-radius: 4mm; padding: 3mm; font-size: 9.5pt; text-align: center; }
+    .fitur b { display: block; font-size: 16pt; }
+    .qr { display: flex; gap: 5mm; align-items: center; border: 2px dashed #1E5FBF; border-radius: 4mm; padding: 4mm; }
+    .qr img { width: 38mm; height: 38mm; }
+    .qr .url { font-weight: 700; font-size: 11pt; word-break: break-all; color: #1E5FBF; }
+    h2 { font-size: 12pt; margin: 0 0 2mm; }
+    ol { margin: 0; padding-left: 5mm; font-size: 9.5pt; }
+    .cara { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+    .kaki { margin-top: auto; font-size: 8.5pt; color: #4A5363; border-top: 1px solid #D9DEE7; padding-top: 3mm; }
+    @media print { body { background: #fff; } .halaman { margin: 0; width: auto; min-height: auto; padding: 0; } }
+  </style>
+</head>
+<body>
+  <div class="halaman">
+    <div class="kepala">
+      <img src="../app/assets/icons/icon-192.png" alt="">
+      <div>
+        <h1>ProfitQuest</h1>
+        <p class="tagline">Petualangan Menghitung Untung dan Rugi</p>
+      </div>
+    </div>
+
+    <p class="untuk">Untuk siswa SMP yang belajar <b>Aritmetika Sosial: Persentase Untung dan Rugi</b>. Jelajahi 6 wilayah pasar, dari mengenal istilah sampai menjadi Juragan!</p>
+
+    <div class="fitur">
+      <div><b>👣</b>Langkah ditunjukkan satu per satu</div>
+      <div><b>🛒</b>Contoh dari jual-beli sehari-hari</div>
+      <div><b>📴</b>Gratis &amp; bisa dipakai tanpa internet</div>
+    </div>
+
+    <div class="qr">
+      <img src="qr.png" alt="QR code ProfitQuest" onerror="this.alt='(Jalankan: python tools/make_qr.py URL)'">
+      <div>
+        <h2>Pindai untuk membuka</h2>
+        <p>Atau ketik alamat ini di browser:</p>
+        <p class="url">https://ALAMAT-APLIKASI-ANDA</p>
+      </div>
+    </div>
+
+    <div class="cara">
+      <div>
+        <h2>📱 Pasang di Android</h2>
+        <ol>
+          <li>Pindai QR code dengan kamera HP.</li>
+          <li>Ketuk <b>Pasang Aplikasi</b>, atau menu ⋮ → <b>Instal aplikasi</b>.</li>
+          <li>Buka ProfitQuest dari layar utama.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>🍎 Pasang di iPhone</h2>
+        <ol>
+          <li>Buka tautan di <b>Safari</b>.</li>
+          <li>Ketuk ikon <b>Bagikan</b>.</li>
+          <li>Pilih <b>Tambahkan ke Layar Utama</b>.</li>
+        </ol>
+      </div>
+    </div>
+
+    <p class="kaki">Tidak perlu Play Store · Tanpa akun · Data tersimpan hanya di HP-mu.<br>
+      Dikembangkan oleh: [Nama Pengembang] · S1 Pendidikan Matematika · [Nama Universitas]</p>
+  </div>
+</body>
+</html>
