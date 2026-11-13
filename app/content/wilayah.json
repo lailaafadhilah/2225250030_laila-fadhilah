@@ -1,0 +1,10 @@
+{
+  "wilayah": [
+    { "id": 1, "nama": "Gerbang Kata Pasar", "ikon": "🏪", "ringkas": "Kenali kata-kata penting di pasar", "berkas": "wilayah-1.json", "gambar": "assets/gambar/pasar.webp", "tag": "Kenali Istilah", "warna": ["#2E9E4F", "#17733A"] },
+    { "id": 2, "nama": "Toko Untung-Rugi", "ikon": "🏬", "ringkas": "Untung atau rugi? Berapa besarnya?", "berkas": "wilayah-2.json", "ilustrasi": "toko", "tag": "Untung & Rugi", "warna": ["#F08A24", "#C2410C"] },
+    { "id": 3, "nama": "Jembatan Persen", "ikon": "🌉", "ringkas": "Persentase selalu dibandingkan dengan modal", "berkas": "wilayah-3.json", "ilustrasi": "jembatan", "tag": "Persentase", "warna": ["#1E9BD7", "#1E5FBF"] },
+    { "id": 4, "nama": "Gudang Modal", "ikon": "📦", "ringkas": "Biaya tambahan ikut masuk modal", "berkas": "wilayah-4.json", "ilustrasi": "gudang", "tag": "Biaya Tambahan", "warna": ["#B7793F", "#7C4A1E"] },
+    { "id": 5, "nama": "Pasar Cerita", "ikon": "📜", "ringkas": "Tandai angka penting di soal cerita", "berkas": "wilayah-5.json", "ilustrasi": "cerita", "tag": "Soal Cerita", "warna": ["#8B5CF6", "#6D28D9"] },
+    { "id": 6, "nama": "Arena Juragan", "ikon": "🏆", "ringkas": "Cari harga jual dan modal dari persen", "berkas": "wilayah-6.json", "ilustrasi": "arena", "tag": "Tantangan", "warna": ["#E8A317", "#B45309"] }
+  ]
+}

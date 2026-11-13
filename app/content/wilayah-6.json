@@ -1,0 +1,88 @@
+{
+  "id": 6,
+  "nama": "Arena Juragan",
+  "ikon": "🏆",
+  "tujuan": "Menentukan harga jual atau modal bila persentase diketahui, serta menilai kewajaran hasil.",
+  "lencana": { "nama": "Juragan Sejati", "ikon": "👑" },
+  "aktivitas": [
+    {
+      "tipe": "situasi",
+      "judul": "Berpikir terbalik",
+      "ikon": "🔄",
+      "ilustrasi": "arena",
+      "teks": [
+        "Kadang persentasenya sudah diketahui.",
+        "Kita diminta mencari harga jual atau modalnya.",
+        "Ingat: modal selalu dianggap 100%."
+      ],
+      "kalimat_kunci": "Untung p% → harga jual = (100 + p)% × modal."
+    },
+    { "tipe": "materi", "bab": "m6" },
+    {
+      "tipe": "contoh",
+      "id": "w6-c1",
+      "judul": "Mencari harga jual",
+      "soal": {
+        "id": "w6-c1-soal", "ikon": "🥭", "barang": "mangga",
+        "cerita": "Bu Lina punya modal [[hb:Rp120.000]] untuk sekeranjang mangga. Ia ingin untung [[persen:25%]]. Berapa harga jualnya?",
+        "hb": 120000, "ongkos": [], "persen": 25, "jenis": "untung", "ditanya": "hj", "kenali": "tampil",
+        "kunci": { "hj": 150000 }
+      }
+    },
+    {
+      "tipe": "contoh",
+      "id": "w6-c2",
+      "judul": "Mencari modal",
+      "soal": {
+        "id": "w6-c2-soal", "ikon": "🐐", "barang": "kambing",
+        "cerita": "Pak Dodi menjual seekor kambing seharga [[hj:Rp2.300.000]] dan mendapat untung [[persen:15%]]. Berapa modalnya?",
+        "hj": 2300000, "persen": 15, "jenis": "untung", "ditanya": "modal", "kenali": "tampil",
+        "kunci": { "modal": 2000000 }
+      }
+    },
+    {
+      "tipe": "latihan",
+      "label": "Latihan",
+      "soal": {
+        "id": "w6-r1", "ikon": "🧥", "barang": "jaket",
+        "cerita": "Toko Ayu ingin menghabiskan stok jaket. Modalnya [[hb:Rp200.000]] dan ia rela rugi [[persen:15%]]. Berapa harga jual jaket itu?",
+        "hb": 200000, "ongkos": [], "persen": 15, "jenis": "rugi", "ditanya": "hj", "kenali": "tampil",
+        "kunci": { "hj": 170000 }
+      }
+    },
+    {
+      "tipe": "latihan",
+      "label": "Latihan",
+      "soal": {
+        "id": "w6-r2", "ikon": "📱", "barang": "ponsel",
+        "cerita": "Kak Rani menjual ponsel bekas seharga [[hj:Rp1.600.000]] dan rugi [[persen:20%]]. Berapa modalnya dulu?",
+        "hj": 1600000, "persen": 20, "jenis": "rugi", "ditanya": "modal", "kenali": "tampil",
+        "kunci": { "modal": 2000000 }
+      }
+    },
+    { "tipe": "latihan", "label": "Latihan Mandiri", "sumber": "bank", "templat": ["w6-hj", "w6-modal"], "jumlah": 3 },
+    {
+      "tipe": "pilihan",
+      "id": "w6-p1",
+      "ikon": "🏪",
+      "pertanyaan": "Toko A untung Rp30.000 dari modal Rp200.000. Toko B untung Rp20.000 dari modal Rp80.000. Persentase untung siapa yang lebih besar?",
+      "opsi": [
+        { "teks": "Toko A", "umpan": "Untung rupiah Toko A memang lebih besar. Tapi coba hitung persennya: 30.000 ÷ 200.000 × 100% = 15%." },
+        { "teks": "Toko B", "benar": true, "umpan": "Betul! Toko A 15%, Toko B 20.000 ÷ 80.000 × 100% = 25%." },
+        { "teks": "Sama besar", "umpan": "Hitung persen masing-masing terhadap modalnya." }
+      ]
+    },
+    {
+      "tipe": "pilihan",
+      "id": "w6-p2",
+      "ikon": "🍧",
+      "pertanyaan": "Kamu punya modal Rp50.000 untuk berjualan es. Kamu ingin untung 20%. Semua es harus laku berapa?",
+      "opsi": [
+        { "teks": "Rp52.000", "umpan": "20% dari Rp50.000 adalah Rp10.000, bukan Rp2.000." },
+        { "teks": "Rp60.000", "benar": true, "umpan": "Hebat! 120% × Rp50.000 = Rp60.000." },
+        { "teks": "Rp70.000", "umpan": "Itu untung 40%. Coba hitung 120% × Rp50.000." }
+      ]
+    },
+    { "tipe": "checkpoint", "sumber": "bank", "templat": ["w6-hj", "w6-modal", "w4-ongkos", "w3-persen"], "jumlah": 4 }
+  ]
+}

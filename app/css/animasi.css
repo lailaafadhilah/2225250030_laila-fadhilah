@@ -1,0 +1,217 @@
+/* Animasi ProfitQuest.
+   Prinsip: animasi hanya untuk MAKNA (langkah baru, benar/salah, hasil hitungan, perayaan),
+   singkat (≤ 0,9 dtk), tidak berulang terus di layar belajar (EL03), dan tidak memajukan langkah sendiri (EL04).
+   Mati otomatis jika "prefers-reduced-motion" atau Pengaturan → Animasi: Hemat. */
+
+/* ---------- Keyframes ---------- */
+@keyframes masuk-naik { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes geser-masuk { from { opacity: 0; transform: translateX(-14px); } to { opacity: 1; transform: none; } }
+@keyframes muncul { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pop { 0% { opacity: 0; transform: scale(0.4); } 65% { opacity: 1; transform: scale(1.15); } 100% { transform: scale(1); } }
+@keyframes pop-halus { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: none; } }
+@keyframes goyang {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); } 40% { transform: translateX(8px); }
+  60% { transform: translateX(-5px); } 80% { transform: translateX(5px); }
+}
+@keyframes denyut { from { box-shadow: 0 0 0 0 currentColor; } to { box-shadow: 0 0 0 12px transparent; } }
+@keyframes sorot { from { box-shadow: 0 0 0 4px var(--ditanya); } to { box-shadow: 0 0 0 0 transparent; } }
+@keyframes garis-tumbuh { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes melompat {
+  0%, 100% { transform: translateY(0); } 30% { transform: translateY(-16px); }
+  50% { transform: translateY(0); } 65% { transform: translateY(-6px); } 80% { transform: translateY(0); }
+}
+@keyframes melayang { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-8px) rotate(-3deg); } }
+@keyframes lencana-masuk {
+  0% { opacity: 0; transform: scale(0) rotate(-200deg); }
+  70% { opacity: 1; transform: scale(1.25) rotate(12deg); }
+  100% { transform: scale(1) rotate(0); }
+}
+@keyframes jatuh {
+  from { transform: translate3d(0, -12vh, 0) rotate(0deg); opacity: 1; }
+  to { transform: translate3d(var(--geser, 0px), 105vh, 0) rotate(var(--putar, 540deg)); opacity: 0.9; }
+}
+@keyframes naik-lembar { from { transform: translateY(100%); } to { transform: none; } }
+@keyframes toast-masuk { from { opacity: 0; transform: translate(-50%, 20px); } to { opacity: 1; transform: translate(-50%, 0); } }
+@keyframes kilau { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.35) drop-shadow(0 0 6px gold); } }
+
+/* ---------- Transisi layar & langkah ---------- */
+.anim-masuk { animation: masuk-naik 320ms ease-out both; }
+/* Wadah yang berisi bar tombol (position: fixed) hanya memudar: transform akan menggeser bar */
+.anim-muncul { animation: muncul 300ms ease-out both; }
+.anim-goyang { animation: goyang 420ms ease-in-out; }
+.anim-denyut { animation: denyut 550ms ease-out; }
+.rumus.anim-sorot { animation: sorot 800ms ease-out; }
+
+/* Langkah yang selesai bergeser masuk + centang "pop" */
+.daftar-selesai li { animation: geser-masuk 300ms ease-out both; }
+.daftar-selesai .centang { display: inline-block; animation: pop 420ms 120ms both; }
+
+/* Umpan balik: benar muncul lembut, salah bergoyang pelan */
+.umpan-benar { animation: pop-halus 300ms ease-out both; }
+.umpan-salah { animation: goyang 420ms ease-in-out; }
+.umpan-info { animation: muncul 200ms ease-out both; }
+
+/* Angka penting di cerita menyala satu per satu (signaling, EL05) */
+.token-warna { animation: pop 380ms ease-out both; animation-delay: calc(var(--i, 0) * 110ms); }
+
+/* Hitungan "terbentuk": garis tumbuh, lalu hasil muncul */
+.visual-kurang .susun-garis { transform-origin: right; animation: garis-tumbuh 380ms 200ms ease-out both; }
+.visual-kurang .susun-hasil { animation: masuk-naik 350ms 520ms ease-out both; }
+.visual-pecahan .hasil-persen { display: inline-block; animation: pop 450ms 380ms ease-out both; }
+.keranjang-isi .anim-pop { animation: pop 350ms ease-out both; }
+
+/* Pilihan & tombol terasa "ditekan" */
+.btn, .opsi, .peta-item { transition: transform 120ms ease, box-shadow 150ms ease, background-color 150ms ease, border-color 150ms ease; }
+.btn:active:not(:disabled), .opsi:active:not(:disabled), .peta-item:active:not(:disabled) { transform: scale(0.97); }
+.opsi[aria-checked="true"], .opsi[aria-pressed="true"] { animation: pop-halus 180ms ease-out; }
+
+/* Bar kemajuan mengisi pelan */
+.kemajuan-isi { transition: width 650ms cubic-bezier(0.22, 1, 0.36, 1); }
+
+/* ---------- Layar hasil & perayaan (gamifikasi hanya di sini) ---------- */
+.hasil-soal .bintang span { display: inline-block; animation: pop 450ms ease-out both; animation-delay: calc(var(--i, 0) * 160ms + 100ms); }
+.hasil-soal .bintang .bintang-penuh { animation: pop 450ms ease-out both, kilau 900ms ease-in-out 2; animation-delay: calc(var(--i, 0) * 160ms + 100ms), calc(var(--i, 0) * 160ms + 600ms); }
+.hasil-wilayah .ikon-besar { display: inline-block; animation: lencana-masuk 850ms ease-out both; }
+.hasil-wilayah h2, .hasil-wilayah p { animation: masuk-naik 350ms ease-out both; animation-delay: 500ms; }
+.situasi .ikon-besar { display: inline-block; animation: melompat 900ms 200ms ease-out both; }
+.kalimat-kunci { animation: pop-halus 400ms 450ms ease-out both; }
+
+.konfeti { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 70; }
+.konfeti span { position: absolute; top: 0; border-radius: 2px; animation: jatuh linear both; }
+
+/* ---------- Beranda & peta ---------- */
+.logo { animation: melayang 3.6s ease-in-out infinite; }
+.hero { animation: pop-halus 500ms ease-out both; }
+.gambar-situasi { animation: pop-halus 450ms ease-out both; }
+.fitur li, .peta li { animation: masuk-naik 380ms ease-out both; animation-delay: calc(var(--i, 0) * 80ms); }
+.peta-terbuka .peta-ikon { animation: melompat 1s 600ms ease-out both; }
+
+/* ---------- Lembar & toast ---------- */
+.lembar-latar { animation: muncul 200ms ease-out; }
+.lembar-panel { animation: naik-lembar 280ms cubic-bezier(0.22, 1, 0.36, 1); }
+.toast { animation: toast-masuk 260ms ease-out; }
+
+
+/* ---------- Ilustrasi SVG bergerak (js/ui/ilustrasi.js) ----------
+   Hanya di Beranda, Peta, kartu pembuka, dan layar hasil, BUKAN di layar hitungan. */
+@keyframes awan-lewat { from { transform: translateX(-90px); } to { transform: translateX(380px); } }
+@keyframes koin-putar {
+  0%, 100% { transform: translateY(0) scaleX(1); } 25% { transform: translateY(-4px) scaleX(0.15); }
+  50% { transform: translateY(-8px) scaleX(1); } 75% { transform: translateY(-4px) scaleX(0.15); }
+}
+@keyframes timbang { 0%, 100% { transform: rotate(-7deg); } 50% { transform: rotate(7deg); } }
+@keyframes ombak { from { transform: translateX(0); } to { transform: translateX(-40px); } }
+@keyframes gerobak { from { transform: translateX(-50px); } to { transform: translateX(340px); } }
+@keyframes apung { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+@keyframes membesar { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+@keyframes kotak-jatuh {
+  0% { transform: translateY(-110px); opacity: 0; } 10% { opacity: 1; }
+  35% { transform: translateY(0); } 42% { transform: translateY(-9px); } 48% { transform: translateY(0); }
+  85% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(0); opacity: 0; }
+}
+@keyframes sorot-teks { 0%, 100% { opacity: 0.2; } 40%, 60% { opacity: 1; } }
+@keyframes kaca-jalan {
+  0%, 100% { transform: translate(0, 0); } 25% { transform: translate(90px, 0); }
+  50% { transform: translate(90px, 44px); } 75% { transform: translate(0, 66px); }
+}
+@keyframes ayun { 0%, 100% { transform: rotate(-2deg); } 50% { transform: rotate(2deg); } }
+@keyframes kilip { from { transform: scale(0.6); opacity: 0.4; } to { transform: scale(1.15); opacity: 1; } }
+@keyframes badan-naik { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes lambai { from { transform: rotate(0deg); } to { transform: rotate(-28deg); } }
+@keyframes kedip { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+
+.ani-awan { animation: awan-lewat 18s linear infinite; animation-delay: -6s; }
+.ani-awan.lambat { animation-duration: 28s; animation-delay: -15s; }
+.ani-koin { transform-box: fill-box; transform-origin: center; animation: koin-putar 2.6s ease-in-out infinite; }
+.ani-timbang { animation: timbang 3.2s ease-in-out infinite; }
+.ani-ombak { animation: ombak 2.4s linear infinite; }
+.ani-jalan { animation: gerobak 7s linear infinite; }
+.ani-melayang { animation: apung 2.6s ease-in-out infinite; }
+.ani-denyut-lembut { transform-box: fill-box; transform-origin: center; animation: membesar 3s ease-in-out infinite; }
+.ani-jatuh { animation: kotak-jatuh 4.5s ease-in infinite; }
+.ani-sorot-teks { animation: sorot-teks 3.6s ease-in-out infinite; }
+.ani-kaca { animation: kaca-jalan 7s ease-in-out infinite; }
+.ani-ayun { animation: ayun 3s ease-in-out infinite; }
+.ani-kilip { transform-box: fill-box; transform-origin: center; animation: kilip 1.4s ease-in-out infinite alternate; }
+.ani-badan { animation: badan-naik 2.2s ease-in-out infinite; }
+.maskot-lompat .ani-badan { animation: melompat 1.1s ease-out infinite; }
+.ani-lambai { animation: lambai 0.7s ease-in-out infinite alternate; }
+.maskot-semangat .ani-lambai { animation-duration: 0.45s; }
+.ani-kedip { transform-box: fill-box; transform-origin: center; animation: kedip 4s ease-in-out infinite; }
+/* Jeda waktu (harus setelah aturan animasi di atas) */
+.ani-d1 { animation-delay: 0.3s; } .ani-d2 { animation-delay: 0.9s; } .ani-d3 { animation-delay: 1.5s; }
+
+/* Di Peta, hanya wilayah yang sedang dikerjakan yang bergerak (hemat baterai & tidak ramai) */
+.peta-item:not(.peta-terbuka) .peta-gambar * { animation: none !important; }
+.penanda-di-sini { animation: melompat 1.4s ease-out infinite; }
+
+/* Materi: poin & langkah contoh muncul berurutan */
+.materi-poin li, .langkah-materi li, .daftar-bab li { animation: masuk-naik 360ms ease-out both; animation-delay: calc(var(--i, 0) * 120ms + 150ms); }
+.rumus-materi { animation: pop-halus 400ms 200ms ease-out both; }
+.kotak-awas { animation: goyang 500ms 300ms ease-in-out both; }
+
+/* ---------- Peta Gedung Pasar (js/ui/peta-pasar.js) ---------- */
+@keyframes loncat { 0%, 100% { transform: translateY(0); opacity: 1; } 45% { transform: translateY(-16px); } 70% { opacity: 1; } 85% { transform: translateY(-4px); opacity: 0.2; } }
+@keyframes gerobak-kecil { from { transform: translateX(-12px); } to { transform: translateX(12px); } }
+@keyframes kotak-jatuh-kecil {
+  0% { transform: translateY(-40px); opacity: 0; } 12% { opacity: 1; } 40% { transform: translateY(0); }
+  48% { transform: translateY(-5px); } 55% { transform: translateY(0); } 85% { opacity: 1; } 100% { transform: translateY(0); opacity: 0; }
+}
+@keyframes kaca-kecil { 0%, 100% { transform: translate(0, 0); } 33% { transform: translate(50px, 0); } 66% { transform: translate(50px, 22px); } }
+@keyframes tumbuh { 0%, 15% { transform: scaleX(0); } 55%, 85% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+@keyframes ayun-kecil { 0%, 100% { transform: rotate(-0.8deg); } 50% { transform: rotate(0.8deg); } }
+@keyframes ayun-daun { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+@keyframes kibar { 0%, 100% { transform: skewY(0deg) scaleX(1); } 50% { transform: skewY(6deg) scaleX(0.9); } }
+@keyframes putar { to { transform: rotate(360deg); } }
+@keyframes gerobak-jalan { from { transform: translateX(-70px); } to { transform: translateX(420px); } }
+@keyframes zzz { 0% { transform: translate(0, 4px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translate(6px, -10px); opacity: 0; } }
+@keyframes lampu-kedip { 0%, 100% { opacity: 1; } 45% { opacity: 1; } 50% { opacity: 0.35; } 55% { opacity: 1; } }
+@keyframes cap-masuk { from { transform: translate(-50%, -50%) rotate(-12deg) scale(2.2); opacity: 0; } to { transform: translate(-50%, -50%) rotate(-12deg) scale(1); opacity: 1; } }
+@keyframes kios-sinar { 0%, 100% { box-shadow: 0 0 0 4px rgb(255 224 102 / 0.9), 0 0 18px 4px rgb(255 224 102 / 0.45); } 50% { box-shadow: 0 0 0 4px rgb(255 224 102 / 1), 0 0 30px 10px rgb(255 224 102 / 0.75); } }
+
+.ani-loncat { animation: loncat 2.2s ease-in-out infinite; }
+.ani-timbang-pivot { transform-box: fill-box; transform-origin: 50% 0%; animation: timbang 3s ease-in-out infinite; }
+.ani-gerobak-kecil { animation: gerobak-kecil 2.4s ease-in-out infinite alternate; }
+.ani-jatuh-kecil { animation: kotak-jatuh-kecil 3.6s ease-in infinite; }
+.ani-kaca-kecil { animation: kaca-kecil 5s ease-in-out infinite; }
+.ani-tumbuh { transform-box: fill-box; transform-origin: 0% 50%; animation: tumbuh 3.6s ease-in-out infinite; }
+.ani-ayun-kecil { transform-box: fill-box; transform-origin: 50% 0%; animation: ayun-kecil 3.2s ease-in-out infinite; }
+.ani-ayun-daun { transform-box: fill-box; transform-origin: 50% 100%; animation: ayun-daun 2.8s ease-in-out infinite; }
+.lantai .ani-ayun { transform-box: fill-box; transform-origin: 50% 0%; }
+.ani-kibar { transform-box: fill-box; transform-origin: 0% 50%; animation: kibar 1.6s ease-in-out infinite; }
+.ani-putar-lambat { transform-box: fill-box; transform-origin: center; animation: putar 20s linear infinite; }
+.ani-gerobak-jalan { animation: gerobak-jalan 14s linear infinite; }
+.ani-zzz { animation: zzz 2.4s ease-out infinite; }
+.ani-loncat.ani-d2, .ani-jatuh-kecil.ani-d2, .ani-kibar.ani-d2 { animation-delay: 0.9s; }
+.ani-loncat.ani-d3 { animation-delay: 1.5s; }
+.lantai-tutup * { animation: none !important; }
+.lampu-buka { animation: lampu-kedip 1.6s steps(1) infinite; }
+.cap-laris { animation: cap-masuk 450ms 300ms ease-out both; }
+.kios-sekarang { animation: kios-sinar 1.8s ease-in-out infinite; }
+.pasar-maskot .ani-badan { animation: melompat 1.6s ease-out infinite; }
+.kios-tombol:active:not(:disabled) { background: rgb(255 255 255 / 0.15); }
+
+/* ---------- Beranda pastel (js/ui/beranda-gambar.js) ---------- */
+@keyframes lambai-tas { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(8deg); } }
+@keyframes pita { 0%, 100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }
+@keyframes angguk { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(5deg); } }
+@keyframes kilip-garis { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+@keyframes judul-pantul { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+.ani-lambai-tas { animation: lambai-tas 1.6s ease-in-out infinite; }
+.ani-pita { transform-box: fill-box; transform-origin: 50% 50%; animation: pita 2.4s ease-in-out infinite; }
+.ani-angguk { animation: angguk 3s ease-in-out infinite; }
+.ani-kilip-garis { animation: kilip-garis 1.2s ease-in-out infinite; }
+.judul-pq { animation: judul-pantul 3s ease-in-out infinite; }
+.tombol-menu { animation: masuk-naik 380ms ease-out both; animation-delay: calc(var(--i, 0) * 90ms + 150ms); }
+.tokoh-sari { animation: masuk-naik 500ms ease-out both; }
+.kucing-pasar { animation: pop-halus 500ms 250ms ease-out both; }
+
+/* ---------- Mode hemat / gerak dikurangi ---------- */
+:root[data-animasi="hemat"] *, :root[data-animasi="hemat"] *::before, :root[data-animasi="hemat"] *::after {
+  animation: none !important;
+  transition: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .konfeti { display: none; }
+}

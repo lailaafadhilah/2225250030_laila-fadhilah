@@ -1,0 +1,101 @@
+{
+  "id": 3,
+  "nama": "Jembatan Persen",
+  "ikon": "🌉",
+  "tujuan": "Menghitung persentase untung/rugi terhadap modal dan menjelaskan alasannya.",
+  "lencana": { "nama": "Penyeberang Persen", "ikon": "🌉" },
+  "aktivitas": [
+    {
+      "tipe": "situasi",
+      "judul": "Siapa yang lebih berhasil?",
+      "ikon": "🤔",
+      "ilustrasi": "jembatan",
+      "teks": [
+        "Ani untung Rp2.000 dari modal Rp10.000.",
+        "Budi untung Rp2.000 dari modal Rp100.000.",
+        "Untungnya sama. Tapi uang yang Ani keluarkan jauh lebih sedikit!"
+      ],
+      "kalimat_kunci": "Untung dan rugi selalu dibandingkan dengan modal."
+    },
+    { "tipe": "materi", "bab": "m3" },
+    {
+      "tipe": "pilihan",
+      "id": "w3-p1",
+      "ikon": "🤔",
+      "pertanyaan": "Menurutmu, usaha siapa yang lebih berhasil?",
+      "opsi": [
+        { "teks": "Ani", "benar": true, "umpan": "Betul! Dengan modal kecil, Ani mendapat untung yang sama. Ani untung 20%, Budi hanya 2%." },
+        { "teks": "Budi", "umpan": "Untung Budi sama, tetapi modalnya 10 kali lebih besar. Bandingkan untung dengan modal." },
+        { "teks": "Sama saja", "umpan": "Rupiahnya memang sama. Coba bandingkan dengan modal masing-masing." }
+      ]
+    },
+    {
+      "tipe": "contoh",
+      "id": "w3-c1",
+      "judul": "Persentase untung",
+      "soal": {
+        "id": "w3-c1-soal", "ikon": "🧕", "barang": "kerudung",
+        "cerita": "Kak Nisa membeli kerudung seharga [[hb:Rp50.000]] dan menjualnya [[hj:Rp60.000]].",
+        "hb": 50000, "ongkos": [], "hj": 60000, "ditanya": "persen", "kenali": "tampil", "pembagi": true,
+        "kunci": { "jenis": "untung", "selisih": 10000, "persen": 20 }
+      }
+    },
+    {
+      "tipe": "contoh",
+      "id": "w3-c2",
+      "judul": "Persentase rugi",
+      "soal": {
+        "id": "w3-c2-soal", "ikon": "🚲", "barang": "sepeda",
+        "cerita": "Pak Rudi membeli sepeda bekas seharga [[hb:Rp400.000]]. Karena butuh uang, ia menjualnya [[hj:Rp340.000]].",
+        "hb": 400000, "ongkos": [], "hj": 340000, "ditanya": "persen", "kenali": "tampil", "pembagi": true,
+        "kunci": { "jenis": "rugi", "selisih": 60000, "persen": 15 }
+      }
+    },
+    {
+      "tipe": "latihan",
+      "label": "Contoh Rumpang",
+      "tampil": 3,
+      "soal": {
+        "id": "w3-r1", "ikon": "👕", "barang": "kaos",
+        "cerita": "Bayu membeli kaos seharga [[hb:Rp40.000]] dan menjualnya [[hj:Rp50.000]].",
+        "hb": 40000, "ongkos": [], "hj": 50000, "ditanya": "persen", "kenali": "tampil", "pembagi": true,
+        "kunci": { "jenis": "untung", "selisih": 10000, "persen": 25 }
+      }
+    },
+    {
+      "tipe": "latihan",
+      "label": "Contoh Rumpang",
+      "tampil": 1,
+      "soal": {
+        "id": "w3-r2", "ikon": "🍌", "barang": "pisang",
+        "cerita": "Bu Rina membeli setandan pisang seharga [[hb:Rp30.000]] dan menjualnya [[hj:Rp36.000]].",
+        "hb": 30000, "ongkos": [], "hj": 36000, "ditanya": "persen", "kenali": "tampil", "pembagi": true,
+        "kunci": { "jenis": "untung", "selisih": 6000, "persen": 20 }
+      }
+    },
+    {
+      "tipe": "pilihan",
+      "id": "w3-p2",
+      "ikon": "🧐",
+      "pertanyaan": "Ucok untung Rp6.000. Modalnya Rp30.000, harga jualnya Rp36.000. Ucok menghitung 6.000 ÷ 36.000 × 100%. Apa kesalahannya?",
+      "opsi": [
+        { "teks": "Seharusnya dibagi modal Rp30.000", "benar": true, "umpan": "Tepat! 6.000 ÷ 30.000 × 100% = 20%." },
+        { "teks": "Seharusnya dibagi untung", "umpan": "Untung dibagi untung selalu 1. Bagilah dengan modal." },
+        { "teks": "Tidak ada yang salah", "umpan": "Persentase dibandingkan dengan modal, bukan harga jual." }
+      ]
+    },
+    { "tipe": "latihan", "label": "Latihan Mandiri", "sumber": "bank", "templat": ["w3-persen"], "jumlah": 3 },
+    {
+      "tipe": "susun",
+      "id": "w3-s1",
+      "pertanyaan": "Jelaskan ke temanmu! Susun langkah mencari persentase untung.",
+      "kartu": [
+        "Hitung besar untung atau rugi",
+        "Tulis pecahan: untung ÷ modal",
+        "Kalikan dengan 100%",
+        "Cek balik: persen × modal = untung"
+      ]
+    },
+    { "tipe": "checkpoint", "sumber": "bank", "templat": ["w3-persen"], "jumlah": 4 }
+  ]
+}

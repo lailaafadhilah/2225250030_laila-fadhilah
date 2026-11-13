@@ -1,0 +1,25 @@
+{
+  "keterangan": "Pesan umpan balik per kode miskonsepsi. Lihat docs/analisis-wawancara.md §3.",
+  "pesan": {
+    "UMUM": "Belum tepat. Coba ikuti rumus di atas langkah ini, lalu hitung pelan-pelan.",
+    "KOSONG": "Isi jawabanmu dulu, ya.",
+    "M1": "Hampir! Persentase dibandingkan dengan uang yang kamu KELUARKAN (modal), bukan uang yang kamu terima. Coba bagi dengan modal.",
+    "M2": "Ada biaya lain yang ikut kamu bayar. Masukkan dulu ke modal: harga beli + biaya tambahan.",
+    "M3": "Cek lagi: mana uang yang DIBAYAR saat membeli, dan mana yang DITERIMA saat menjual?",
+    "M4": "Hasil bagimu sudah benar! Sekarang kalikan 100 agar menjadi persen.",
+    "M5": "Coba hitung jumlah nolnya lagi. Coret nol yang sama di atas dan di bawah garis pecahan.",
+    "M6": "Bandingkan lagi. Apakah uang yang diterima lebih banyak atau lebih sedikit dari modal?",
+    "H1": "Itu baru besar untung/ruginya. Harga jual = modal ditambah (atau dikurangi) nilai itu.",
+    "H2": "Arahnya terbalik. Untung berarti harga jual LEBIH BESAR dari modal, rugi berarti LEBIH KECIL.",
+    "H3": "Modal adalah 100%. Harga jual dibagi persennya (mis. 115%), bukan dikali.",
+    "H4": "Persen dihitung dari modal, bukan dari harga jual. Gunakan: harga jual × 100 ÷ (100 ± persen).",
+    "K1": "Harga jual adalah uang yang kamu TERIMA. Ia tidak termasuk modal.",
+    "K2": "Harga beli juga uang yang kamu keluarkan. Masukkan ke keranjang modal.",
+    "P1": "Angka ini tidak dipakai untuk menghitung untung atau rugi. Tandai sebagai \"Tidak dipakai\".",
+    "T1": "Masih ada angka yang belum diberi label. Ketuk angka bergaris di cerita.",
+    "IL05": "Baca lagi kalimatnya. Siapa yang membayar dan siapa yang menerima uang?",
+    "C1": "Coba hitung lagi: ubah persen menjadi pecahan, lalu kalikan dengan modal.",
+    "C2": "Coba hitung lagi dengan teliti, langkah demi langkah.",
+    "S1": "Urutannya belum tepat. Ingat 4 Langkah Juragan: Kenali → Bandingkan → Hitung selisih → Persenkan & Cek."
+  }
+}

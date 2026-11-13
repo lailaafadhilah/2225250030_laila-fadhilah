@@ -1,0 +1,12 @@
+{
+  "istilah": [
+    { "id": "harga-beli", "ikon": "🛒", "istilah": "Harga beli", "definisi": "Uang yang dibayar pedagang untuk mendapatkan barang.", "contoh": "Beli 1 pak buku Rp40.000." },
+    { "id": "biaya-tambahan", "ikon": "📦", "istilah": "Biaya tambahan", "definisi": "Uang lain yang ikut dikeluarkan agar barang bisa dijual. Misalnya ongkos kirim, plastik, atau ojek.", "contoh": "Ongkos ojek Rp5.000." },
+    { "id": "modal", "ikon": "🛒", "istilah": "Modal", "definisi": "Semua uang yang dikeluarkan. Modal = harga beli + biaya tambahan. Jika tidak ada biaya tambahan, modal = harga beli.", "contoh": "Rp40.000 + Rp5.000 = Rp45.000." },
+    { "id": "harga-jual", "ikon": "💰", "istilah": "Harga jual", "definisi": "Uang yang diterima pedagang saat barangnya laku.", "contoh": "Buku laku Rp54.000." },
+    { "id": "untung", "ikon": "⬆️", "istilah": "Untung", "definisi": "Terjadi jika harga jual lebih besar dari modal. Untung = harga jual − modal.", "contoh": "Rp54.000 − Rp45.000 = Rp9.000." },
+    { "id": "rugi", "ikon": "⬇️", "istilah": "Rugi", "definisi": "Terjadi jika harga jual lebih kecil dari modal. Rugi = modal − harga jual.", "contoh": "Rp45.000 − Rp40.000 = Rp5.000." },
+    { "id": "impas", "ikon": "🟰", "istilah": "Impas", "definisi": "Harga jual sama dengan modal. Tidak untung, tidak rugi.", "contoh": "Modal Rp20.000, laku Rp20.000." },
+    { "id": "persentase", "ikon": "％", "istilah": "Persentase untung/rugi", "definisi": "Besar untung atau rugi dibandingkan dengan MODAL, lalu dikali 100%.", "contoh": "Rp9.000 ÷ Rp45.000 × 100% = 20%." }
+  ]
+}

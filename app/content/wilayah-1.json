@@ -1,0 +1,126 @@
+{
+  "id": 1,
+  "nama": "Gerbang Kata Pasar",
+  "ikon": "🏪",
+  "tujuan": "Menjelaskan arti harga beli, harga jual, modal, biaya tambahan, untung, dan rugi.",
+  "lencana": { "nama": "Penjaga Kata", "ikon": "🔑" },
+  "aktivitas": [
+    {
+      "tipe": "situasi",
+      "judul": "Selamat datang di pasar!",
+      "ikon": "🏪",
+      "gambar": "assets/gambar/pasar.webp",
+      "gambar_alt": "Toko pasar dengan buah dan sayur di depannya",
+      "teks": [
+        "Di pasar, pedagang membeli barang lalu menjualnya lagi.",
+        "Sebelum berhitung, kenali dulu kata-kata pentingnya.",
+        "Ketuk tombol ? di atas kapan saja untuk membuka Kamus."
+      ],
+      "kalimat_kunci": "Kenali dulu, baru hitung."
+    },
+    { "tipe": "materi", "bab": "m1" },
+    {
+      "tipe": "contoh",
+      "id": "w1-c1",
+      "judul": "Mengenali harga",
+      "soal": {
+        "id": "w1-c1-soal", "ikon": "📿", "barang": "gelang",
+        "cerita": "Rina membeli sebuah gelang seharga [[hb:Rp5.000]]. Lalu ia menjualnya ke temannya seharga [[hj:Rp7.000]].",
+        "hb": 5000, "ongkos": [], "hj": 7000, "ditanya": "kenali", "kenali": "tampil"
+      }
+    },
+    {
+      "tipe": "pilihan",
+      "id": "w1-p1",
+      "ikon": "📿",
+      "pertanyaan": "Uang Rp5.000 yang Rina BAYAR saat membeli gelang disebut…",
+      "opsi": [
+        { "teks": "🛒 Harga beli", "benar": true, "umpan": "Tepat! Uang yang dibayar saat membeli adalah harga beli." },
+        { "teks": "💰 Harga jual", "umpan": "Harga jual adalah uang yang DITERIMA saat menjual." },
+        { "teks": "⬆️ Untung", "umpan": "Untung adalah selisih, bukan uang yang dibayar." }
+      ]
+    },
+    {
+      "tipe": "pilihan",
+      "id": "w1-p2",
+      "ikon": "🧺",
+      "pertanyaan": "Uang yang DITERIMA pedagang saat barangnya laku disebut…",
+      "opsi": [
+        { "teks": "🛒 Harga beli", "umpan": "Harga beli adalah uang yang DIBAYAR saat membeli." },
+        { "teks": "💰 Harga jual", "benar": true, "umpan": "Betul! Itulah harga jual." },
+        { "teks": "📦 Biaya tambahan", "umpan": "Biaya tambahan adalah uang yang dikeluarkan, bukan diterima." }
+      ]
+    },
+    {
+      "tipe": "pilihan",
+      "id": "w1-p3",
+      "ikon": "🍉",
+      "pertanyaan": "Pak Joko membeli semangka Rp20.000 dan membayar ongkos becak Rp5.000. Berapa modal Pak Joko?",
+      "opsi": [
+        { "teks": "Rp20.000", "umpan": "Ongkos becak juga uang yang keluar. Modal = harga beli + biaya tambahan." },
+        { "teks": "Rp25.000", "benar": true, "umpan": "Hebat! Rp20.000 + Rp5.000 = Rp25.000." },
+        { "teks": "Rp15.000", "umpan": "Biaya tambahan DITAMBAHKAN ke harga beli, bukan dikurangkan." }
+      ]
+    },
+    {
+      "tipe": "latihan",
+      "label": "Latihan Menandai",
+      "soal": {
+        "id": "w1-l1", "ikon": "🧢", "barang": "topi",
+        "cerita": "Kak Tono membeli topi seharga [[hb:Rp25.000]]. Ia membayar ongkos kirim [[ongkos:Rp3.000]]. Topi itu laku [[hj:Rp35.000]].",
+        "hb": 25000, "ongkos": [{ "nama": "ongkos kirim", "nilai": 3000 }], "hj": 35000,
+        "ditanya": "kenali", "kenali": "tandai"
+      }
+    },
+    {
+      "tipe": "latihan",
+      "label": "Latihan Menandai",
+      "soal": {
+        "id": "w1-l2", "ikon": "☂️", "barang": "payung",
+        "cerita": "Ayu membeli payung seharga [[hb:Rp40.000]]. Karena gagangnya patah, payung itu hanya laku [[hj:Rp30.000]].",
+        "hb": 40000, "ongkos": [], "hj": 30000, "ditanya": "kenali", "kenali": "tandai"
+      }
+    },
+    {
+      "tipe": "checkpoint",
+      "soal": [
+        {
+          "tipe": "pilihan", "id": "w1-k1", "ikon": "🚚",
+          "pertanyaan": "Ongkos angkut barang termasuk…",
+          "opsi": [
+            { "teks": "Bagian dari modal", "benar": true, "umpan": "Betul, ongkos angkut adalah biaya tambahan." },
+            { "teks": "Bagian dari harga jual", "umpan": "Ongkos angkut adalah uang yang dikeluarkan, jadi masuk modal." },
+            { "teks": "Untung", "umpan": "Ongkos angkut adalah uang yang dikeluarkan, jadi masuk modal." }
+          ]
+        },
+        {
+          "tipe": "pilihan", "id": "w1-k2", "ikon": "🥤",
+          "pertanyaan": "Modal Rp10.000, harga jual Rp12.000. Pedagang mengalami…",
+          "opsi": [
+            { "teks": "⬆️ Untung", "benar": true, "umpan": "Benar, harga jual lebih besar dari modal." },
+            { "teks": "⬇️ Rugi", "umpan": "Harga jual lebih besar dari modal, jadi untung." },
+            { "teks": "🟰 Impas", "umpan": "Impas jika harga jual sama dengan modal." }
+          ]
+        },
+        {
+          "tipe": "pilihan", "id": "w1-k3", "ikon": "🧮",
+          "pertanyaan": "Modal sama dengan…",
+          "opsi": [
+            { "teks": "Harga jual + biaya tambahan", "umpan": "Modal adalah uang yang dikeluarkan: harga beli + biaya tambahan." },
+            { "teks": "Harga beli + biaya tambahan", "benar": true, "umpan": "Tepat!" },
+            { "teks": "Harga jual − harga beli", "umpan": "Itu rumus untung, bukan modal." }
+          ]
+        },
+        {
+          "tipe": "pilihan", "id": "w1-k4", "ikon": "🍞",
+          "pertanyaan": "Jika harga jual SAMA dengan modal, disebut…",
+          "opsi": [
+            { "teks": "⬇️ Rugi", "umpan": "Rugi jika harga jual lebih kecil dari modal." },
+            { "teks": "⬆️ Untung", "umpan": "Untung jika harga jual lebih besar dari modal." },
+            { "teks": "🟰 Impas", "benar": true, "umpan": "Betul, tidak untung dan tidak rugi." }
+          ]
+        }
+      ]
+    }
+  ]
+}

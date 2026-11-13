@@ -1,0 +1,79 @@
+{
+  "id": 2,
+  "nama": "Toko Untung-Rugi",
+  "ikon": "🏬",
+  "tujuan": "Menentukan untung atau rugi, lalu menghitung besarnya.",
+  "lencana": { "nama": "Pedagang Cermat", "ikon": "🧾" },
+  "aktivitas": [
+    {
+      "tipe": "situasi",
+      "judul": "Untung atau rugi?",
+      "ikon": "⚖️",
+      "ilustrasi": "toko",
+      "teks": [
+        "Bandingkan harga jual dengan modal.",
+        "Harga jual lebih besar → untung.",
+        "Harga jual lebih kecil → rugi."
+      ],
+      "kalimat_kunci": "Untung = harga jual − modal. Rugi = modal − harga jual."
+    },
+    { "tipe": "materi", "bab": "m2" },
+    {
+      "tipe": "contoh",
+      "id": "w2-c1",
+      "judul": "Menghitung untung",
+      "soal": {
+        "id": "w2-c1-soal", "ikon": "🎒", "barang": "tas",
+        "cerita": "Dimas membeli tas bekas seharga [[hb:Rp80.000]]. Seminggu kemudian, tas itu ia jual [[hj:Rp95.000]].",
+        "hb": 80000, "ongkos": [], "hj": 95000, "ditanya": "selisih", "kenali": "tampil",
+        "kunci": { "jenis": "untung", "selisih": 15000 }
+      }
+    },
+    {
+      "tipe": "contoh",
+      "id": "w2-c2",
+      "judul": "Menghitung rugi",
+      "soal": {
+        "id": "w2-c2-soal", "ikon": "🎂", "barang": "kue",
+        "cerita": "Bu Wati membeli satu loyang kue seharga [[hb:Rp60.000]]. Karena hujan, kue itu hanya laku [[hj:Rp45.000]].",
+        "hb": 60000, "ongkos": [], "hj": 45000, "ditanya": "selisih", "kenali": "tampil",
+        "kunci": { "jenis": "rugi", "selisih": 15000 }
+      }
+    },
+    {
+      "tipe": "latihan",
+      "label": "Contoh Rumpang",
+      "tampil": 2,
+      "soal": {
+        "id": "w2-r1", "ikon": "⚽", "barang": "sepatu bola",
+        "cerita": "Fajar membeli sepatu bola bekas seharga [[hb:Rp120.000]] lalu menjualnya [[hj:Rp150.000]].",
+        "hb": 120000, "ongkos": [], "hj": 150000, "ditanya": "selisih", "kenali": "tampil",
+        "kunci": { "jenis": "untung", "selisih": 30000 }
+      }
+    },
+    {
+      "tipe": "latihan",
+      "label": "Contoh Rumpang",
+      "tampil": 1,
+      "soal": {
+        "id": "w2-r2", "ikon": "🪀", "barang": "yoyo",
+        "cerita": "Lina membeli yoyo seharga [[hb:Rp18.000]]. Karena talinya kusut, yoyo itu hanya laku [[hj:Rp12.500]].",
+        "hb": 18000, "ongkos": [], "hj": 12500, "ditanya": "selisih", "kenali": "tampil",
+        "kunci": { "jenis": "rugi", "selisih": 5500 }
+      }
+    },
+    { "tipe": "latihan", "label": "Latihan Mandiri", "sumber": "bank", "templat": ["w2-selisih"], "jumlah": 3 },
+    {
+      "tipe": "susun",
+      "id": "w2-s1",
+      "pertanyaan": "Jelaskan ke temanmu! Susun langkah mencari untung atau rugi.",
+      "kartu": [
+        "Kenali harga beli dan harga jual",
+        "Bandingkan harga jual dengan modal",
+        "Hitung selisihnya",
+        "Cek: modal + untung = harga jual"
+      ]
+    },
+    { "tipe": "checkpoint", "sumber": "bank", "templat": ["w2-selisih"], "jumlah": 4 }
+  ]
+}

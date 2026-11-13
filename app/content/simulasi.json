@@ -1,0 +1,21 @@
+{
+  "keterangan": "Barang & tantangan untuk Simulasi Jual Beli. Siswa mengatur harga dengan tombol, hasilnya dihitung langsung.",
+  "barang": [
+    { "id": "semangka", "nama": "Semangka", "ikon": "🍉", "hb": 20000, "ongkos": 2000, "hj": 25000 },
+    { "id": "jus", "nama": "Jus Buah", "ikon": "🧃", "hb": 5000, "ongkos": 1000, "hj": 8000 },
+    { "id": "buku", "nama": "Buku Tulis", "ikon": "📒", "hb": 30000, "ongkos": 0, "hj": 36000 },
+    { "id": "boneka", "nama": "Boneka", "ikon": "🧸", "hb": 40000, "ongkos": 5000, "hj": 50000 },
+    { "id": "sepatu", "nama": "Sepatu", "ikon": "👟", "hb": 150000, "ongkos": 10000, "hj": 180000 },
+    { "id": "donat", "nama": "Donat", "ikon": "🍩", "hb": 24000, "ongkos": 3000, "hj": 30000 }
+  ],
+  "langkah": { "hb": [-5000, -1000, 1000, 5000], "ongkos": [-1000, -500, 500, 1000], "hj": [-5000, -1000, 1000, 5000] },
+  "tantangan": [
+    { "jenis": "untung", "persen": 10 },
+    { "jenis": "untung", "persen": 20 },
+    { "jenis": "untung", "persen": 25 },
+    { "jenis": "untung", "persen": 50 },
+    { "jenis": "rugi", "persen": 10 },
+    { "jenis": "rugi", "persen": 20 },
+    { "jenis": "impas", "persen": 0 }
+  ]
+}

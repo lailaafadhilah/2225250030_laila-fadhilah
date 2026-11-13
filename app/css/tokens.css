@@ -1,0 +1,86 @@
+/* Token desain ProfitQuest — lihat docs/ui-ux.md */
+:root {
+  /* Warna peran angka (selalu dipasangkan dengan ikon + teks) */
+  --hb: #1E5FBF;        /* 🛒 harga beli / modal */
+  --hb-muda: #E3EDFB;
+  --hj: #1B7F3B;        /* 💰 harga jual */
+  --hj-muda: #E2F4E8;
+  --ongkos: #B45309;    /* 📦 biaya tambahan */
+  --ongkos-muda: #FDF0E1;
+  --ditanya: #6D28D9;   /* ❓ ditanya */
+  --ditanya-muda: #EFE8FC;
+  --persen: #0F766E;    /* ％ persentase */
+  --persen-muda: #DDF3F1;
+  --x: #5B6472;         /* ✖ tidak dipakai */
+  --x-muda: #ECEEF1;
+  --rugi: #B91C1C;
+  --rugi-muda: #FDE7E7;
+
+  /* Permukaan & teks */
+  --latar: #F7F8FB;
+  --kartu: #FFFFFF;
+  --teks: #1A1F2B;
+  --teks-lembut: #4A5363;
+  --garis: #D9DEE7;
+  --utama: #1E5FBF;
+  --utama-teks: #FFFFFF;
+  --bayangan: 0 1px 3px rgb(16 24 40 / 0.08), 0 1px 2px rgb(16 24 40 / 0.04);
+  --bercak1: #DCEBFF;  /* bercak warna lembut di latar */
+  --bercak2: #FFE9D2;
+  --bercak3: #E7F7DF;
+
+  /* Ukuran */
+  --teks-dasar: 1.125rem;   /* 18 px */
+  --teks-angka: 1.6rem;
+  --radius: 14px;
+  --spasi: 0.5rem;          /* kelipatan 8 px */
+  --sentuh: 3rem;           /* 48 px target sentuh */
+  --lebar-maks: 30rem;      /* 480 px */
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+}
+
+:root[data-teks="besar"] {
+  --teks-dasar: 1.3rem;
+  --teks-angka: 1.9rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --hb: #7FB0F5; --hb-muda: #18294A;
+    --hj: #6FD394; --hj-muda: #143322;
+    --ongkos: #F5B26B; --ongkos-muda: #3A2610;
+    --ditanya: #C4A8FA; --ditanya-muda: #2A1D4A;
+    --persen: #6ED8CD; --persen-muda: #12322F;
+    --x: #A9B1BE; --x-muda: #262B33;
+    --rugi: #F59A9A; --rugi-muda: #3D1717;
+    --latar: #12151C;
+    --kartu: #1C2029;
+    --teks: #EEF1F6;
+    --teks-lembut: #B4BCC9;
+    --garis: #343A46;
+    --utama: #4A86E0;
+    --utama-teks: #FFFFFF;
+    --bayangan: none;
+    --bercak1: #172544; --bercak2: #2E2012; --bercak3: #13291B;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --hb: #7FB0F5; --hb-muda: #18294A;
+  --hj: #6FD394; --hj-muda: #143322;
+  --ongkos: #F5B26B; --ongkos-muda: #3A2610;
+  --ditanya: #C4A8FA; --ditanya-muda: #2A1D4A;
+  --persen: #6ED8CD; --persen-muda: #12322F;
+  --x: #A9B1BE; --x-muda: #262B33;
+  --rugi: #F59A9A; --rugi-muda: #3D1717;
+  --latar: #12151C;
+  --kartu: #1C2029;
+  --teks: #EEF1F6;
+  --teks-lembut: #B4BCC9;
+  --garis: #343A46;
+  --utama: #4A86E0;
+  --utama-teks: #FFFFFF;
+  --bayangan: none;
+  --bercak1: #172544; --bercak2: #2E2012; --bercak3: #13291B;
+  color-scheme: dark;
+}

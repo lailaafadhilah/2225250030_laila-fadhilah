@@ -1,0 +1,2334 @@
+{
+ "keterangan": "DIBUAT OTOMATIS oleh tools/generate_soal.py — jangan diedit manual.",
+ "seed": 2026,
+ "soal": {
+  "w2-selisih": [
+   {
+    "id": "w2-selisih-01",
+    "ikon": "🎸",
+    "barang": "gitar",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 400000,
+    "ongkos": [],
+    "hj": 500000,
+    "cerita": "Bu Yanti membeli sebuah gitar bekas seharga [[hb:Rp400.000]]. Beberapa hari kemudian, gitar itu laku [[hj:Rp500.000]].",
+    "kunci": {
+     "modal": 400000,
+     "jenis": "untung",
+     "selisih": 100000,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w2-selisih-02",
+    "ikon": "🎸",
+    "barang": "gitar",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 440000,
+    "ongkos": [],
+    "hj": 264000,
+    "cerita": "Pak Hasan membeli sebuah gitar bekas seharga [[hb:Rp440.000]]. Karena agak rusak, gitar itu hanya laku [[hj:Rp264.000]].",
+    "kunci": {
+     "modal": 440000,
+     "jenis": "rugi",
+     "selisih": 176000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w2-selisih-03",
+    "ikon": "🎒",
+    "barang": "tas",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 95000,
+    "ongkos": [],
+    "hj": 133000,
+    "cerita": "Pak Rudi membeli sebuah tas seharga [[hb:Rp95.000]] lalu menjualnya [[hj:Rp133.000]].",
+    "kunci": {
+     "modal": 95000,
+     "jenis": "untung",
+     "selisih": 38000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w2-selisih-04",
+    "ikon": "🌀",
+    "barang": "kipas angin",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 130000,
+    "ongkos": [],
+    "hj": 169000,
+    "cerita": "Ucok membeli sebuah kipas angin seharga [[hb:Rp130.000]] lalu menjualnya [[hj:Rp169.000]].",
+    "kunci": {
+     "modal": 130000,
+     "jenis": "untung",
+     "selisih": 39000,
+     "persen": 30.0
+    }
+   },
+   {
+    "id": "w2-selisih-05",
+    "ikon": "📚",
+    "barang": "komik",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 60000,
+    "ongkos": [],
+    "hj": 45000,
+    "cerita": "Bu Yanti membeli setumpuk komik bekas seharga [[hb:Rp60.000]], tetapi terpaksa menjualnya [[hj:Rp45.000]].",
+    "kunci": {
+     "modal": 60000,
+     "jenis": "rugi",
+     "selisih": 15000,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w2-selisih-06",
+    "ikon": "🎸",
+    "barang": "gitar",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 290000,
+    "ongkos": [],
+    "hj": 406000,
+    "cerita": "Pak Made membeli sebuah gitar bekas seharga [[hb:Rp290.000]]. Beberapa hari kemudian, gitar itu laku [[hj:Rp406.000]].",
+    "kunci": {
+     "modal": 290000,
+     "jenis": "untung",
+     "selisih": 116000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w2-selisih-07",
+    "ikon": "🌀",
+    "barang": "kipas angin",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 155000,
+    "ongkos": [],
+    "hj": 139500,
+    "cerita": "Lina membeli sebuah kipas angin seharga [[hb:Rp155.000]], tetapi terpaksa menjualnya [[hj:Rp139.500]].",
+    "kunci": {
+     "modal": 155000,
+     "jenis": "rugi",
+     "selisih": 15500,
+     "persen": 10.0
+    }
+   },
+   {
+    "id": "w2-selisih-08",
+    "ikon": "🎸",
+    "barang": "gitar",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 350000,
+    "ongkos": [],
+    "hj": 455000,
+    "cerita": "Rizky membeli sebuah gitar bekas seharga [[hb:Rp350.000]] lalu menjualnya [[hj:Rp455.000]].",
+    "kunci": {
+     "modal": 350000,
+     "jenis": "untung",
+     "selisih": 105000,
+     "persen": 30.0
+    }
+   },
+   {
+    "id": "w2-selisih-09",
+    "ikon": "🎸",
+    "barang": "gitar",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 470000,
+    "ongkos": [],
+    "hj": 329000,
+    "cerita": "Bu Wati membeli sebuah gitar bekas seharga [[hb:Rp470.000]], tetapi terpaksa menjualnya [[hj:Rp329.000]].",
+    "kunci": {
+     "modal": 470000,
+     "jenis": "rugi",
+     "selisih": 141000,
+     "persen": 30.0
+    }
+   },
+   {
+    "id": "w2-selisih-10",
+    "ikon": "👟",
+    "barang": "sepatu",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 95000,
+    "ongkos": [],
+    "hj": 133000,
+    "cerita": "Bu Rina membeli sepasang sepatu seharga [[hb:Rp95.000]] lalu menjualnya [[hj:Rp133.000]].",
+    "kunci": {
+     "modal": 95000,
+     "jenis": "untung",
+     "selisih": 38000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w2-selisih-11",
+    "ikon": "⌚",
+    "barang": "jam tangan",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 120000,
+    "ongkos": [],
+    "hj": 72000,
+    "cerita": "Rizky membeli sebuah jam tangan seharga [[hb:Rp120.000]], tetapi terpaksa menjualnya [[hj:Rp72.000]].",
+    "kunci": {
+     "modal": 120000,
+     "jenis": "rugi",
+     "selisih": 48000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w2-selisih-12",
+    "ikon": "👟",
+    "barang": "sepatu",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 165000,
+    "ongkos": [],
+    "hj": 115500,
+    "cerita": "Pak Made membeli sepasang sepatu seharga [[hb:Rp165.000]]. Karena agak rusak, sepatu itu hanya laku [[hj:Rp115.500]].",
+    "kunci": {
+     "modal": 165000,
+     "jenis": "rugi",
+     "selisih": 49500,
+     "persen": 30.0
+    }
+   },
+   {
+    "id": "w2-selisih-13",
+    "ikon": "🌀",
+    "barang": "kipas angin",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 170000,
+    "ongkos": [],
+    "hj": 212500,
+    "cerita": "Pak Hasan membeli sebuah kipas angin seharga [[hb:Rp170.000]] lalu menjualnya [[hj:Rp212.500]].",
+    "kunci": {
+     "modal": 170000,
+     "jenis": "untung",
+     "selisih": 42500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w2-selisih-14",
+    "ikon": "⌚",
+    "barang": "jam tangan",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 85000,
+    "ongkos": [],
+    "hj": 51000,
+    "cerita": "Siti membeli sebuah jam tangan seharga [[hb:Rp85.000]], tetapi terpaksa menjualnya [[hj:Rp51.000]].",
+    "kunci": {
+     "modal": 85000,
+     "jenis": "rugi",
+     "selisih": 34000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w2-selisih-15",
+    "ikon": "📚",
+    "barang": "komik",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 26000,
+    "ongkos": [],
+    "hj": 32500,
+    "cerita": "Lina membeli setumpuk komik bekas seharga [[hb:Rp26.000]] lalu menjualnya [[hj:Rp32.500]].",
+    "kunci": {
+     "modal": 26000,
+     "jenis": "untung",
+     "selisih": 6500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w2-selisih-16",
+    "ikon": "🎒",
+    "barang": "tas",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 50000,
+    "ongkos": [],
+    "hj": 65000,
+    "cerita": "Kak Nisa membeli sebuah tas seharga [[hb:Rp50.000]]. Beberapa hari kemudian, tas itu laku [[hj:Rp65.000]].",
+    "kunci": {
+     "modal": 50000,
+     "jenis": "untung",
+     "selisih": 15000,
+     "persen": 30.0
+    }
+   },
+   {
+    "id": "w2-selisih-17",
+    "ikon": "🎒",
+    "barang": "tas",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 55000,
+    "ongkos": [],
+    "hj": 66000,
+    "cerita": "Mega membeli sebuah tas seharga [[hb:Rp55.000]] lalu menjualnya [[hj:Rp66.000]].",
+    "kunci": {
+     "modal": 55000,
+     "jenis": "untung",
+     "selisih": 11000,
+     "persen": 20.0
+    }
+   },
+   {
+    "id": "w2-selisih-18",
+    "ikon": "⌚",
+    "barang": "jam tangan",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 150000,
+    "ongkos": [],
+    "hj": 165000,
+    "cerita": "Putu membeli sebuah jam tangan seharga [[hb:Rp150.000]]. Beberapa hari kemudian, jam tangan itu laku [[hj:Rp165.000]].",
+    "kunci": {
+     "modal": 150000,
+     "jenis": "untung",
+     "selisih": 15000,
+     "persen": 10.0
+    }
+   },
+   {
+    "id": "w2-selisih-19",
+    "ikon": "🎸",
+    "barang": "gitar",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 500000,
+    "ongkos": [],
+    "hj": 650000,
+    "cerita": "Bu Rina membeli sebuah gitar bekas seharga [[hb:Rp500.000]]. Beberapa hari kemudian, gitar itu laku [[hj:Rp650.000]].",
+    "kunci": {
+     "modal": 500000,
+     "jenis": "untung",
+     "selisih": 150000,
+     "persen": 30.0
+    }
+   },
+   {
+    "id": "w2-selisih-20",
+    "ikon": "👟",
+    "barang": "sepatu",
+    "ditanya": "selisih",
+    "kenali": "tampil",
+    "hb": 175000,
+    "ongkos": [],
+    "hj": 140000,
+    "cerita": "Putu membeli sepasang sepatu seharga [[hb:Rp175.000]], tetapi terpaksa menjualnya [[hj:Rp140.000]].",
+    "kunci": {
+     "modal": 175000,
+     "jenis": "rugi",
+     "selisih": 35000,
+     "persen": 20.0
+    }
+   }
+  ],
+  "w3-persen": [
+   {
+    "id": "w3-persen-01",
+    "ikon": "👕",
+    "barang": "kaos",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 30000,
+    "ongkos": [],
+    "hj": 45000,
+    "pembagi": true,
+    "cerita": "Kadek membeli sebuah kaos seharga [[hb:Rp30.000]]. Lalu kaos itu dijual [[hj:Rp45.000]].",
+    "kunci": {
+     "modal": 30000,
+     "jenis": "untung",
+     "selisih": 15000,
+     "persen": 50.0
+    }
+   },
+   {
+    "id": "w3-persen-02",
+    "ikon": "🚲",
+    "barang": "sepeda",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 790000,
+    "ongkos": [],
+    "hj": 869000,
+    "pembagi": true,
+    "cerita": "Lina membeli sebuah sepeda bekas seharga [[hb:Rp790.000]] dan menjualnya [[hj:Rp869.000]].",
+    "kunci": {
+     "modal": 790000,
+     "jenis": "untung",
+     "selisih": 79000,
+     "persen": 10.0
+    }
+   },
+   {
+    "id": "w3-persen-03",
+    "ikon": "💡",
+    "barang": "lampu",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 110000,
+    "ongkos": [],
+    "hj": 82500,
+    "pembagi": true,
+    "cerita": "Pak Made membeli sebuah lampu meja seharga [[hb:Rp110.000]]. Karena butuh uang, lampu itu dijual [[hj:Rp82.500]].",
+    "kunci": {
+     "modal": 110000,
+     "jenis": "rugi",
+     "selisih": 27500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w3-persen-04",
+    "ikon": "🏀",
+    "barang": "bola",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 85000,
+    "ongkos": [],
+    "hj": 51000,
+    "pembagi": true,
+    "cerita": "Mega membeli sebuah bola basket seharga [[hb:Rp85.000]]. Karena butuh uang, bola itu dijual [[hj:Rp51.000]].",
+    "kunci": {
+     "modal": 85000,
+     "jenis": "rugi",
+     "selisih": 34000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w3-persen-05",
+    "ikon": "🚲",
+    "barang": "sepeda",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 680000,
+    "ongkos": [],
+    "hj": 340000,
+    "pembagi": true,
+    "cerita": "Siti membeli sebuah sepeda bekas seharga [[hb:Rp680.000]]. Karena butuh uang, sepeda itu dijual [[hj:Rp340.000]].",
+    "kunci": {
+     "modal": 680000,
+     "jenis": "rugi",
+     "selisih": 340000,
+     "persen": 50.0
+    }
+   },
+   {
+    "id": "w3-persen-06",
+    "ikon": "👕",
+    "barang": "kaos",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 30000,
+    "ongkos": [],
+    "hj": 27000,
+    "pembagi": true,
+    "cerita": "Kak Tono membeli sebuah kaos seharga [[hb:Rp30.000]], tetapi hanya laku [[hj:Rp27.000]].",
+    "kunci": {
+     "modal": 30000,
+     "jenis": "rugi",
+     "selisih": 3000,
+     "persen": 10.0
+    }
+   },
+   {
+    "id": "w3-persen-07",
+    "ikon": "💡",
+    "barang": "lampu",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 60000,
+    "ongkos": [],
+    "hj": 84000,
+    "pembagi": true,
+    "cerita": "Dimas membeli sebuah lampu meja seharga [[hb:Rp60.000]] dan menjualnya [[hj:Rp84.000]].",
+    "kunci": {
+     "modal": 60000,
+     "jenis": "untung",
+     "selisih": 24000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w3-persen-08",
+    "ikon": "🚲",
+    "barang": "sepeda",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 520000,
+    "ongkos": [],
+    "hj": 728000,
+    "pembagi": true,
+    "cerita": "Kak Tono membeli sebuah sepeda bekas seharga [[hb:Rp520.000]]. Lalu sepeda itu dijual [[hj:Rp728.000]].",
+    "kunci": {
+     "modal": 520000,
+     "jenis": "untung",
+     "selisih": 208000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w3-persen-09",
+    "ikon": "🧸",
+    "barang": "boneka",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 26000,
+    "ongkos": [],
+    "hj": 13000,
+    "pembagi": true,
+    "cerita": "Siti membeli sebuah boneka seharga [[hb:Rp26.000]]. Karena butuh uang, boneka itu dijual [[hj:Rp13.000]].",
+    "kunci": {
+     "modal": 26000,
+     "jenis": "rugi",
+     "selisih": 13000,
+     "persen": 50.0
+    }
+   },
+   {
+    "id": "w3-persen-10",
+    "ikon": "🧕",
+    "barang": "kerudung",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 65000,
+    "ongkos": [],
+    "hj": 78000,
+    "pembagi": true,
+    "cerita": "Kak Nisa membeli sebuah kerudung seharga [[hb:Rp65.000]]. Lalu kerudung itu dijual [[hj:Rp78.000]].",
+    "kunci": {
+     "modal": 65000,
+     "jenis": "untung",
+     "selisih": 13000,
+     "persen": 20.0
+    }
+   },
+   {
+    "id": "w3-persen-11",
+    "ikon": "🚲",
+    "barang": "sepeda",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 520000,
+    "ongkos": [],
+    "hj": 572000,
+    "pembagi": true,
+    "cerita": "Kak Tono membeli sebuah sepeda bekas seharga [[hb:Rp520.000]] dan menjualnya [[hj:Rp572.000]].",
+    "kunci": {
+     "modal": 520000,
+     "jenis": "untung",
+     "selisih": 52000,
+     "persen": 10.0
+    }
+   },
+   {
+    "id": "w3-persen-12",
+    "ikon": "🏀",
+    "barang": "bola",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 150000,
+    "ongkos": [],
+    "hj": 75000,
+    "pembagi": true,
+    "cerita": "Ayu membeli sebuah bola basket seharga [[hb:Rp150.000]], tetapi hanya laku [[hj:Rp75.000]].",
+    "kunci": {
+     "modal": 150000,
+     "jenis": "rugi",
+     "selisih": 75000,
+     "persen": 50.0
+    }
+   },
+   {
+    "id": "w3-persen-13",
+    "ikon": "🚲",
+    "barang": "sepeda",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 570000,
+    "ongkos": [],
+    "hj": 627000,
+    "pembagi": true,
+    "cerita": "Pak Rudi membeli sebuah sepeda bekas seharga [[hb:Rp570.000]] dan menjualnya [[hj:Rp627.000]].",
+    "kunci": {
+     "modal": 570000,
+     "jenis": "untung",
+     "selisih": 57000,
+     "persen": 10.0
+    }
+   },
+   {
+    "id": "w3-persen-14",
+    "ikon": "🧕",
+    "barang": "kerudung",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 55000,
+    "ongkos": [],
+    "hj": 27500,
+    "pembagi": true,
+    "cerita": "Pak Made membeli sebuah kerudung seharga [[hb:Rp55.000]], tetapi hanya laku [[hj:Rp27.500]].",
+    "kunci": {
+     "modal": 55000,
+     "jenis": "rugi",
+     "selisih": 27500,
+     "persen": 50.0
+    }
+   },
+   {
+    "id": "w3-persen-15",
+    "ikon": "🧕",
+    "barang": "kerudung",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 90000,
+    "ongkos": [],
+    "hj": 81000,
+    "pembagi": true,
+    "cerita": "Bayu membeli sebuah kerudung seharga [[hb:Rp90.000]], tetapi hanya laku [[hj:Rp81.000]].",
+    "kunci": {
+     "modal": 90000,
+     "jenis": "rugi",
+     "selisih": 9000,
+     "persen": 10.0
+    }
+   },
+   {
+    "id": "w3-persen-16",
+    "ikon": "🧕",
+    "barang": "kerudung",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 30000,
+    "ongkos": [],
+    "hj": 33000,
+    "pembagi": true,
+    "cerita": "Fajar membeli sebuah kerudung seharga [[hb:Rp30.000]] dan menjualnya [[hj:Rp33.000]].",
+    "kunci": {
+     "modal": 30000,
+     "jenis": "untung",
+     "selisih": 3000,
+     "persen": 10.0
+    }
+   },
+   {
+    "id": "w3-persen-17",
+    "ikon": "🏀",
+    "barang": "bola",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 110000,
+    "ongkos": [],
+    "hj": 165000,
+    "pembagi": true,
+    "cerita": "Lina membeli sebuah bola basket seharga [[hb:Rp110.000]] dan menjualnya [[hj:Rp165.000]].",
+    "kunci": {
+     "modal": 110000,
+     "jenis": "untung",
+     "selisih": 55000,
+     "persen": 50.0
+    }
+   },
+   {
+    "id": "w3-persen-18",
+    "ikon": "💡",
+    "barang": "lampu",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 120000,
+    "ongkos": [],
+    "hj": 108000,
+    "pembagi": true,
+    "cerita": "Lina membeli sebuah lampu meja seharga [[hb:Rp120.000]], tetapi hanya laku [[hj:Rp108.000]].",
+    "kunci": {
+     "modal": 120000,
+     "jenis": "rugi",
+     "selisih": 12000,
+     "persen": 10.0
+    }
+   },
+   {
+    "id": "w3-persen-19",
+    "ikon": "🧕",
+    "barang": "kerudung",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 30000,
+    "ongkos": [],
+    "hj": 22500,
+    "pembagi": true,
+    "cerita": "Bayu membeli sebuah kerudung seharga [[hb:Rp30.000]], tetapi hanya laku [[hj:Rp22.500]].",
+    "kunci": {
+     "modal": 30000,
+     "jenis": "rugi",
+     "selisih": 7500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w3-persen-20",
+    "ikon": "🚲",
+    "barang": "sepeda",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 500000,
+    "ongkos": [],
+    "hj": 450000,
+    "pembagi": true,
+    "cerita": "Bayu membeli sebuah sepeda bekas seharga [[hb:Rp500.000]], tetapi hanya laku [[hj:Rp450.000]].",
+    "kunci": {
+     "modal": 500000,
+     "jenis": "rugi",
+     "selisih": 50000,
+     "persen": 10.0
+    }
+   }
+  ],
+  "w4-ongkos": [
+   {
+    "id": "w4-ongkos-01",
+    "ikon": "📓",
+    "barang": "buku tulis",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 43000,
+    "ongkos": [
+     {
+      "nama": "biaya parkir",
+      "nilai": 4000
+     },
+     {
+      "nama": "ongkos ojek",
+      "nilai": 11000
+     }
+    ],
+    "hj": 72500,
+    "cerita": "Pak Made membeli 1 pak buku tulis seharga [[hb:Rp43.000]]. Ia membayar biaya parkir [[ongkos:Rp4.000]] dan ongkos ojek [[ongkos:Rp11.000]]. Semua buku tulis itu laku [[hj:Rp72.500]].",
+    "kunci": {
+     "modal": 58000,
+     "jenis": "untung",
+     "selisih": 14500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w4-ongkos-02",
+    "ikon": "🧦",
+    "barang": "kaos kaki",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 89000,
+    "ongkos": [
+     {
+      "nama": "ongkos kirim",
+      "nilai": 6000
+     }
+    ],
+    "hj": 133000,
+    "cerita": "Bu Rina membeli 1 kodi kaos kaki seharga [[hb:Rp89.000]]. Ia membayar ongkos kirim [[ongkos:Rp6.000]]. Semua kaos kaki itu laku [[hj:Rp133.000]].",
+    "kunci": {
+     "modal": 95000,
+     "jenis": "untung",
+     "selisih": 38000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w4-ongkos-03",
+    "ikon": "🧦",
+    "barang": "kaos kaki",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 100000,
+    "ongkos": [
+     {
+      "nama": "ongkos kirim",
+      "nilai": 12000
+     }
+    ],
+    "hj": 140000,
+    "cerita": "Bu Yanti membeli 1 kodi kaos kaki seharga [[hb:Rp100.000]]. Ia membayar ongkos kirim [[ongkos:Rp12.000]]. Semua kaos kaki itu laku [[hj:Rp140.000]].",
+    "kunci": {
+     "modal": 112000,
+     "jenis": "untung",
+     "selisih": 28000,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w4-ongkos-04",
+    "ikon": "📓",
+    "barang": "buku tulis",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 90000,
+    "ongkos": [
+     {
+      "nama": "biaya parkir",
+      "nilai": 2000
+     },
+     {
+      "nama": "ongkos ojek",
+      "nilai": 6000
+     }
+    ],
+    "hj": 122500,
+    "cerita": "Sari membeli 1 pak buku tulis seharga [[hb:Rp90.000]]. Ia membayar biaya parkir [[ongkos:Rp2.000]] dan ongkos ojek [[ongkos:Rp6.000]]. Semua buku tulis itu laku [[hj:Rp122.500]].",
+    "kunci": {
+     "modal": 98000,
+     "jenis": "untung",
+     "selisih": 24500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w4-ongkos-05",
+    "ikon": "📓",
+    "barang": "buku tulis",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 79000,
+    "ongkos": [
+     {
+      "nama": "biaya parkir",
+      "nilai": 3000
+     }
+    ],
+    "hj": 61500,
+    "cerita": "Bu Wati membeli 1 pak buku tulis seharga [[hb:Rp79.000]]. Ia membayar biaya parkir [[ongkos:Rp3.000]]. Sayangnya, semua buku tulis itu hanya laku [[hj:Rp61.500]].",
+    "kunci": {
+     "modal": 82000,
+     "jenis": "rugi",
+     "selisih": 20500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w4-ongkos-06",
+    "ikon": "📓",
+    "barang": "buku tulis",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 60000,
+    "ongkos": [
+     {
+      "nama": "ongkos kirim",
+      "nilai": 10000
+     }
+    ],
+    "hj": 87500,
+    "cerita": "Bu Rina membeli 1 pak buku tulis seharga [[hb:Rp60.000]]. Ia membayar ongkos kirim [[ongkos:Rp10.000]]. Semua buku tulis itu laku [[hj:Rp87.500]].",
+    "kunci": {
+     "modal": 70000,
+     "jenis": "untung",
+     "selisih": 17500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w4-ongkos-07",
+    "ikon": "🧦",
+    "barang": "kaos kaki",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 87000,
+    "ongkos": [
+     {
+      "nama": "biaya parkir",
+      "nilai": 3000
+     }
+    ],
+    "hj": 81000,
+    "cerita": "Pak Made membeli 1 kodi kaos kaki seharga [[hb:Rp87.000]]. Ia membayar biaya parkir [[ongkos:Rp3.000]]. Sayangnya, semua kaos kaki itu hanya laku [[hj:Rp81.000]].",
+    "kunci": {
+     "modal": 90000,
+     "jenis": "rugi",
+     "selisih": 9000,
+     "persen": 10.0
+    }
+   },
+   {
+    "id": "w4-ongkos-08",
+    "ikon": "🥚",
+    "barang": "telur",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 155000,
+    "ongkos": [
+     {
+      "nama": "ongkos angkot",
+      "nilai": 7000
+     }
+    ],
+    "hj": 202500,
+    "cerita": "Pak Rudi membeli 5 kg telur seharga [[hb:Rp155.000]]. Ia membayar ongkos angkot [[ongkos:Rp7.000]]. Semua telur itu laku [[hj:Rp202.500]].",
+    "kunci": {
+     "modal": 162000,
+     "jenis": "untung",
+     "selisih": 40500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w4-ongkos-09",
+    "ikon": "✏️",
+    "barang": "pensil",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 70000,
+    "ongkos": [
+     {
+      "nama": "ongkos ojek",
+      "nilai": 7000
+     },
+     {
+      "nama": "biaya plastik",
+      "nilai": 5000
+     }
+    ],
+    "hj": 61500,
+    "cerita": "Rizky membeli 2 lusin pensil seharga [[hb:Rp70.000]]. Ia membayar ongkos ojek [[ongkos:Rp7.000]] dan biaya plastik [[ongkos:Rp5.000]]. Sayangnya, semua pensil itu hanya laku [[hj:Rp61.500]].",
+    "kunci": {
+     "modal": 82000,
+     "jenis": "rugi",
+     "selisih": 20500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w4-ongkos-10",
+    "ikon": "🥚",
+    "barang": "telur",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 100000,
+    "ongkos": [
+     {
+      "nama": "ongkos ojek",
+      "nilai": 15000
+     }
+    ],
+    "hj": 69000,
+    "cerita": "Ucok membeli 5 kg telur seharga [[hb:Rp100.000]]. Ia membayar ongkos ojek [[ongkos:Rp15.000]]. Sayangnya, semua telur itu hanya laku [[hj:Rp69.000]].",
+    "kunci": {
+     "modal": 115000,
+     "jenis": "rugi",
+     "selisih": 46000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w4-ongkos-11",
+    "ikon": "🍊",
+    "barang": "jeruk",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 181000,
+    "ongkos": [
+     {
+      "nama": "biaya parkir",
+      "nilai": 4000
+     },
+     {
+      "nama": "biaya plastik",
+      "nilai": 1000
+     }
+    ],
+    "hj": 139500,
+    "cerita": "Ayu membeli 10 kg jeruk seharga [[hb:Rp181.000]]. Ia membayar biaya parkir [[ongkos:Rp4.000]] dan biaya plastik [[ongkos:Rp1.000]]. Sayangnya, semua jeruk itu hanya laku [[hj:Rp139.500]].",
+    "kunci": {
+     "modal": 186000,
+     "jenis": "rugi",
+     "selisih": 46500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w4-ongkos-12",
+    "ikon": "✏️",
+    "barang": "pensil",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 44000,
+    "ongkos": [
+     {
+      "nama": "ongkos ojek",
+      "nilai": 9000
+     },
+     {
+      "nama": "biaya parkir",
+      "nilai": 2000
+     }
+    ],
+    "hj": 60500,
+    "cerita": "Ucok membeli 2 lusin pensil seharga [[hb:Rp44.000]]. Ia membayar ongkos ojek [[ongkos:Rp9.000]] dan biaya parkir [[ongkos:Rp2.000]]. Semua pensil itu laku [[hj:Rp60.500]].",
+    "kunci": {
+     "modal": 55000,
+     "jenis": "untung",
+     "selisih": 5500,
+     "persen": 10.0
+    }
+   },
+   {
+    "id": "w4-ongkos-13",
+    "ikon": "🧦",
+    "barang": "kaos kaki",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 69000,
+    "ongkos": [
+     {
+      "nama": "biaya plastik",
+      "nilai": 5000
+     }
+    ],
+    "hj": 55500,
+    "cerita": "Kak Tono membeli 1 kodi kaos kaki seharga [[hb:Rp69.000]]. Ia membayar biaya plastik [[ongkos:Rp5.000]]. Sayangnya, semua kaos kaki itu hanya laku [[hj:Rp55.500]].",
+    "kunci": {
+     "modal": 74000,
+     "jenis": "rugi",
+     "selisih": 18500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w4-ongkos-14",
+    "ikon": "🍊",
+    "barang": "jeruk",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 110000,
+    "ongkos": [
+     {
+      "nama": "ongkos angkot",
+      "nilai": 5000
+     }
+    ],
+    "hj": 138000,
+    "cerita": "Siti membeli 10 kg jeruk seharga [[hb:Rp110.000]]. Ia membayar ongkos angkot [[ongkos:Rp5.000]]. Semua jeruk itu laku [[hj:Rp138.000]].",
+    "kunci": {
+     "modal": 115000,
+     "jenis": "untung",
+     "selisih": 23000,
+     "persen": 20.0
+    }
+   },
+   {
+    "id": "w4-ongkos-15",
+    "ikon": "✏️",
+    "barang": "pensil",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 71000,
+    "ongkos": [
+     {
+      "nama": "biaya parkir",
+      "nilai": 4000
+     },
+     {
+      "nama": "ongkos kirim",
+      "nilai": 5000
+     }
+    ],
+    "hj": 96000,
+    "cerita": "Bayu membeli 2 lusin pensil seharga [[hb:Rp71.000]]. Ia membayar biaya parkir [[ongkos:Rp4.000]] dan ongkos kirim [[ongkos:Rp5.000]]. Semua pensil itu laku [[hj:Rp96.000]].",
+    "kunci": {
+     "modal": 80000,
+     "jenis": "untung",
+     "selisih": 16000,
+     "persen": 20.0
+    }
+   },
+   {
+    "id": "w4-ongkos-16",
+    "ikon": "🥚",
+    "barang": "telur",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 112000,
+    "ongkos": [
+     {
+      "nama": "ongkos ojek",
+      "nilai": 8000
+     }
+    ],
+    "hj": 132000,
+    "cerita": "Bayu membeli 5 kg telur seharga [[hb:Rp112.000]]. Ia membayar ongkos ojek [[ongkos:Rp8.000]]. Semua telur itu laku [[hj:Rp132.000]].",
+    "kunci": {
+     "modal": 120000,
+     "jenis": "untung",
+     "selisih": 12000,
+     "persen": 10.0
+    }
+   },
+   {
+    "id": "w4-ongkos-17",
+    "ikon": "✏️",
+    "barang": "pensil",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 57000,
+    "ongkos": [
+     {
+      "nama": "ongkos angkot",
+      "nilai": 6000
+     },
+     {
+      "nama": "biaya plastik",
+      "nilai": 3000
+     }
+    ],
+    "hj": 82500,
+    "cerita": "Rizky membeli 2 lusin pensil seharga [[hb:Rp57.000]]. Ia membayar ongkos angkot [[ongkos:Rp6.000]] dan biaya plastik [[ongkos:Rp3.000]]. Semua pensil itu laku [[hj:Rp82.500]].",
+    "kunci": {
+     "modal": 66000,
+     "jenis": "untung",
+     "selisih": 16500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w4-ongkos-18",
+    "ikon": "🍊",
+    "barang": "jeruk",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 151000,
+    "ongkos": [
+     {
+      "nama": "biaya plastik",
+      "nilai": 4000
+     }
+    ],
+    "hj": 124000,
+    "cerita": "Bu Rina membeli 10 kg jeruk seharga [[hb:Rp151.000]]. Ia membayar biaya plastik [[ongkos:Rp4.000]]. Sayangnya, semua jeruk itu hanya laku [[hj:Rp124.000]].",
+    "kunci": {
+     "modal": 155000,
+     "jenis": "rugi",
+     "selisih": 31000,
+     "persen": 20.0
+    }
+   },
+   {
+    "id": "w4-ongkos-19",
+    "ikon": "🧦",
+    "barang": "kaos kaki",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 119000,
+    "ongkos": [
+     {
+      "nama": "biaya plastik",
+      "nilai": 3000
+     },
+     {
+      "nama": "ongkos kirim",
+      "nilai": 6000
+     }
+    ],
+    "hj": 160000,
+    "cerita": "Kak Nisa membeli 1 kodi kaos kaki seharga [[hb:Rp119.000]]. Ia membayar biaya plastik [[ongkos:Rp3.000]] dan ongkos kirim [[ongkos:Rp6.000]]. Semua kaos kaki itu laku [[hj:Rp160.000]].",
+    "kunci": {
+     "modal": 128000,
+     "jenis": "untung",
+     "selisih": 32000,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w4-ongkos-20",
+    "ikon": "✏️",
+    "barang": "pensil",
+    "ditanya": "persen",
+    "kenali": "tampil",
+    "hb": 60000,
+    "ongkos": [
+     {
+      "nama": "biaya plastik",
+      "nilai": 4000
+     }
+    ],
+    "hj": 80000,
+    "cerita": "Pak Made membeli 2 lusin pensil seharga [[hb:Rp60.000]]. Ia membayar biaya plastik [[ongkos:Rp4.000]]. Semua pensil itu laku [[hj:Rp80.000]].",
+    "kunci": {
+     "modal": 64000,
+     "jenis": "untung",
+     "selisih": 16000,
+     "persen": 25.0
+    }
+   }
+  ],
+  "w5-cerita": [
+   {
+    "id": "w5-cerita-01",
+    "ikon": "💧",
+    "barang": "air mineral",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 66000,
+    "ongkos": [
+     {
+      "nama": "ongkos angkot",
+      "nilai": 6000
+     }
+    ],
+    "hj": 63000,
+    "cerita": "Pagi ini Ucok membeli 1 dus air mineral seharga [[hb:Rp66.000]]. Lapaknya berada di los nomor [[x:14]]. Ia juga membayar ongkos angkot [[ongkos:Rp6.000]]. Karena sepi pembeli, semua air mineral hanya laku [[hj:Rp63.000]].",
+    "kunci": {
+     "modal": 72000,
+     "jenis": "rugi",
+     "selisih": 9000,
+     "persen": 12.5
+    }
+   },
+   {
+    "id": "w5-cerita-02",
+    "ikon": "💧",
+    "barang": "air mineral",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 75000,
+    "ongkos": [
+     {
+      "nama": "ongkos angkot",
+      "nilai": 9000
+     }
+    ],
+    "hj": 73500,
+    "cerita": "Pagi ini Kak Nisa membeli 1 dus air mineral seharga [[hb:Rp75.000]]. Perjalanan ke pasar memakan waktu [[x:9]] menit. Ia juga membayar ongkos angkot [[ongkos:Rp9.000]]. Karena sepi pembeli, semua air mineral hanya laku [[hj:Rp73.500]].",
+    "kunci": {
+     "modal": 84000,
+     "jenis": "rugi",
+     "selisih": 10500,
+     "persen": 12.5
+    }
+   },
+   {
+    "id": "w5-cerita-03",
+    "ikon": "🍞",
+    "barang": "roti",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 65000,
+    "ongkos": [
+     {
+      "nama": "biaya parkir",
+      "nilai": 3000
+     },
+     {
+      "nama": "ongkos ojek",
+      "nilai": 8000
+     }
+    ],
+    "hj": 95000,
+    "cerita": "Pagi ini Rizky membeli 20 bungkus roti seharga [[hb:Rp65.000]]. Perjalanan ke pasar memakan waktu [[x:38]] menit. Ia juga membayar biaya parkir [[ongkos:Rp3.000]] dan ongkos ojek [[ongkos:Rp8.000]]. Sore harinya, semua roti laku [[hj:Rp95.000]].",
+    "kunci": {
+     "modal": 76000,
+     "jenis": "untung",
+     "selisih": 19000,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w5-cerita-04",
+    "ikon": "🧅",
+    "barang": "bawang",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 269000,
+    "ongkos": [
+     {
+      "nama": "ongkos kirim",
+      "nilai": 7000
+     }
+    ],
+    "hj": 207000,
+    "cerita": "Pagi ini Kak Tono membeli 2 karung bawang seharga [[hb:Rp269.000]]. Perjalanan ke pasar memakan waktu [[x:11]] menit. Ia juga membayar ongkos kirim [[ongkos:Rp7.000]]. Karena sepi pembeli, semua bawang hanya laku [[hj:Rp207.000]].",
+    "kunci": {
+     "modal": 276000,
+     "jenis": "rugi",
+     "selisih": 69000,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w5-cerita-05",
+    "ikon": "💐",
+    "barang": "bunga",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 124000,
+    "ongkos": [
+     {
+      "nama": "ongkos kirim",
+      "nilai": 4000
+     },
+     {
+      "nama": "biaya parkir",
+      "nilai": 2000
+     }
+    ],
+    "hj": 162500,
+    "cerita": "Pagi ini Mega membeli 3 ikat bunga seharga [[hb:Rp124.000]]. Lapaknya berada di los nomor [[x:36]]. Ia juga membayar ongkos kirim [[ongkos:Rp4.000]] dan biaya parkir [[ongkos:Rp2.000]]. Sore harinya, semua bunga laku [[hj:Rp162.500]].",
+    "kunci": {
+     "modal": 130000,
+     "jenis": "untung",
+     "selisih": 32500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w5-cerita-06",
+    "ikon": "🧅",
+    "barang": "bawang",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 264000,
+    "ongkos": [
+     {
+      "nama": "ongkos angkot",
+      "nilai": 8000
+     },
+     {
+      "nama": "biaya plastik",
+      "nilai": 2000
+     }
+    ],
+    "hj": 205500,
+    "cerita": "Pagi ini Bu Wati membeli 2 karung bawang seharga [[hb:Rp264.000]]. Perjalanan ke pasar memakan waktu [[x:42]] menit. Ia juga membayar ongkos angkot [[ongkos:Rp8.000]] dan biaya plastik [[ongkos:Rp2.000]]. Karena sepi pembeli, semua bawang hanya laku [[hj:Rp205.500]].",
+    "kunci": {
+     "modal": 274000,
+     "jenis": "rugi",
+     "selisih": 68500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w5-cerita-07",
+    "ikon": "🧅",
+    "barang": "bawang",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 251000,
+    "ongkos": [
+     {
+      "nama": "biaya parkir",
+      "nilai": 4000
+     }
+    ],
+    "hj": 357000,
+    "cerita": "Pagi ini Rizky membeli 2 karung bawang seharga [[hb:Rp251.000]]. Lapaknya berada di los nomor [[x:37]]. Ia juga membayar biaya parkir [[ongkos:Rp4.000]]. Sore harinya, semua bawang laku [[hj:Rp357.000]].",
+    "kunci": {
+     "modal": 255000,
+     "jenis": "untung",
+     "selisih": 102000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w5-cerita-08",
+    "ikon": "🧅",
+    "barang": "bawang",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 207000,
+    "ongkos": [
+     {
+      "nama": "biaya parkir",
+      "nilai": 4000
+     },
+     {
+      "nama": "biaya plastik",
+      "nilai": 4000
+     }
+    ],
+    "hj": 129000,
+    "cerita": "Pagi ini Bayu membeli 2 karung bawang seharga [[hb:Rp207.000]]. Lapaknya berada di los nomor [[x:17]]. Ia juga membayar biaya parkir [[ongkos:Rp4.000]] dan biaya plastik [[ongkos:Rp4.000]]. Karena sepi pembeli, semua bawang hanya laku [[hj:Rp129.000]].",
+    "kunci": {
+     "modal": 215000,
+     "jenis": "rugi",
+     "selisih": 86000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w5-cerita-09",
+    "ikon": "💐",
+    "barang": "bunga",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 122000,
+    "ongkos": [
+     {
+      "nama": "ongkos angkot",
+      "nilai": 9000
+     },
+     {
+      "nama": "ongkos ojek",
+      "nilai": 13000
+     }
+    ],
+    "hj": 162000,
+    "cerita": "Pagi ini Kak Tono membeli 3 ikat bunga seharga [[hb:Rp122.000]]. Perjalanan ke pasar memakan waktu [[x:26]] menit. Ia juga membayar ongkos angkot [[ongkos:Rp9.000]] dan ongkos ojek [[ongkos:Rp13.000]]. Sore harinya, semua bunga laku [[hj:Rp162.000]].",
+    "kunci": {
+     "modal": 144000,
+     "jenis": "untung",
+     "selisih": 18000,
+     "persen": 12.5
+    }
+   },
+   {
+    "id": "w5-cerita-10",
+    "ikon": "💐",
+    "barang": "bunga",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 99000,
+    "ongkos": [
+     {
+      "nama": "ongkos kirim",
+      "nilai": 3000
+     }
+    ],
+    "hj": 127500,
+    "cerita": "Pagi ini Ucok membeli 3 ikat bunga seharga [[hb:Rp99.000]]. Hari itu ada [[x:45]] pembeli yang mampir. Ia juga membayar ongkos kirim [[ongkos:Rp3.000]]. Sore harinya, semua bunga laku [[hj:Rp127.500]].",
+    "kunci": {
+     "modal": 102000,
+     "jenis": "untung",
+     "selisih": 25500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w5-cerita-11",
+    "ikon": "🍅",
+    "barang": "tomat",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 185000,
+    "ongkos": [
+     {
+      "nama": "biaya parkir",
+      "nilai": 5000
+     }
+    ],
+    "hj": 142500,
+    "cerita": "Pagi ini Pak Rudi membeli sekeranjang tomat seharga [[hb:Rp185.000]]. Hari itu ada [[x:41]] pembeli yang mampir. Ia juga membayar biaya parkir [[ongkos:Rp5.000]]. Karena sepi pembeli, semua tomat hanya laku [[hj:Rp142.500]].",
+    "kunci": {
+     "modal": 190000,
+     "jenis": "rugi",
+     "selisih": 47500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w5-cerita-12",
+    "ikon": "🍅",
+    "barang": "tomat",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 157000,
+    "ongkos": [
+     {
+      "nama": "biaya plastik",
+      "nilai": 1000
+     },
+     {
+      "nama": "ongkos angkot",
+      "nilai": 6000
+     }
+    ],
+    "hj": 143500,
+    "cerita": "Pagi ini Bu Rina membeli sekeranjang tomat seharga [[hb:Rp157.000]]. Hari itu ada [[x:7]] pembeli yang mampir. Ia juga membayar biaya plastik [[ongkos:Rp1.000]] dan ongkos angkot [[ongkos:Rp6.000]]. Karena sepi pembeli, semua tomat hanya laku [[hj:Rp143.500]].",
+    "kunci": {
+     "modal": 164000,
+     "jenis": "rugi",
+     "selisih": 20500,
+     "persen": 12.5
+    }
+   },
+   {
+    "id": "w5-cerita-13",
+    "ikon": "🍞",
+    "barang": "roti",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 62000,
+    "ongkos": [
+     {
+      "nama": "biaya parkir",
+      "nilai": 4000
+     },
+     {
+      "nama": "ongkos angkot",
+      "nilai": 9000
+     }
+    ],
+    "hj": 105000,
+    "cerita": "Pagi ini Bu Wati membeli 20 bungkus roti seharga [[hb:Rp62.000]]. Lapaknya berada di los nomor [[x:19]]. Ia juga membayar biaya parkir [[ongkos:Rp4.000]] dan ongkos angkot [[ongkos:Rp9.000]]. Sore harinya, semua roti laku [[hj:Rp105.000]].",
+    "kunci": {
+     "modal": 75000,
+     "jenis": "untung",
+     "selisih": 30000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w5-cerita-14",
+    "ikon": "🍞",
+    "barang": "roti",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 83000,
+    "ongkos": [
+     {
+      "nama": "ongkos angkot",
+      "nilai": 9000
+     },
+     {
+      "nama": "biaya plastik",
+      "nilai": 3000
+     }
+    ],
+    "hj": 57000,
+    "cerita": "Pagi ini Pak Rudi membeli 20 bungkus roti seharga [[hb:Rp83.000]]. Perjalanan ke pasar memakan waktu [[x:25]] menit. Ia juga membayar ongkos angkot [[ongkos:Rp9.000]] dan biaya plastik [[ongkos:Rp3.000]]. Karena sepi pembeli, semua roti hanya laku [[hj:Rp57.000]].",
+    "kunci": {
+     "modal": 95000,
+     "jenis": "rugi",
+     "selisih": 38000,
+     "persen": 40.0
+    }
+   },
+   {
+    "id": "w5-cerita-15",
+    "ikon": "🍅",
+    "barang": "tomat",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 109000,
+    "ongkos": [
+     {
+      "nama": "ongkos kirim",
+      "nilai": 3000
+     }
+    ],
+    "hj": 98000,
+    "cerita": "Pagi ini Bayu membeli sekeranjang tomat seharga [[hb:Rp109.000]]. Perjalanan ke pasar memakan waktu [[x:40]] menit. Ia juga membayar ongkos kirim [[ongkos:Rp3.000]]. Karena sepi pembeli, semua tomat hanya laku [[hj:Rp98.000]].",
+    "kunci": {
+     "modal": 112000,
+     "jenis": "rugi",
+     "selisih": 14000,
+     "persen": 12.5
+    }
+   },
+   {
+    "id": "w5-cerita-16",
+    "ikon": "🍅",
+    "barang": "tomat",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 104000,
+    "ongkos": [
+     {
+      "nama": "ongkos angkot",
+      "nilai": 8000
+     },
+     {
+      "nama": "ongkos kirim",
+      "nilai": 8000
+     }
+    ],
+    "hj": 144000,
+    "cerita": "Pagi ini Pak Rudi membeli sekeranjang tomat seharga [[hb:Rp104.000]]. Perjalanan ke pasar memakan waktu [[x:3]] menit. Ia juga membayar ongkos angkot [[ongkos:Rp8.000]] dan ongkos kirim [[ongkos:Rp8.000]]. Sore harinya, semua tomat laku [[hj:Rp144.000]].",
+    "kunci": {
+     "modal": 120000,
+     "jenis": "untung",
+     "selisih": 24000,
+     "persen": 20.0
+    }
+   },
+   {
+    "id": "w5-cerita-17",
+    "ikon": "💧",
+    "barang": "air mineral",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 52000,
+    "ongkos": [
+     {
+      "nama": "biaya plastik",
+      "nilai": 3000
+     },
+     {
+      "nama": "ongkos kirim",
+      "nilai": 10000
+     }
+    ],
+    "hj": 78000,
+    "cerita": "Pagi ini Fajar membeli 1 dus air mineral seharga [[hb:Rp52.000]]. Lapaknya berada di los nomor [[x:10]]. Ia juga membayar biaya plastik [[ongkos:Rp3.000]] dan ongkos kirim [[ongkos:Rp10.000]]. Sore harinya, semua air mineral laku [[hj:Rp78.000]].",
+    "kunci": {
+     "modal": 65000,
+     "jenis": "untung",
+     "selisih": 13000,
+     "persen": 20.0
+    }
+   },
+   {
+    "id": "w5-cerita-18",
+    "ikon": "🍞",
+    "barang": "roti",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 100000,
+    "ongkos": [
+     {
+      "nama": "biaya plastik",
+      "nilai": 5000
+     },
+     {
+      "nama": "ongkos ojek",
+      "nilai": 9000
+     }
+    ],
+    "hj": 85500,
+    "cerita": "Pagi ini Sari membeli 20 bungkus roti seharga [[hb:Rp100.000]]. Lapaknya berada di los nomor [[x:43]]. Ia juga membayar biaya plastik [[ongkos:Rp5.000]] dan ongkos ojek [[ongkos:Rp9.000]]. Karena sepi pembeli, semua roti hanya laku [[hj:Rp85.500]].",
+    "kunci": {
+     "modal": 114000,
+     "jenis": "rugi",
+     "selisih": 28500,
+     "persen": 25.0
+    }
+   },
+   {
+    "id": "w5-cerita-19",
+    "ikon": "🍅",
+    "barang": "tomat",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 190000,
+    "ongkos": [
+     {
+      "nama": "ongkos ojek",
+      "nilai": 10000
+     }
+    ],
+    "hj": 180000,
+    "cerita": "Pagi ini Bu Yanti membeli sekeranjang tomat seharga [[hb:Rp190.000]]. Lapaknya berada di los nomor [[x:23]]. Ia juga membayar ongkos ojek [[ongkos:Rp10.000]]. Karena sepi pembeli, semua tomat hanya laku [[hj:Rp180.000]].",
+    "kunci": {
+     "modal": 200000,
+     "jenis": "rugi",
+     "selisih": 20000,
+     "persen": 10.0
+    }
+   },
+   {
+    "id": "w5-cerita-20",
+    "ikon": "🍅",
+    "barang": "tomat",
+    "ditanya": "persen",
+    "kenali": "tandai",
+    "hb": 176000,
+    "ongkos": [
+     {
+      "nama": "ongkos angkot",
+      "nilai": 6000
+     }
+    ],
+    "hj": 227500,
+    "cerita": "Pagi ini Ayu membeli sekeranjang tomat seharga [[hb:Rp176.000]]. Perjalanan ke pasar memakan waktu [[x:5]] menit. Ia juga membayar ongkos angkot [[ongkos:Rp6.000]]. Sore harinya, semua tomat laku [[hj:Rp227.500]].",
+    "kunci": {
+     "modal": 182000,
+     "jenis": "untung",
+     "selisih": 45500,
+     "persen": 25.0
+    }
+   }
+  ],
+  "w6-hj": [
+   {
+    "id": "w6-hj-01",
+    "ikon": "🧥",
+    "barang": "jaket",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 240000,
+    "ongkos": [],
+    "persen": 10,
+    "jenis": "rugi",
+    "cerita": "Sari ingin cepat menghabiskan stok jaket. Modalnya [[hb:Rp240.000]] dan ia rela rugi [[persen:10%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 240000,
+     "jenis": "rugi",
+     "hj": 216000
+    }
+   },
+   {
+    "id": "w6-hj-02",
+    "ikon": "🩴",
+    "barang": "sandal",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 130000,
+    "ongkos": [],
+    "persen": 25,
+    "jenis": "untung",
+    "cerita": "Kak Nisa punya modal [[hb:Rp130.000]] untuk stok sandal. Ia ingin untung [[persen:25%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 130000,
+     "jenis": "untung",
+     "hj": 162500
+    }
+   },
+   {
+    "id": "w6-hj-03",
+    "ikon": "🥭",
+    "barang": "mangga",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 80000,
+    "ongkos": [],
+    "persen": 20,
+    "jenis": "untung",
+    "cerita": "Kak Nisa punya modal [[hb:Rp80.000]] untuk sekeranjang mangga. Ia ingin untung [[persen:20%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 80000,
+     "jenis": "untung",
+     "hj": 96000
+    }
+   },
+   {
+    "id": "w6-hj-04",
+    "ikon": "🧥",
+    "barang": "jaket",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 160000,
+    "ongkos": [],
+    "persen": 30,
+    "jenis": "untung",
+    "cerita": "Sari punya modal [[hb:Rp160.000]] untuk stok jaket. Ia ingin untung [[persen:30%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 160000,
+     "jenis": "untung",
+     "hj": 208000
+    }
+   },
+   {
+    "id": "w6-hj-05",
+    "ikon": "🥭",
+    "barang": "mangga",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 100000,
+    "ongkos": [],
+    "persen": 10,
+    "jenis": "untung",
+    "cerita": "Pak Made punya modal [[hb:Rp100.000]] untuk sekeranjang mangga. Ia ingin untung [[persen:10%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 100000,
+     "jenis": "untung",
+     "hj": 110000
+    }
+   },
+   {
+    "id": "w6-hj-06",
+    "ikon": "🩴",
+    "barang": "sandal",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 130000,
+    "ongkos": [],
+    "persen": 10,
+    "jenis": "rugi",
+    "cerita": "Pak Hasan ingin cepat menghabiskan stok sandal. Modalnya [[hb:Rp130.000]] dan ia rela rugi [[persen:10%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 130000,
+     "jenis": "rugi",
+     "hj": 117000
+    }
+   },
+   {
+    "id": "w6-hj-07",
+    "ikon": "🧥",
+    "barang": "jaket",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 170000,
+    "ongkos": [],
+    "persen": 30,
+    "jenis": "untung",
+    "cerita": "Sari punya modal [[hb:Rp170.000]] untuk stok jaket. Ia ingin untung [[persen:30%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 170000,
+     "jenis": "untung",
+     "hj": 221000
+    }
+   },
+   {
+    "id": "w6-hj-08",
+    "ikon": "🥭",
+    "barang": "mangga",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 200000,
+    "ongkos": [],
+    "persen": 10,
+    "jenis": "rugi",
+    "cerita": "Bu Rina ingin cepat menghabiskan sekeranjang mangga. Modalnya [[hb:Rp200.000]] dan ia rela rugi [[persen:10%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 200000,
+     "jenis": "rugi",
+     "hj": 180000
+    }
+   },
+   {
+    "id": "w6-hj-09",
+    "ikon": "🩴",
+    "barang": "sandal",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 150000,
+    "ongkos": [],
+    "persen": 20,
+    "jenis": "untung",
+    "cerita": "Mega punya modal [[hb:Rp150.000]] untuk stok sandal. Ia ingin untung [[persen:20%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 150000,
+     "jenis": "untung",
+     "hj": 180000
+    }
+   },
+   {
+    "id": "w6-hj-10",
+    "ikon": "🧥",
+    "barang": "jaket",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 300000,
+    "ongkos": [],
+    "persen": 40,
+    "jenis": "untung",
+    "cerita": "Ayu punya modal [[hb:Rp300.000]] untuk stok jaket. Ia ingin untung [[persen:40%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 300000,
+     "jenis": "untung",
+     "hj": 420000
+    }
+   },
+   {
+    "id": "w6-hj-11",
+    "ikon": "🥭",
+    "barang": "mangga",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 140000,
+    "ongkos": [],
+    "persen": 40,
+    "jenis": "rugi",
+    "cerita": "Bu Yanti ingin cepat menghabiskan sekeranjang mangga. Modalnya [[hb:Rp140.000]] dan ia rela rugi [[persen:40%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 140000,
+     "jenis": "rugi",
+     "hj": 84000
+    }
+   },
+   {
+    "id": "w6-hj-12",
+    "ikon": "🥭",
+    "barang": "mangga",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 150000,
+    "ongkos": [],
+    "persen": 15,
+    "jenis": "untung",
+    "cerita": "Pak Made punya modal [[hb:Rp150.000]] untuk sekeranjang mangga. Ia ingin untung [[persen:15%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 150000,
+     "jenis": "untung",
+     "hj": 172500
+    }
+   },
+   {
+    "id": "w6-hj-13",
+    "ikon": "🍩",
+    "barang": "donat",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 80000,
+    "ongkos": [],
+    "persen": 20,
+    "jenis": "rugi",
+    "cerita": "Bu Wati ingin cepat menghabiskan sekotak donat. Modalnya [[hb:Rp80.000]] dan ia rela rugi [[persen:20%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 80000,
+     "jenis": "rugi",
+     "hj": 64000
+    }
+   },
+   {
+    "id": "w6-hj-14",
+    "ikon": "🧥",
+    "barang": "jaket",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 180000,
+    "ongkos": [],
+    "persen": 25,
+    "jenis": "rugi",
+    "cerita": "Ucok ingin cepat menghabiskan stok jaket. Modalnya [[hb:Rp180.000]] dan ia rela rugi [[persen:25%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 180000,
+     "jenis": "rugi",
+     "hj": 135000
+    }
+   },
+   {
+    "id": "w6-hj-15",
+    "ikon": "🧥",
+    "barang": "jaket",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 330000,
+    "ongkos": [],
+    "persen": 30,
+    "jenis": "rugi",
+    "cerita": "Ucok ingin cepat menghabiskan stok jaket. Modalnya [[hb:Rp330.000]] dan ia rela rugi [[persen:30%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 330000,
+     "jenis": "rugi",
+     "hj": 231000
+    }
+   },
+   {
+    "id": "w6-hj-16",
+    "ikon": "🥭",
+    "barang": "mangga",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 120000,
+    "ongkos": [],
+    "persen": 30,
+    "jenis": "rugi",
+    "cerita": "Bu Rina ingin cepat menghabiskan sekeranjang mangga. Modalnya [[hb:Rp120.000]] dan ia rela rugi [[persen:30%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 120000,
+     "jenis": "rugi",
+     "hj": 84000
+    }
+   },
+   {
+    "id": "w6-hj-17",
+    "ikon": "🍩",
+    "barang": "donat",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 100000,
+    "ongkos": [],
+    "persen": 25,
+    "jenis": "untung",
+    "cerita": "Fajar punya modal [[hb:Rp100.000]] untuk sekotak donat. Ia ingin untung [[persen:25%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 100000,
+     "jenis": "untung",
+     "hj": 125000
+    }
+   },
+   {
+    "id": "w6-hj-18",
+    "ikon": "🧥",
+    "barang": "jaket",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 150000,
+    "ongkos": [],
+    "persen": 30,
+    "jenis": "untung",
+    "cerita": "Putu punya modal [[hb:Rp150.000]] untuk stok jaket. Ia ingin untung [[persen:30%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 150000,
+     "jenis": "untung",
+     "hj": 195000
+    }
+   },
+   {
+    "id": "w6-hj-19",
+    "ikon": "🍩",
+    "barang": "donat",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 90000,
+    "ongkos": [],
+    "persen": 40,
+    "jenis": "untung",
+    "cerita": "Bu Rina punya modal [[hb:Rp90.000]] untuk sekotak donat. Ia ingin untung [[persen:40%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 90000,
+     "jenis": "untung",
+     "hj": 126000
+    }
+   },
+   {
+    "id": "w6-hj-20",
+    "ikon": "🩴",
+    "barang": "sandal",
+    "ditanya": "hj",
+    "kenali": "tampil",
+    "hb": 260000,
+    "ongkos": [],
+    "persen": 15,
+    "jenis": "rugi",
+    "cerita": "Kak Tono ingin cepat menghabiskan stok sandal. Modalnya [[hb:Rp260.000]] dan ia rela rugi [[persen:15%]]. Berapa harga jualnya?",
+    "kunci": {
+     "modal": 260000,
+     "jenis": "rugi",
+     "hj": 221000
+    }
+   }
+  ],
+  "w6-modal": [
+   {
+    "id": "w6-modal-01",
+    "ikon": "🐐",
+    "barang": "kambing",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 2000000,
+    "persen": 25,
+    "jenis": "untung",
+    "cerita": "Kadek menjual seekor kambing seharga [[hj:Rp2.000.000]] dan mendapat untung [[persen:25%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 1600000,
+     "jenis": "untung",
+     "hj": 2000000
+    }
+   },
+   {
+    "id": "w6-modal-02",
+    "ikon": "🐐",
+    "barang": "kambing",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 2250000,
+    "persen": 25,
+    "jenis": "untung",
+    "cerita": "Ucok menjual seekor kambing seharga [[hj:Rp2.250.000]] dan mendapat untung [[persen:25%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 1800000,
+     "jenis": "untung",
+     "hj": 2250000
+    }
+   },
+   {
+    "id": "w6-modal-03",
+    "ikon": "📱",
+    "barang": "ponsel",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 1560000,
+    "persen": 20,
+    "jenis": "untung",
+    "cerita": "Bu Rina menjual ponsel bekas seharga [[hj:Rp1.560.000]] dan mendapat untung [[persen:20%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 1300000,
+     "jenis": "untung",
+     "hj": 1560000
+    }
+   },
+   {
+    "id": "w6-modal-04",
+    "ikon": "📱",
+    "barang": "ponsel",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 800000,
+    "persen": 50,
+    "jenis": "rugi",
+    "cerita": "Pak Hasan menjual ponsel bekas seharga [[hj:Rp800.000]] dan rugi [[persen:50%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 1600000,
+     "jenis": "rugi",
+     "hj": 800000
+    }
+   },
+   {
+    "id": "w6-modal-05",
+    "ikon": "📱",
+    "barang": "ponsel",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 1710000,
+    "persen": 10,
+    "jenis": "rugi",
+    "cerita": "Pak Rudi menjual ponsel bekas seharga [[hj:Rp1.710.000]] dan rugi [[persen:10%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 1900000,
+     "jenis": "rugi",
+     "hj": 1710000
+    }
+   },
+   {
+    "id": "w6-modal-06",
+    "ikon": "📱",
+    "barang": "ponsel",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 1430000,
+    "persen": 10,
+    "jenis": "untung",
+    "cerita": "Bu Yanti menjual ponsel bekas seharga [[hj:Rp1.430.000]] dan mendapat untung [[persen:10%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 1300000,
+     "jenis": "untung",
+     "hj": 1430000
+    }
+   },
+   {
+    "id": "w6-modal-07",
+    "ikon": "🐐",
+    "barang": "kambing",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 1710000,
+    "persen": 10,
+    "jenis": "rugi",
+    "cerita": "Kak Tono menjual seekor kambing seharga [[hj:Rp1.710.000]] dan rugi [[persen:10%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 1900000,
+     "jenis": "rugi",
+     "hj": 1710000
+    }
+   },
+   {
+    "id": "w6-modal-08",
+    "ikon": "📱",
+    "barang": "ponsel",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 825000,
+    "persen": 25,
+    "jenis": "rugi",
+    "cerita": "Bu Wati menjual ponsel bekas seharga [[hj:Rp825.000]] dan rugi [[persen:25%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 1100000,
+     "jenis": "rugi",
+     "hj": 825000
+    }
+   },
+   {
+    "id": "w6-modal-09",
+    "ikon": "🛵",
+    "barang": "motor",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 2000000,
+    "persen": 50,
+    "jenis": "rugi",
+    "cerita": "Ucok menjual sepeda motor bekas seharga [[hj:Rp2.000.000]] dan rugi [[persen:50%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 4000000,
+     "jenis": "rugi",
+     "hj": 2000000
+    }
+   },
+   {
+    "id": "w6-modal-10",
+    "ikon": "🐐",
+    "barang": "kambing",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 2520000,
+    "persen": 10,
+    "jenis": "rugi",
+    "cerita": "Sari menjual seekor kambing seharga [[hj:Rp2.520.000]] dan rugi [[persen:10%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 2800000,
+     "jenis": "rugi",
+     "hj": 2520000
+    }
+   },
+   {
+    "id": "w6-modal-11",
+    "ikon": "🐐",
+    "barang": "kambing",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 3000000,
+    "persen": 50,
+    "jenis": "untung",
+    "cerita": "Pak Rudi menjual seekor kambing seharga [[hj:Rp3.000.000]] dan mendapat untung [[persen:50%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 2000000,
+     "jenis": "untung",
+     "hj": 3000000
+    }
+   },
+   {
+    "id": "w6-modal-12",
+    "ikon": "🐐",
+    "barang": "kambing",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 3125000,
+    "persen": 25,
+    "jenis": "untung",
+    "cerita": "Bayu menjual seekor kambing seharga [[hj:Rp3.125.000]] dan mendapat untung [[persen:25%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 2500000,
+     "jenis": "untung",
+     "hj": 3125000
+    }
+   },
+   {
+    "id": "w6-modal-13",
+    "ikon": "🐐",
+    "barang": "kambing",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 2070000,
+    "persen": 10,
+    "jenis": "rugi",
+    "cerita": "Ucok menjual seekor kambing seharga [[hj:Rp2.070.000]] dan rugi [[persen:10%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 2300000,
+     "jenis": "rugi",
+     "hj": 2070000
+    }
+   },
+   {
+    "id": "w6-modal-14",
+    "ikon": "🐐",
+    "barang": "kambing",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 1350000,
+    "persen": 10,
+    "jenis": "rugi",
+    "cerita": "Ayu menjual seekor kambing seharga [[hj:Rp1.350.000]] dan rugi [[persen:10%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 1500000,
+     "jenis": "rugi",
+     "hj": 1350000
+    }
+   },
+   {
+    "id": "w6-modal-15",
+    "ikon": "📱",
+    "barang": "ponsel",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 1170000,
+    "persen": 10,
+    "jenis": "rugi",
+    "cerita": "Pak Rudi menjual ponsel bekas seharga [[hj:Rp1.170.000]] dan rugi [[persen:10%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 1300000,
+     "jenis": "rugi",
+     "hj": 1170000
+    }
+   },
+   {
+    "id": "w6-modal-16",
+    "ikon": "🐐",
+    "barang": "kambing",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 1875000,
+    "persen": 25,
+    "jenis": "untung",
+    "cerita": "Putu menjual seekor kambing seharga [[hj:Rp1.875.000]] dan mendapat untung [[persen:25%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 1500000,
+     "jenis": "untung",
+     "hj": 1875000
+    }
+   },
+   {
+    "id": "w6-modal-17",
+    "ikon": "📱",
+    "barang": "ponsel",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 1800000,
+    "persen": 10,
+    "jenis": "rugi",
+    "cerita": "Lina menjual ponsel bekas seharga [[hj:Rp1.800.000]] dan rugi [[persen:10%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 2000000,
+     "jenis": "rugi",
+     "hj": 1800000
+    }
+   },
+   {
+    "id": "w6-modal-18",
+    "ikon": "📱",
+    "barang": "ponsel",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 2280000,
+    "persen": 20,
+    "jenis": "untung",
+    "cerita": "Ayu menjual ponsel bekas seharga [[hj:Rp2.280.000]] dan mendapat untung [[persen:20%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 1900000,
+     "jenis": "untung",
+     "hj": 2280000
+    }
+   },
+   {
+    "id": "w6-modal-19",
+    "ikon": "🗄️",
+    "barang": "lemari",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 250000,
+    "persen": 50,
+    "jenis": "rugi",
+    "cerita": "Kadek menjual lemari kayu seharga [[hj:Rp250.000]] dan rugi [[persen:50%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 500000,
+     "jenis": "rugi",
+     "hj": 250000
+    }
+   },
+   {
+    "id": "w6-modal-20",
+    "ikon": "📱",
+    "barang": "ponsel",
+    "ditanya": "modal",
+    "kenali": "tampil",
+    "hj": 1050000,
+    "persen": 25,
+    "jenis": "rugi",
+    "cerita": "Pak Made menjual ponsel bekas seharga [[hj:Rp1.050.000]] dan rugi [[persen:25%]]. Berapa modalnya?",
+    "kunci": {
+     "modal": 1400000,
+     "jenis": "rugi",
+     "hj": 1050000
+    }
+   }
+  ]
+ }
+}

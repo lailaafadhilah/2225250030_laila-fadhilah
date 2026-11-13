@@ -1,0 +1,71 @@
+{
+  "id": 4,
+  "nama": "Gudang Modal",
+  "ikon": "📦",
+  "tujuan": "Menghitung modal yang memuat biaya tambahan, lalu persentase untung/ruginya.",
+  "lencana": { "nama": "Juragan Gudang", "ikon": "📦" },
+  "aktivitas": [
+    {
+      "tipe": "situasi",
+      "judul": "Biaya tambahan ikut jadi modal",
+      "ikon": "🧺",
+      "ilustrasi": "gudang",
+      "teks": [
+        "Pedagang sering membayar ongkos lain.",
+        "Misalnya ongkos kirim, plastik, atau ojek.",
+        "Semua uang yang keluar masuk ke keranjang modal."
+      ],
+      "kalimat_kunci": "Modal = harga beli + biaya tambahan."
+    },
+    { "tipe": "materi", "bab": "m4" },
+    {
+      "tipe": "contoh",
+      "id": "w4-c1",
+      "judul": "Modal dengan ongkos kirim",
+      "soal": {
+        "id": "w4-c1-soal", "ikon": "✏️", "barang": "pensil",
+        "cerita": "Bu Sari membeli 2 lusin pensil seharga [[hb:Rp36.000]]. Ia membayar ongkos kirim [[ongkos:Rp4.000]]. Semua pensil terjual [[hj:Rp50.000]].",
+        "hb": 36000, "ongkos": [{ "nama": "ongkos kirim", "nilai": 4000 }], "hj": 50000,
+        "ditanya": "persen", "kenali": "tampil",
+        "kunci": { "jenis": "untung", "modal": 40000, "selisih": 10000, "persen": 25 }
+      }
+    },
+    {
+      "tipe": "latihan",
+      "label": "Isi Keranjang Modal",
+      "tampil": 1,
+      "soal": {
+        "id": "w4-r1", "ikon": "🍊", "barang": "jeruk",
+        "cerita": "Pak Made membeli 10 kg jeruk seharga [[hb:Rp95.000]]. Ongkos angkutnya [[ongkos:Rp5.000]]. Semua jeruk laku [[hj:Rp120.000]].",
+        "hb": 95000, "ongkos": [{ "nama": "ongkos angkut", "nilai": 5000 }], "hj": 120000,
+        "ditanya": "persen", "kenali": "tampil",
+        "kunci": { "jenis": "untung", "modal": 100000, "selisih": 20000, "persen": 20 }
+      }
+    },
+    {
+      "tipe": "latihan",
+      "label": "Isi Keranjang Modal",
+      "tampil": 1,
+      "soal": {
+        "id": "w4-r2", "ikon": "🔑", "barang": "gantungan kunci",
+        "cerita": "Kadek membeli 1 kodi gantungan kunci seharga [[hb:Rp55.000]]. Ia membayar ongkos kirim [[ongkos:Rp5.000]] dan plastik [[ongkos:Rp4.000]]. Semua gantungan kunci laku [[hj:Rp80.000]].",
+        "hb": 55000, "ongkos": [{ "nama": "ongkos kirim", "nilai": 5000 }, { "nama": "plastik", "nilai": 4000 }], "hj": 80000,
+        "ditanya": "persen", "kenali": "tampil",
+        "kunci": { "jenis": "untung", "modal": 64000, "selisih": 16000, "persen": 25 }
+      }
+    },
+    { "tipe": "latihan", "label": "Latihan Mandiri", "sumber": "bank", "templat": ["w4-ongkos"], "jumlah": 3 },
+    {
+      "tipe": "pilihan",
+      "id": "w4-p1",
+      "ikon": "🧐",
+      "pertanyaan": "Siti lupa memasukkan ongkos kirim ke modal. Akibatnya, persentase untung yang ia hitung…",
+      "opsi": [
+        { "teks": "Terlihat lebih besar dari seharusnya", "benar": true, "umpan": "Betul! Modal jadi terlalu kecil, jadi untung terlihat lebih besar." },
+        { "teks": "Tetap sama", "umpan": "Modal berubah, jadi untung dan persennya juga berubah." },
+        { "teks": "Terlihat lebih kecil", "umpan": "Jika ongkos lupa, modal terlalu kecil dan untung terlihat lebih BESAR." }
+      ]
+    },
+    { "tipe": "checkpoint", "sumber": "bank", "templat": ["w4-ongkos"], "jumlah": 4 }
+  ]
+}

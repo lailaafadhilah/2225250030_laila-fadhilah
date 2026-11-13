@@ -1,0 +1,199 @@
+{
+  "keterangan": "Penjelasan materi per wilayah. Satu ide per halaman. Angka contoh diperiksa oleh tools/validate_content.py (field 'periksa').",
+  "sumber": [
+    "Kemendikbud, Buku Siswa Matematika SMP/MTs Kelas VII Semester 2 (K13 revisi 2017), Bab Aritmetika Sosial",
+    "https://accurate.id/akuntansi/persentase-keuntungan/",
+    "https://www.ruangguru.com/blog/menghitung-harga-dan-persentase-untung-rugi",
+    "https://roboguru.ruangguru.com/question/pak-doni-membeli-sebuah-televisi-seharga-rp1-500-000-00-sebulan-kemudian_QU-PZCDXE6H"
+  ],
+  "bab": [
+    {
+      "id": "m1", "wilayah": 1, "ikon": "🏪", "judul": "Kata-kata penting di pasar",
+      "halaman": [
+        {
+          "judul": "Apa itu jual beli?",
+          "gambar": "assets/gambar/pasar.webp",
+          "teks": ["Pedagang membeli barang, lalu menjualnya lagi.", "Dari jual beli itu, pedagang bisa untung atau rugi.", "Ayo kenali dulu kata-kata pentingnya!"]
+        },
+        {
+          "judul": "🛒 Harga beli",
+          "teks": ["Harga beli adalah uang yang DIBAYAR pedagang saat membeli barang.", "Di buku paket, disebut juga harga pembelian."],
+          "contoh": "Bu Ani membeli sekotak donat seharga [[hb:Rp30.000]]."
+        },
+        {
+          "judul": "💰 Harga jual",
+          "teks": ["Harga jual adalah uang yang DITERIMA pedagang saat barangnya laku.", "Di buku paket, disebut juga harga penjualan."],
+          "contoh": "Donat Bu Ani laku terjual [[hj:Rp40.000]]."
+        },
+        {
+          "judul": "📦 Biaya tambahan",
+          "teks": ["Kadang pedagang membayar biaya lain agar barang bisa dijual.", "Contohnya ongkos angkut, ongkos kirim, plastik, atau biaya perbaikan."],
+          "contoh": "Bu Ani membayar ongkos ojek [[ongkos:Rp5.000]] untuk mengambil donat."
+        },
+        {
+          "judul": "🛒 Modal",
+          "teks": ["Modal adalah SEMUA uang yang dikeluarkan pedagang."],
+          "rumus": ["Modal = Harga beli + Biaya tambahan"],
+          "contoh": "Modal Bu Ani = [[hb:Rp30.000]] + [[ongkos:Rp5.000]] = Rp35.000.",
+          "ingat": "Jika tidak ada biaya tambahan, modal = harga beli.",
+          "periksa": { "hb": 30000, "ongkos": [5000], "modal": 35000 }
+        },
+        {
+          "judul": "Untung, rugi, atau impas?",
+          "poin": ["⬆️ UNTUNG (laba): harga jual LEBIH BESAR dari modal.", "⬇️ RUGI: harga jual LEBIH KECIL dari modal.", "🟰 IMPAS: harga jual SAMA dengan modal."],
+          "contoh": "Modal Bu Ani Rp35.000. Donatnya laku [[hj:Rp40.000]]. Harga jual lebih besar, jadi Bu Ani UNTUNG.",
+          "periksa": { "hb": 30000, "ongkos": [5000], "hj": 40000, "jenis": "untung" }
+        }
+      ]
+    },
+    {
+      "id": "m2", "wilayah": 2, "ikon": "🏬", "judul": "Menghitung untung dan rugi",
+      "halaman": [
+        {
+          "judul": "Menghitung besar untung",
+          "ilustrasi": "toko",
+          "teks": ["Untung adalah selisih antara harga jual dan modal."],
+          "rumus": ["Untung = Harga jual − Modal"],
+          "contoh": "Alin membeli cangkir seharga [[hb:Rp20.000]] dan menjualnya [[hj:Rp25.000]].",
+          "langkah": ["Harga jual lebih besar → untung", "Untung = Rp25.000 − Rp20.000 = Rp5.000"],
+          "periksa": { "hb": 20000, "hj": 25000, "jenis": "untung", "selisih": 5000 }
+        },
+        {
+          "judul": "Menghitung besar rugi",
+          "teks": ["Rugi adalah selisih antara modal dan harga jual."],
+          "rumus": ["Rugi = Modal − Harga jual"],
+          "contoh": "Dodi membeli sepatu seharga [[hb:Rp200.000]], lalu menjualnya [[hj:Rp180.000]].",
+          "langkah": ["Harga jual lebih kecil → rugi", "Rugi = Rp200.000 − Rp180.000 = Rp20.000"],
+          "ingat": "Selalu kurangkan angka yang besar dengan yang kecil. Besar untung atau rugi tidak pernah negatif.",
+          "periksa": { "hb": 200000, "hj": 180000, "jenis": "rugi", "selisih": 20000 }
+        },
+        {
+          "judul": "Hubungan modal, harga jual, dan untung",
+          "teks": ["Jika dua angka diketahui, angka ketiga bisa dicari."],
+          "rumus": ["Harga jual = Modal + Untung", "Harga jual = Modal − Rugi", "Modal = Harga jual − Untung", "Modal = Harga jual + Rugi"],
+          "contoh": "Modal Rp50.000, untung Rp8.000. Harga jual = Rp50.000 + Rp8.000 = Rp58.000.",
+          "periksa": { "hb": 50000, "hj": 58000, "selisih": 8000 }
+        },
+        {
+          "judul": "Cek jawabanmu",
+          "teks": ["Setelah menghitung, cek balik hasilnya."],
+          "poin": ["Untung? Modal + untung harus sama dengan harga jual.", "Rugi? Modal − rugi harus sama dengan harga jual."],
+          "contoh": "Alin: Rp20.000 + Rp5.000 = Rp25.000 ✔ sama dengan harga jualnya."
+        }
+      ]
+    },
+    {
+      "id": "m3", "wilayah": 3, "ikon": "🌉", "judul": "Persentase untung dan rugi",
+      "halaman": [
+        {
+          "judul": "Mengapa perlu persen?",
+          "ilustrasi": "jembatan",
+          "teks": ["Ani untung Rp2.000 dari modal Rp10.000.", "Budi untung Rp2.000 dari modal Rp100.000.", "Untungnya sama, tetapi modal Ani jauh lebih kecil. Persen membantu kita membandingkan dengan adil."]
+        },
+        {
+          "judul": "Persentase untung",
+          "teks": ["Persentase untung membandingkan besar untung dengan MODAL."],
+          "rumus": ["% Untung = (Untung ÷ Modal) × 100%"],
+          "contoh": "Untung Alin Rp5.000 dari modal [[hb:Rp20.000]].",
+          "langkah": ["% Untung = 5.000/20.000 × 100%", "= 1/4 × 100% = 25%"],
+          "periksa": { "hb": 20000, "hj": 25000, "persen": 25 }
+        },
+        {
+          "judul": "Persentase rugi",
+          "teks": ["Persentase rugi juga dibandingkan dengan MODAL."],
+          "rumus": ["% Rugi = (Rugi ÷ Modal) × 100%"],
+          "contoh": "Rugi Dodi Rp20.000 dari modal [[hb:Rp200.000]].",
+          "langkah": ["% Rugi = 20.000/200.000 × 100%", "= 1/10 × 100% = 10%"],
+          "periksa": { "hb": 200000, "hj": 180000, "persen": 10 }
+        },
+        {
+          "judul": "Dibagi apa?",
+          "awas": "Persentase untung atau rugi SELALU dibagi MODAL (harga beli), bukan harga jual.",
+          "teks": ["Alasannya: kita ingin tahu seberapa besar hasil dari uang yang kita KELUARKAN."],
+          "poin": ["❌ Salah: 5.000 ÷ 25.000 (harga jual) × 100% = 20%", "✅ Benar: 5.000 ÷ 20.000 (modal) × 100% = 25%"]
+        },
+        {
+          "judul": "Tips: coret nol",
+          "teks": ["Coret nol yang sama banyak di atas dan di bawah garis pecahan.", "Lalu sederhanakan pecahannya."],
+          "contoh": "10.000/50.000 → 10/50 → 1/5. Lalu 1/5 × 100% = 20%."
+        }
+      ]
+    },
+    {
+      "id": "m4", "wilayah": 4, "ikon": "📦", "judul": "Modal dengan biaya tambahan",
+      "halaman": [
+        {
+          "judul": "Biaya tambahan masuk modal",
+          "ilustrasi": "gudang",
+          "teks": ["Ongkos angkut, ongkos kirim, plastik, dan biaya perbaikan adalah uang yang dikeluarkan.", "Jadi, semuanya ikut masuk ke modal."],
+          "rumus": ["Modal = Harga beli + Biaya tambahan"]
+        },
+        {
+          "judul": "Contoh: televisi bekas",
+          "contoh": "Pak Doni membeli televisi bekas seharga [[hb:Rp1.500.000]]. Biaya perbaikannya [[ongkos:Rp250.000]]. Televisi itu lalu dijual [[hj:Rp1.225.000]].",
+          "langkah": ["Modal = Rp1.500.000 + Rp250.000 = Rp1.750.000", "Harga jual < modal → RUGI", "Rugi = Rp1.750.000 − Rp1.225.000 = Rp525.000", "% Rugi = 525.000/1.750.000 × 100% = 30%"],
+          "periksa": { "hb": 1500000, "ongkos": [250000], "hj": 1225000, "modal": 1750000, "jenis": "rugi", "selisih": 525000, "persen": 30 }
+        },
+        {
+          "judul": "Jangan lupa ongkos!",
+          "awas": "Jika biaya tambahan lupa dimasukkan, modal jadi terlalu kecil dan jawabannya salah.",
+          "contoh": "Lupa biaya perbaikan: rugi = Rp1.500.000 − Rp1.225.000 = Rp275.000 (18,33%). Itu SALAH. Jawaban benar: 30%.",
+          "periksa": { "hb": 1500000, "hj": 1225000, "selisih": 275000, "persen": 18.33 }
+        }
+      ]
+    },
+    {
+      "id": "m5", "wilayah": 5, "ikon": "📜", "judul": "Menyelesaikan soal cerita",
+      "halaman": [
+        {
+          "judul": "Strategi membaca soal cerita",
+          "ilustrasi": "cerita",
+          "poin": ["1️⃣ Baca cerita sampai habis.", "2️⃣ Tandai harga beli, biaya tambahan, dan harga jual.", "3️⃣ Tulis Diketahui dan Ditanya.", "4️⃣ Hitung dengan 4 Langkah Juragan.", "5️⃣ Cek kewajaran jawabanmu."]
+        },
+        {
+          "judul": "Kata kunci dalam cerita",
+          "poin": ["🛒 \"membeli\", \"seharga\", \"modal\" → harga beli", "📦 \"ongkos\", \"biaya\", \"membayar … untuk\" → biaya tambahan", "💰 \"dijual\", \"laku\", \"hasil penjualan\" → harga jual"]
+        },
+        {
+          "judul": "Hati-hati angka pengecoh",
+          "teks": ["Tidak semua angka di cerita dipakai untuk menghitung.", "Jumlah barang, jam, atau jumlah pembeli sering tidak dipakai."],
+          "contoh": "Pak Hasan membeli [[x:20]] kg tomat seharga [[hb:Rp160.000]]. Angka 20 kg tidak dipakai untuk menghitung untung."
+        },
+        {
+          "judul": "4 Langkah Juragan",
+          "poin": ["1. KENALI: tandai angka dan hitung modal.", "2. BANDINGKAN: untung atau rugi?", "3. HITUNG SELISIH: besar untung atau rugi.", "4. PERSENKAN & CEK: bagi modal, kali 100%, lalu cek balik."]
+        }
+      ]
+    },
+    {
+      "id": "m6", "wilayah": 6, "ikon": "🏆", "judul": "Mencari harga jual dan modal",
+      "halaman": [
+        {
+          "judul": "Modal = 100%",
+          "ilustrasi": "arena",
+          "teks": ["Jika persennya sudah diketahui, anggap modal sebagai 100%.", "Untung 25% berarti harga jual = 100% + 25% = 125% dari modal.", "Rugi 15% berarti harga jual = 100% − 15% = 85% dari modal."]
+        },
+        {
+          "judul": "Mencari harga jual",
+          "rumus": ["Untung p%: Harga jual = (100 + p)% × Modal", "Rugi p%: Harga jual = (100 − p)% × Modal"],
+          "contoh": "Modal [[hb:Rp120.000]], ingin untung [[persen:25%]].",
+          "langkah": ["Harga jual = 125% × Rp120.000", "= 125/100 × Rp120.000 = Rp150.000"],
+          "periksa": { "modal": 120000, "persen": 25, "jenis": "untung", "hj": 150000 }
+        },
+        {
+          "judul": "Mencari modal",
+          "rumus": ["Untung p%: Modal = Harga jual × 100 ÷ (100 + p)", "Rugi p%: Modal = Harga jual × 100 ÷ (100 − p)"],
+          "contoh": "Harga jual [[hj:Rp115.000]], untung [[persen:15%]].",
+          "langkah": ["Modal = Rp115.000 × 100/115", "= Rp100.000"],
+          "periksa": { "hj": 115000, "persen": 15, "jenis": "untung", "modal": 100000 }
+        },
+        {
+          "judul": "Jangan langsung dikurangi",
+          "awas": "Modal BUKAN harga jual dikurangi p% dari harga jual. Persen selalu dihitung dari modal.",
+          "poin": ["❌ Salah: Rp115.000 − 15% × Rp115.000 = Rp97.750", "✅ Benar: Rp115.000 × 100/115 = Rp100.000"],
+          "periksa": { "hj": 115000, "persen": 15, "jenis": "untung", "modal": 100000 }
+        }
+      ]
+    }
+  ]
+}

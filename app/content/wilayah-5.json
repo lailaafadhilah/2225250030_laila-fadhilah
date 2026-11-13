@@ -1,0 +1,70 @@
+{
+  "id": 5,
+  "nama": "Pasar Cerita",
+  "ikon": "📜",
+  "tujuan": "Mengidentifikasi informasi yang diketahui dan ditanyakan dalam soal cerita lalu menyelesaikannya.",
+  "lencana": { "nama": "Detektif Cerita", "ikon": "🔍" },
+  "aktivitas": [
+    {
+      "tipe": "situasi",
+      "judul": "Soal cerita? Tandai dulu!",
+      "ikon": "🔍",
+      "ilustrasi": "cerita",
+      "teks": [
+        "Soal cerita punya banyak angka.",
+        "Ketuk setiap angka, lalu beri label.",
+        "Ada angka yang tidak dipakai. Hati-hati!"
+      ],
+      "kalimat_kunci": "Tandai dulu, baru hitung."
+    },
+    { "tipe": "materi", "bab": "m5" },
+    {
+      "tipe": "contoh",
+      "id": "w5-c1",
+      "judul": "Bazar sekolah",
+      "soal": {
+        "id": "w5-c1-soal", "ikon": "🥤", "barang": "minuman",
+        "cerita": "Menjelang bazar sekolah, OSIS membeli [[x:50]] botol minuman seharga [[hb:Rp150.000]]. Mereka juga membayar [[ongkos:Rp10.000]] untuk es batu dan [[ongkos:Rp20.000]] untuk sewa meja. Di akhir bazar, seluruh minuman laku dengan total [[hj:Rp200.000]].",
+        "hb": 150000, "ongkos": [{ "nama": "es batu", "nilai": 10000 }, { "nama": "sewa meja", "nilai": 20000 }], "hj": 200000,
+        "ditanya": "persen", "kenali": "tandai",
+        "kunci": { "jenis": "untung", "modal": 180000, "selisih": 20000, "persen": 11.11 }
+      }
+    },
+    {
+      "tipe": "latihan",
+      "label": "Tandai & Hitung",
+      "soal": {
+        "id": "w5-r1", "ikon": "🍅", "barang": "tomat",
+        "cerita": "Pagi ini Pak Hasan membeli [[x:20]] kg tomat seharga [[hb:Rp160.000]]. Ia membayar ojek [[ongkos:Rp15.000]] dan kantong plastik [[ongkos:Rp5.000]]. Sore harinya, semua tomat laku [[hj:Rp216.000]].",
+        "hb": 160000, "ongkos": [{ "nama": "ojek", "nilai": 15000 }, { "nama": "kantong plastik", "nilai": 5000 }], "hj": 216000,
+        "ditanya": "persen", "kenali": "tandai",
+        "kunci": { "jenis": "untung", "modal": 180000, "selisih": 36000, "persen": 20 }
+      }
+    },
+    {
+      "tipe": "latihan",
+      "label": "Tandai & Hitung",
+      "soal": {
+        "id": "w5-r2", "ikon": "📓", "barang": "buku tulis",
+        "cerita": "Koperasi kelas membeli [[x:2]] lusin buku tulis seharga [[hb:Rp96.000]]. Ongkos angkotnya [[ongkos:Rp4.000]]. Ternyata [[x:5]] buku basah terkena hujan, sehingga semua buku hanya laku [[hj:Rp90.000]].",
+        "hb": 96000, "ongkos": [{ "nama": "ongkos angkot", "nilai": 4000 }], "hj": 90000,
+        "ditanya": "persen", "kenali": "tandai",
+        "kunci": { "jenis": "rugi", "modal": 100000, "selisih": 10000, "persen": 10 }
+      }
+    },
+    { "tipe": "latihan", "label": "Latihan Mandiri", "sumber": "bank", "templat": ["w5-cerita"], "jumlah": 3 },
+    {
+      "tipe": "susun",
+      "id": "w5-s1",
+      "pertanyaan": "Jelaskan ke temanmu! Susun langkah menyelesaikan soal cerita.",
+      "kartu": [
+        "Baca cerita sampai habis",
+        "Tandai harga beli, biaya tambahan, dan harga jual",
+        "Hitung modal",
+        "Hitung untung atau rugi",
+        "Hitung persentase terhadap modal"
+      ]
+    },
+    { "tipe": "checkpoint", "sumber": "bank", "templat": ["w5-cerita"], "jumlah": 4 }
+  ]
+}
