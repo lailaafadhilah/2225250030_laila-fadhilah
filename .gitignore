@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+brosur/qr.png
+.vscode/
+
+# hasil build (bisa dibuat ulang dengan tools/bundel_satu_file.py)
+dist/
