@@ -5,6 +5,8 @@ function awal() {
   return {
     versi: 1,
     nama: '',
+    kelas: '', // contoh "8A", diisi siswa sebelum belajar
+
     wilayah: {},
     contoh_dibuka: [],
     materi_dibaca: [],

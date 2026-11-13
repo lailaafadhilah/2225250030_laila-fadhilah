@@ -118,6 +118,7 @@ Templat ada di `tools/templat-soal.json`. Generator Python menentukan `hj` dari 
 {
   "versi": 1,
   "nama_panggilan": "Raka",
+  "kelas": "8A",
   "wilayah": { "1": { "status": "selesai", "bintang": 11 }, "2": { "status": "terbuka", "bintang": 4 } },
   "contoh_dibuka": ["w1-c1", "w2-c1"],
   "statistik_salah": { "M1": 3, "M2": 1 },

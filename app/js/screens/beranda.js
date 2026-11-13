@@ -7,27 +7,38 @@ import { mulaiMusik, hentikanMusik, musikNyala } from '../ui/suara.js';
 
 const MENU = [
   { ikon: 'main', teks: 'Mulai Belajar', kelas: 'menu-kuning', tujuan: '#peta', perluNama: true },
-  { ikon: 'buku', teks: 'Materi', kelas: 'menu-merah-muda', tujuan: '#materi' },
+  { ikon: 'buku', teks: 'Materi', kelas: 'menu-merah-muda', tujuan: '#materi', perluNama: true },
   { ikon: 'toko', teks: 'Simulasi Jual Beli', kelas: 'menu-hijau', tujuan: '#simulasi' },
   { ikon: 'tanya', teks: 'Kuis', kelas: 'menu-ungu', tujuan: '#kuis', perluNama: true },
   { ikon: 'orang', teks: 'Profil', kelas: 'menu-biru', tujuan: '#pengaturan' },
 ];
 
-/** Meminta nama panggilan sekali saja sebelum mulai. */
+/** Meminta nama & kelas sekali saja sebelum masuk Mulai Belajar, Materi, atau Kuis. */
 function mintaNama(lanjut) {
   const p = progres.muat();
-  if (p.nama) { lanjut(); return; }
-  const input = h('input', { type: 'text', class: 'input-teks', maxlength: '20', placeholder: 'Contoh: Raka', 'aria-label': 'Nama panggilan' });
+  if (p.nama && p.kelas) { lanjut(); return; }
+  const inputNama = h('input', { type: 'text', class: 'input-teks', maxlength: '20', value: p.nama, placeholder: 'Contoh: Raka', autocomplete: 'given-name' });
+  const inputKelas = h('input', { type: 'text', class: 'input-teks', maxlength: '10', value: p.kelas, placeholder: 'Contoh: 8A', autocapitalize: 'characters' });
+  const pesan = h('p', { class: 'catatan-kecil', role: 'alert' });
   const simpan = () => {
-    p.nama = input.value.trim() || 'Juragan Cilik';
+    const nama = inputNama.value.trim();
+    const kelas = inputKelas.value.trim().toUpperCase();
+    if (!nama) { pesan.textContent = '✏️ Tulis nama kamu dulu, ya.'; inputNama.focus(); return; }
+    if (!kelas) { pesan.textContent = '✏️ Tulis kelas kamu juga, ya. Contoh: 8A.'; inputKelas.focus(); return; }
+    p.nama = nama;
+    p.kelas = kelas;
     progres.simpan();
     tutupLembar();
     lanjut();
   };
-  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') simpan(); });
-  bukaLembar('👋 Siapa nama panggilanmu?', h('div', { class: 'daftar-opsi' }, input,
+  inputNama.addEventListener('keydown', (e) => { if (e.key === 'Enter') inputKelas.focus(); });
+  inputKelas.addEventListener('keydown', (e) => { if (e.key === 'Enter') simpan(); });
+  bukaLembar('👋 Kenalan dulu, yuk!', h('div', { class: 'daftar-opsi' },
+    h('label', { class: 'baris-atur' }, 'Nama', inputNama),
+    h('label', { class: 'baris-atur' }, 'Kelas', inputKelas),
+    pesan,
     h('button', { type: 'button', class: 'btn btn-utama btn-lebar', onclick: simpan }, 'Simpan & Mulai ▶')));
-  setTimeout(() => input.focus(), 100);
+  setTimeout(() => (p.nama ? inputKelas : inputNama).focus(), 100);
 }
 
 export async function layarBeranda(akar, _param, app) {
@@ -66,7 +77,7 @@ export async function layarBeranda(akar, _param, app) {
         h('p', { class: 'papan-sub' }, '★ Petualangan Menghitung Untung dan Rugi! ★'))),
     h('div', { class: 'beranda-tengah' },
       h('div', { class: 'kolom-tokoh' },
-        p.nama ? h('p', { class: 'sapa-beranda' }, `Halo, ${p.nama}! 👋`) : null,
+        p.nama ? h('p', { class: 'sapa-beranda' }, `Halo, ${p.nama}${p.kelas ? ` (${p.kelas})` : ''}! 👋`) : null,
         tokohSari(), papanA()),
       h('nav', { class: 'menu-utama', 'aria-label': 'Menu' },
       MENU.map((m, i) => h('button', {

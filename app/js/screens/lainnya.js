@@ -27,7 +27,7 @@ export async function layarPeta(akar, _param, app) {
   });
   akar.replaceChildren(
     h('div', { class: 'peta-statistik' },
-      h('span', { class: 'pil' }, p.nama ? `👋 ${p.nama}` : '👋 Halo!'),
+      h('span', { class: 'pil' }, p.nama ? `👋 ${p.nama}${p.kelas ? ` · ${p.kelas}` : ''}` : '👋 Halo!'),
       h('span', { class: 'pil' }, `⭐ ${progres.totalBintang()}`),
       h('span', { class: 'pil' }, `🏅 ${jumlahLencana}/${daftar.length}`)),
     peta,
@@ -114,6 +114,13 @@ export async function layarPengaturan(akar, _param, app) {
 
   const nama = h('input', { type: 'text', class: 'input-teks', maxlength: '20', value: p.nama, 'aria-label': 'Nama panggilan' });
   nama.addEventListener('change', () => { p.nama = nama.value.trim(); progres.simpan(); tampilkanToast('Nama disimpan.'); });
+  const kelas = h('input', { type: 'text', class: 'input-teks', maxlength: '10', value: p.kelas, placeholder: 'Contoh: 8A', autocapitalize: 'characters', 'aria-label': 'Kelas' });
+  kelas.addEventListener('change', () => {
+    p.kelas = kelas.value.trim().toUpperCase();
+    kelas.value = p.kelas;
+    progres.simpan();
+    tampilkanToast('Kelas disimpan.');
+  });
 
   const ukuran = h('select', { class: 'input-teks', 'aria-label': 'Ukuran teks' },
     h('option', { value: 'normal' }, 'Normal'), h('option', { value: 'besar' }, 'Besar'));
@@ -183,6 +190,7 @@ export async function layarPengaturan(akar, _param, app) {
   akar.replaceChildren(h('div', { class: 'pengaturan' },
     h('section', { class: 'kartu' }, h('h2', {}, 'Profil'),
       h('label', { class: 'baris-atur' }, 'Nama panggilan', nama),
+      h('label', { class: 'baris-atur' }, 'Kelas', kelas),
       h('label', { class: 'baris-atur' }, 'Ukuran teks', ukuran),
       h('label', { class: 'baris-atur' }, 'Animasi', animasi),
       h('label', { class: 'baris-atur' }, 'Suara efek (klik, benar, salah)', efek),
