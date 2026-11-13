@@ -1,6 +1,6 @@
 // Service worker ProfitQuest: menyimpan semua berkas agar bisa dipakai offline.
 // NAIKKAN VERSI setiap kali ada berkas yang berubah, lalu deploy ulang.
-const VERSI = 'pq-v2.0.0';
+const VERSI = 'pq-v2.1.0';
 
 const PRECACHE = [
   './',

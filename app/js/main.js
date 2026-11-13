@@ -4,7 +4,7 @@ import { bukaLembar } from './ui/lembar.js';
 import { tampilkanToast } from './ui/toast.js';
 import { h } from './ui/dom.js';
 import { animasikan } from './ui/animasi.js';
-import { suara, mulaiMusik, musikNyala } from './ui/suara.js';
+import { suara, mulaiMusik, musikNyala, bukaKunciAudio } from './ui/suara.js';
 import { layarWilayah } from './screens/wilayah.js';
 import { layarBeranda } from './screens/beranda.js';
 import { layarSimulasi } from './screens/simulasi.js';
@@ -90,13 +90,19 @@ tombolSuara.addEventListener('click', () => {
   simpan();
   gambarTombolSuara();
 });
-// Bunyi "klik" untuk setiap tombol & tautan yang diketuk
+// Bunyi "klik" untuk setiap tombol, tautan, pilihan, dan isian yang diketuk
 document.addEventListener('pointerdown', (e) => {
-  const el = e.target.closest('button, a, [role="radio"]');
+  const el = e.target.closest('button, a, [role="radio"], [role="button"], [onclick], select, input, label, summary');
   if (el && !el.disabled) suara.klik();
 }, true);
-// Musik latar hanya boleh mulai setelah sentuhan pertama (aturan browser HP)
-document.addEventListener('pointerdown', () => { if (muat().pengaturan.musik && !musikNyala()) mulaiMusik(); }, { once: true });
+// Audio & musik latar hanya boleh mulai setelah sentuhan pertama (aturan browser HP).
+// iPhone membuka audio saat "touchend"/"click", Android saat "pointerdown": pasang ketiganya.
+function mulaiAudio() {
+  bukaKunciAudio();
+  if (muat().pengaturan.musik && !musikNyala()) mulaiMusik();
+  ['pointerdown', 'touchend', 'click', 'keydown'].forEach((jenis) => document.removeEventListener(jenis, mulaiAudio, true));
+}
+['pointerdown', 'touchend', 'click', 'keydown'].forEach((jenis) => document.addEventListener(jenis, mulaiAudio, true));
 
 document.documentElement.dataset.teks = muat().pengaturan.ukuran_teks;
 document.documentElement.dataset.animasi = muat().pengaturan.animasi;

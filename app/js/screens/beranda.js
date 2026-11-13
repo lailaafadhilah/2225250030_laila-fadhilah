@@ -35,12 +35,21 @@ export async function layarBeranda(akar, _param, app) {
   app.sembunyikanKepala(true);
   const p = progres.muat();
 
-  const tombolMusik = h('button', { type: 'button', class: 'bulat-pastel tombol-musik', 'aria-label': 'Musik latar', 'aria-pressed': String(musikNyala()) }, '🎵');
+  // Ikon mengikuti pengaturan (bukan status putar), karena musik baru mulai setelah sentuhan pertama
+  const tombolMusik = h('button', { type: 'button', class: 'bulat-pastel tombol-musik' });
+  const gambarMusik = () => {
+    const nyala = p.pengaturan.musik;
+    tombolMusik.textContent = nyala ? '🎵' : '🔕';
+    tombolMusik.setAttribute('aria-pressed', String(nyala));
+    tombolMusik.setAttribute('aria-label', nyala ? 'Matikan musik latar' : 'Nyalakan musik latar');
+  };
   tombolMusik.addEventListener('click', () => {
-    if (musikNyala()) { hentikanMusik(); p.pengaturan.musik = false; } else { mulaiMusik(); p.pengaturan.musik = true; }
+    p.pengaturan.musik = !p.pengaturan.musik;
+    if (p.pengaturan.musik) { if (!musikNyala()) mulaiMusik(); } else hentikanMusik();
     progres.simpan();
-    tombolMusik.setAttribute('aria-pressed', String(musikNyala()));
+    gambarMusik();
   });
+  gambarMusik();
 
   akar.replaceChildren(h('section', { class: 'beranda-pasar' },
     latarPasar(),

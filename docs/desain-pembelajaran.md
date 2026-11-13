@@ -57,7 +57,7 @@ Setiap wilayah minimal memuat satu soal **keputusan**. Contoh: membandingkan dua
 | *Segmenting* & dikendalikan siswa | Satu langkah per layar. Tombol Lanjut/Ulangi. Tanpa timer di mode belajar |
 | *Signaling* | Warna + ikon tetap: 🛒 Harga Beli (biru), 💰 Harga Jual (hijau), 📦 Biaya Tambahan (oranye), ❓ Ditanya (ungu) |
 | *Spatial contiguity* | Rumus selalu di atas langkah yang sedang dikerjakan. Angka disubstitusikan tepat di tempat variabel rumus |
-| *Coherence* | Tanpa gambar dekoratif. Satu ilustrasi barang per soal. Tanpa musik latar |
+| *Coherence* | Tanpa gambar dekoratif. Satu ilustrasi barang per soal. Musik latar nyala bawaan atas permintaan pengguna (agar menarik), lebih pelan dari efek, dan bisa dimatikan lewat 🎵 atau Pengaturan |
 | *Worked example → fading* | Contoh terurai penuh → 1 langkah kosong → 2 langkah kosong → mandiri |
 | *Expertise reversal* | Siswa yang menjawab 3 soal berturut-turut benar boleh melewati contoh |
 | *Self-explanation* | Jelaskan ke Teman: susun urutan langkah, pilih alasan yang benar |

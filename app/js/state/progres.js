@@ -12,7 +12,7 @@ function awal() {
     kuis_terbaik: null,
     simulasi_berhasil: 0,
     statistik_salah: {},
-    pengaturan: { ukuran_teks: 'normal', animasi: 'nyala', cara_jawab: 'klik', suara: true, musik: false, buka_semua: false },
+    pengaturan: { ukuran_teks: 'normal', animasi: 'nyala', cara_jawab: 'klik', suara: true, musik: true, versi_suara: 2, buka_semua: false },
   };
 }
 
@@ -26,7 +26,14 @@ export function muat() {
   } catch {
     data = awal();
   }
-  data.pengaturan = { ...awal().pengaturan, ...(data.pengaturan || {}) };
+  const lama = data.pengaturan || {};
+  data.pengaturan = { ...awal().pengaturan, ...lama };
+  // Migrasi sekali: dulu musik mati & suara pelan. Nyalakan musik + efek untuk pengguna lama.
+  if (lama.versi_suara !== 2) {
+    data.pengaturan.musik = true;
+    data.pengaturan.suara = true;
+    data.pengaturan.versi_suara = 2;
+  }
   return data;
 }
 
