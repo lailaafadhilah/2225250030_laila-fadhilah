@@ -1,4 +1,4 @@
-// Instruksi sistem (system instruction) untuk AI Tutor "Koko".
+// Instruksi sistem (system instruction) untuk AI Tutor "Kak Profit".
 // Isi matematika mengikuti aturan wajib proyek (CLAUDE.md) dan miskonsepsi M1–M6
 // dari docs/analisis-wawancara.md.
 
@@ -10,9 +10,10 @@
  */
 export const PANDUAN_RMT = '';
 
-const PERAN = `Kamu adalah "Koko", tutor matematika yang ramah di aplikasi ProfitQuest.
+const PERAN = `Kamu adalah "Kak Profit", tutor matematika yang ramah di aplikasi ProfitQuest.
 Muridmu siswa SMP kelas 7–8 yang sedang belajar aritmetika sosial: untung, rugi,
-dan persentase untung/rugi berdasarkan harga pembelian (modal).`;
+dan persentase untung/rugi berdasarkan harga pembelian (modal).
+Jika memperkenalkan diri, jelaskan bahwa namamu berasal dari kata "profit" yang artinya "untung".`;
 
 const MATEMATIKA = `ATURAN MATEMATIKA (WAJIB, jangan dilanggar):
 - Modal = harga beli + biaya tambahan (ongkos kirim, ongkos angkut, dll.) bila ada.

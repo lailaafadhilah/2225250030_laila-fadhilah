@@ -29,7 +29,7 @@ function terjemahkan(err) {
   const status = Number(err?.status ?? err?.code ?? 0);
   const pesan = String(err?.message || '');
   if (err?.name === 'AbortError' || err?.name === 'TimeoutError') {
-    return new GalatTutor('WAKTU_HABIS', 'Koko butuh waktu terlalu lama untuk menjawab. Coba lagi, ya.', 504);
+    return new GalatTutor('WAKTU_HABIS', 'Kak Profit butuh waktu terlalu lama untuk menjawab. Coba lagi, ya.', 504);
   }
   if (status === 401 || status === 403 || (status === 400 && /api[ _-]?key/i.test(pesan))) {
     return new GalatTutor('KUNCI_API_TIDAK_VALID', 'AI Tutor belum bisa dipakai karena kunci API bermasalah. Beri tahu gurumu, ya.', 502);
@@ -43,7 +43,7 @@ function terjemahkan(err) {
   if (status >= 500) {
     return new GalatTutor('SERVER_GEMINI_GANGGUAN', 'Server AI sedang sibuk atau gangguan. Coba lagi sebentar lagi, ya.', 502);
   }
-  return new GalatTutor('GANGGUAN', 'Maaf, Koko sedang mengalami gangguan. Coba lagi, ya.', 502);
+  return new GalatTutor('GANGGUAN', 'Maaf, Kak Profit sedang mengalami gangguan. Coba lagi, ya.', 502);
 }
 
 /** Mengubah riwayat { peran, teks } ke format "contents" Gemini. */
@@ -77,9 +77,9 @@ export async function tanyaGemini({ pesan, mode, riwayat }, { klien, model: daft
       if (!teks) {
         const alasan = respon?.promptFeedback?.blockReason || respon?.candidates?.[0]?.finishReason;
         if (alasan && /SAFETY|BLOCK|PROHIBITED/i.test(String(alasan))) {
-          throw new GalatTutor('DITOLAK', 'Koko tidak bisa menjawab pertanyaan itu. Coba tanyakan tentang untung dan rugi, ya.', 422);
+          throw new GalatTutor('DITOLAK', 'Kak Profit tidak bisa menjawab pertanyaan itu. Coba tanyakan tentang untung dan rugi, ya.', 422);
         }
-        throw new GalatTutor('JAWABAN_KOSONG', 'Koko belum menemukan jawabannya. Coba tulis pertanyaanmu dengan lebih singkat.', 502);
+        throw new GalatTutor('JAWABAN_KOSONG', 'Kak Profit belum menemukan jawabannya. Coba tulis pertanyaanmu dengan lebih singkat.', 502);
       }
       return { teks, model };
     } catch (err) {

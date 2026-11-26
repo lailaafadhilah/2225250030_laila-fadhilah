@@ -8,9 +8,9 @@ const WAKTU_TUNGGU = 30_000;
 export const PESAN_GALAT = {
   OFFLINE: 'Kamu sedang offline. AI Tutor butuh internet. Menu lain tetap bisa dipakai, ya!',
   BELUM_SIAP: 'AI Tutor belum dihubungkan ke server oleh pengelola aplikasi.',
-  WAKTU_HABIS: 'Koko butuh waktu terlalu lama untuk menjawab. Coba lagi, ya.',
+  WAKTU_HABIS: 'Kak Profit butuh waktu terlalu lama untuk menjawab. Coba lagi, ya.',
   SERVER_TAK_TERJANGKAU: 'Server AI Tutor tidak bisa dihubungi. Periksa internetmu, lalu coba lagi.',
-  GANGGUAN: 'Maaf, Koko sedang mengalami gangguan. Coba lagi, ya.',
+  GANGGUAN: 'Maaf, Kak Profit sedang mengalami gangguan. Coba lagi, ya.',
   PESAN_KOSONG: 'Tulis dulu pertanyaanmu, ya.',
   PESAN_TERLALU_PANJANG: `Pesanmu terlalu panjang. Maksimal ${PANJANG_PESAN_MAKS} huruf, ya.`,
 };

@@ -10,7 +10,7 @@ const MENU = [
   { ikon: 'buku', teks: 'Materi', kelas: 'menu-merah-muda', tujuan: '#materi', perluNama: true },
   { ikon: 'toko', teks: 'Simulasi Jual Beli', kelas: 'menu-hijau', tujuan: '#simulasi' },
   { ikon: 'tanya', teks: 'Kuis', kelas: 'menu-ungu', tujuan: '#kuis', perluNama: true },
-  { ikon: 'chat', teks: 'Tanya Koko (AI)', kelas: 'menu-oranye', tujuan: '#tutor' },
+  { ikon: 'chat', teks: 'Tanya Kak Profit (AI)', kelas: 'menu-oranye', tujuan: '#tutor' },
   { ikon: 'orang', teks: 'Profil', kelas: 'menu-biru', tujuan: '#pengaturan' },
 ];
 

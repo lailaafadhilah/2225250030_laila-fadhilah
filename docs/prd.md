@@ -125,7 +125,7 @@ Kartu Situasi → Contoh Terurai (langkah satu per satu) → Contoh Rumpang → 
 | F20 | Pre-test & post-test | Modul tes terpisah untuk keperluan penelitian | Sebaiknya |
 | F21 | Kuesioner beban kognitif & SUS | Formulir singkat di akhir uji coba | Opsional |
 | F22 | Suara narasi | Narasi audio langkah (modalitas ganda) | Opsional |
-| F23 | AI Tutor "Tanya Koko" | Tanya jawab dengan Gemini: penjelasan konsep, rumus, langkah bertahap, petunjuk, contoh soal. Butuh internet; fitur lain tetap offline. Detail: [ai-tutor.md](ai-tutor.md) | Sebaiknya |
+| F23 | AI Tutor "Tanya Kak Profit" | Tanya jawab dengan Gemini: penjelasan konsep, rumus, langkah bertahap, petunjuk, contoh soal. Butuh internet; fitur lain tetap offline. Detail: [ai-tutor.md](ai-tutor.md) | Sebaiknya |
 
 ## 7. Kebutuhan Non-Fungsional
 

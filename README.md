@@ -15,7 +15,7 @@ Aplikasi web progresif (PWA) untuk siswa SMP yang mempelajari **Persentase Untun
 | [docs/konten-materi.md](docs/konten-materi.md) | Kamus istilah, contoh soal, aturan angka |
 | [docs/rencana-pengujian.md](docs/rencana-pengujian.md) | Uji teknis, validasi ahli, uji coba siswa |
 | [docs/deployment.md](docs/deployment.md) | Hosting, instalasi PWA, brosur & QR |
-| [docs/ai-tutor.md](docs/ai-tutor.md) | AI Tutor "Tanya Koko": backend Vercel + Gemini, keamanan, deploy |
+| [docs/ai-tutor.md](docs/ai-tutor.md) | AI Tutor "Tanya Kak Profit": backend Vercel + Gemini, keamanan, deploy |
 | [docs/roadmap.md](docs/roadmap.md) | Tahapan ADDIE & daftar tugas per sprint |
 | [CLAUDE.md](CLAUDE.md) | Aturan kerja untuk Claude Code |
 

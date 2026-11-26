@@ -7,7 +7,7 @@ import { tanyaGemini, buatKlienGemini, GalatTutor } from './gemini.js';
 
 const PESAN_TERLALU_CEPAT = {
   TERLALU_CEPAT: 'Pelan-pelan, ya. Tunggu sebentar sebelum bertanya lagi.',
-  RAMAI: 'Koko sedang menjawab banyak teman. Coba lagi sebentar lagi, ya.',
+  RAMAI: 'Kak Profit sedang menjawab banyak teman. Coba lagi sebentar lagi, ya.',
   BATAS_HARIAN: 'Kamu sudah banyak bertanya hari ini. Lanjutkan besok, ya!',
 };
 
@@ -66,7 +66,7 @@ export function buatPenangan(deps = {}) {
       const { teks } = await tanyaGemini(data, { klien, model: daftarModel(env) });
       return jawabJson(200, { ok: true, teks }, cors);
     } catch (err) {
-      const g = err instanceof GalatTutor ? err : new GalatTutor('GANGGUAN', 'Maaf, Koko sedang mengalami gangguan. Coba lagi, ya.', 502);
+      const g = err instanceof GalatTutor ? err : new GalatTutor('GANGGUAN', 'Maaf, Kak Profit sedang mengalami gangguan. Coba lagi, ya.', 502);
       // Log ringkas tanpa isi pesan siswa (privasi)
       const asli = err?.cause || err;
       console.error(`[tutor] ${g.kode}: ${asli?.status ?? ''} ${String(asli?.message || '').slice(0, 200)}`);

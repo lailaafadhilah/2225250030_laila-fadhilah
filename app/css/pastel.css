@@ -166,7 +166,7 @@ body.tanpa-kepala .layar { padding: 0 0 5.5rem; max-width: 30rem; }
   :root:not([data-theme="light"]) .nav a { color: #F3E6D6; }
 }
 
-/* ---------- AI Tutor "Tanya Koko" ---------- */
+/* ---------- AI Tutor "Tanya Kak Profit" ---------- */
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .menu-oranye { background: var(--p-oranye); box-shadow: 0 5px 0 var(--p-oranye-tua); --bayang-menu: var(--p-oranye-tua); }
 :root { --p-oranye: #FFCB9A; --p-oranye-tua: #E8A065; }

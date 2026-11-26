@@ -1,13 +1,13 @@
-# AI Tutor "Tanya Koko" (Google Gemini API)
+# AI Tutor "Tanya Kak Profit" (Google Gemini API)
 
-Fitur F23. Siswa bisa bertanya tentang untung, rugi, dan persentase kepada tutor AI bernama **Koko**.
+Fitur F23. Siswa bisa bertanya tentang untung, rugi, dan persentase kepada tutor AI bernama **Kak Profit**.
 Frontend tetap di GitHub Pages. Kunci API Gemini hanya disimpan di backend **Vercel Functions**.
 
 ```
 HP siswa (GitHub Pages)                Vercel (backend/)                      Google
 app/js/screens/tutor.js  ── POST ──▶  api/tutor.js                ── SDK ──▶  Gemini API
   pertanyaan saja (tanpa              CORS · validasi · pembatas              (GEMINI_API_KEY
-  nama/kelas/progres)                 instruksi Koko · terjemah galat          hanya di sini)
+  nama/kelas/progres)                 instruksi Kak Profit · terjemah galat          hanya di sini)
 ```
 
 ## 1. Berkas
@@ -19,7 +19,7 @@ app/js/screens/tutor.js  ── POST ──▶  api/tutor.js                ─�
 | `backend/lib/tangani.js` | Urutan pemeriksaan: asal → metode → JSON & ukuran → pembatas → kunci → Gemini |
 | `backend/lib/validasi.js` | Validasi input, batas panjang, penyamaran data pribadi, daftar `MODE` |
 | `backend/lib/pembatas.js` | Rate limit di memori (per IP & total) |
-| `backend/lib/instruksi.js` | Instruksi sistem Koko + tempat **PANDUAN_RMT** |
+| `backend/lib/instruksi.js` | Instruksi sistem Kak Profit + tempat **PANDUAN_RMT** |
 | `backend/lib/gemini.js` | Memanggil `@google/genai`, model cadangan, menerjemahkan galat |
 | `backend/lib/konfigurasi.js` | Origin yang diizinkan, daftar model, angka batas |
 | `backend/server-lokal.js` | Menjalankan backend di laptop tanpa akun Vercel |
@@ -32,7 +32,7 @@ app/js/screens/tutor.js  ── POST ──▶  api/tutor.js                ─�
 
 ## 2. Jenis bantuan (`mode`)
 
-| Mode | Tombol | Perilaku Koko |
+| Mode | Tombol | Perilaku Kak Profit |
 |---|---|---|
 | `tanya` | 📘 Jelaskan untung & rugi, 🧮 Rumus persentase | Penjelasan konsep singkat + contoh sehari-hari |
 | `contoh` | 🛒 Beri contoh soal | Membuat 1 soal cerita baru **tanpa** jawaban, lalu menawarkan mengecek |
@@ -43,9 +43,9 @@ Daftar `MODE` di `backend/lib/validasi.js` adalah sumber utama. `validate_conten
 
 ## 3. Pendekatan RMT (Rogorius Mathematical Thinking)
 
-**Status: menunggu ringkasan RMT dari dosen.** `PANDUAN_RMT` di `backend/lib/instruksi.js` sengaja dikosongkan, sehingga Koko tidak menyebut RMT sama sekali. Setelah ringkasan diterima, tahapan dan prinsipnya ditulis di sana (tanpa menambah istilah karangan), lalu `npm test` dijalankan.
+**Status: menunggu ringkasan RMT dari dosen.** `PANDUAN_RMT` di `backend/lib/instruksi.js` sengaja dikosongkan, sehingga Kak Profit tidak menyebut RMT sama sekali. Setelah ringkasan diterima, tahapan dan prinsipnya ditulis di sana (tanpa menambah istilah karangan), lalu `npm test` dijalankan.
 
-Sementara itu Koko memakai **4 Langkah Juragan** dan daftar miskonsepsi M1–M6 yang sudah ada di aplikasi.
+Sementara itu Kak Profit memakai **4 Langkah Juragan** dan daftar miskonsepsi M1–M6 yang sudah ada di aplikasi.
 
 ## 4. Menjalankan backend di laptop
 
@@ -91,7 +91,7 @@ Mengganti kunci API: Vercel → Project → Settings → Environment Variables �
 - **Pembatas**: 6 pertanyaan/menit dan 80/hari per IP, serta 30/menit untuk semua pengguna per instans. Ini perlindungan "usaha terbaik" karena memori tiap instans Vercel terpisah. Untuk perlindungan lebih kuat, tambahkan aturan *Rate Limiting* di **Vercel → Firewall** untuk path `/api/tutor`.
 - **Privasi siswa**: yang dikirim hanya teks pertanyaan + 6 giliran terakhir. Nama, kelas, dan progres **tidak** dikirim. Nama siswa yang tertulis di pesan diganti "aku" di HP. Email, nomor HP, dan angka panjang (NIK/NISN) disamarkan di backend. Percakapan hanya ada di memori (hilang saat aplikasi ditutup). Log server tidak mencatat isi pesan.
 - **Catatan Free Tier**: menurut ketentuan Google, data dari Gemini API Free Tier dapat dipakai Google untuk meningkatkan layanannya. Karena itu aplikasi mengingatkan siswa agar tidak menulis data pribadi.
-- **Batas topik**: instruksi Koko menolak pertanyaan di luar matematika dan mengabaikan perintah untuk mengubah aturannya.
+- **Batas topik**: instruksi Kak Profit menolak pertanyaan di luar matematika dan mengabaikan perintah untuk mengubah aturannya.
 
 ## 7. Pesan galat
 
@@ -100,7 +100,7 @@ Mengganti kunci API: Vercel → Project → Settings → Environment Variables �
 | `OFFLINE` | HP tidak ada internet | "Kamu sedang offline… Menu lain tetap bisa dipakai" |
 | `BELUM_SIAP` | Alamat Vercel belum diisi di `konfigurasi.js` | "AI Tutor belum dihubungkan ke server" |
 | `SERVER_TAK_TERJANGKAU` | Backend mati / alamat salah | "Server AI Tutor tidak bisa dihubungi" |
-| `WAKTU_HABIS` | Jawaban > 25–30 detik | "Koko butuh waktu terlalu lama" |
+| `WAKTU_HABIS` | Jawaban > 25–30 detik | "Kak Profit butuh waktu terlalu lama" |
 | `KUNCI_API_TIDAK_VALID` | Kunci salah / dicabut | "kunci API bermasalah. Beri tahu gurumu" |
 | `KUOTA_HABIS` | Kuota Free Tier habis (429) | "Kuota AI Tutor hari ini sudah habis" |
 | `SERVER_GEMINI_GANGGUAN` | Gemini 5xx / sibuk | "Server AI sedang sibuk atau gangguan" |

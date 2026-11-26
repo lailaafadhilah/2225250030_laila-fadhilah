@@ -10,7 +10,7 @@ Baca dulu sebelum mengerjakan fitur:
 - `docs/arsitektur.md` — struktur folder, API `core/`, dan model data
 - `docs/ui-ux.md` — token warna, tata letak, dan gaya bahasa
 - `docs/konten-materi.md` — aturan angka soal & contoh
-- `docs/ai-tutor.md` — AI Tutor "Tanya Koko" (backend Vercel + Gemini), keamanan, deploy
+- `docs/ai-tutor.md` — AI Tutor "Tanya Kak Profit" (backend Vercel + Gemini), keamanan, deploy
 
 ## Tumpukan Teknologi
 - **App (JavaScript):** HTML + CSS + JavaScript ES Modules *vanilla* di folder `app/`. **Jangan** menambah framework (React/Vue), bundler, atau dependensi npm tanpa persetujuan eksplisit.

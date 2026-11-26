@@ -216,7 +216,7 @@
   .konfeti { display: none; }
 }
 
-/* ---------- AI Tutor: titik "Koko sedang berpikir" (hanya selama menunggu jawaban) ---------- */
+/* ---------- AI Tutor: titik "Kak Profit sedang berpikir" (hanya selama menunggu jawaban) ---------- */
 @keyframes titik-loncat { 0%, 80%, 100% { opacity: 0.3; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-4px); } }
 .titik-tiga i { animation: titik-loncat 0.9s ease-in-out infinite; }
 .titik-tiga i:nth-child(2) { animation-delay: 0.15s; }

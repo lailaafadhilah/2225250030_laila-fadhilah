@@ -1,4 +1,4 @@
-// Layar AI Tutor "Tanya Koko": percakapan dengan Gemini lewat backend Vercel.
+// Layar AI Tutor "Tanya Kak Profit": percakapan dengan Gemini lewat backend Vercel.
 // Privasi: nama/kelas/progres TIDAK dikirim. Nama siswa yang tertulis di pesan diganti "aku".
 import { h, tombol } from '../ui/dom.js';
 import { muatTutor } from '../konten.js';
@@ -32,21 +32,21 @@ function gelembung(item) {
   return h('div', { class: `tutor-baris tutor-koko${item.galat ? ' tutor-galat' : ''}` },
     h('span', { class: 'tutor-avatar', 'aria-hidden': 'true' }, item.galat ? '⚠️' : '🪙'),
     h('div', { class: 'tutor-gelembung' },
-      h('span', { class: 'sr-only' }, 'Koko: '),
+      h('span', { class: 'sr-only' }, 'Kak Profit: '),
       item.galat ? h('p', {}, item.teks) : formatJawaban(item.teks)));
 }
 
 export async function layarTutor(akar, _param, app) {
-  app.aturJudul('🪙 Tanya Koko (AI)', { kembali: '#beranda' });
+  app.aturJudul('🪙 Tanya Kak Profit (AI)', { kembali: '#beranda' });
   const konten = await muatTutor();
   let mode = 'tanya';
   let sibuk = false;
 
-  const log = h('div', { class: 'tutor-log', role: 'log', 'aria-live': 'polite', 'aria-label': 'Percakapan dengan Koko' });
+  const log = h('div', { class: 'tutor-log', role: 'log', 'aria-live': 'polite', 'aria-label': 'Percakapan dengan Kak Profit' });
   const status = h('p', { class: 'tutor-status', role: 'status' });
   const isian = h('textarea', {
     class: 'input-teks tutor-isian', rows: '2', maxlength: String(PANJANG_PESAN_MAKS),
-    placeholder: 'Tulis pertanyaanmu…', 'aria-label': 'Pertanyaan untuk Koko', enterkeyhint: 'send',
+    placeholder: 'Tulis pertanyaanmu…', 'aria-label': 'Pertanyaan untuk Kak Profit', enterkeyhint: 'send',
   });
   const hitung = h('span', { class: 'tutor-hitung', 'aria-hidden': 'true' }, `0/${PANJANG_PESAN_MAKS}`);
   const pilMode = h('button', { type: 'button', class: 'tutor-pil-mode', hidden: true, 'aria-label': 'Hapus jenis bantuan' });
@@ -111,7 +111,7 @@ export async function layarTutor(akar, _param, app) {
     perbaruiStatus();
     const berpikir = h('div', { class: 'tutor-baris tutor-koko tutor-berpikir' },
       h('span', { class: 'tutor-avatar', 'aria-hidden': 'true' }, '🪙'),
-      h('div', { class: 'tutor-gelembung' }, h('span', { class: 'sr-only' }, 'Koko sedang berpikir'),
+      h('div', { class: 'tutor-gelembung' }, h('span', { class: 'sr-only' }, 'Kak Profit sedang berpikir'),
         h('span', { class: 'titik-tiga', 'aria-hidden': 'true' }, h('i'), h('i'), h('i'))));
     log.append(berpikir);
     berpikir.scrollIntoView({ block: 'end', behavior: bolehAnimasi() ? 'smooth' : 'auto' });
