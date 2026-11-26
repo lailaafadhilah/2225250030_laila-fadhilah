@@ -13,13 +13,17 @@ export function asalDiizinkan(env = process.env) {
 }
 
 /**
- * Daftar model yang dicoba berurutan. Model pertama bisa diganti lewat GEMINI_MODEL.
- * Alias "-latest" otomatis mengikuti versi terbaru dari Google, jadi tidak cepat usang.
+ * Daftar model yang dicoba berurutan. Model pertama bisa diganti lewat GEMINI_MODEL
+ * (tanpa mengubah kode: Vercel → Settings → Environment Variables).
  * Flash-Lite dipilih sebagai bawaan karena kuota Free Tier-nya paling longgar.
+ * Bila Google menghapus sebuah model (404), backend otomatis mencoba model berikutnya.
+ * Nama model dicek di https://ai.google.dev/gemini-api/docs/models (November 2026).
  */
+export const MODEL_CADANGAN = ['gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-3.8-flash'];
+
 export function daftarModel(env = process.env) {
   const pilihan = (env.GEMINI_MODEL || '').trim();
-  return [...new Set([pilihan, 'gemini-flash-lite-latest', 'gemini-flash-latest'].filter(Boolean))];
+  return [...new Set([pilihan, ...MODEL_CADANGAN].filter(Boolean))];
 }
 
 export const BATAS = {

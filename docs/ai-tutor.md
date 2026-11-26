@@ -72,7 +72,7 @@ Cek cepat: buka `http://localhost:3000/api/kesehatan` → `"kunciTerpasang": tru
 3. **Root Directory**: klik *Edit*, pilih **`backend`**. Framework Preset: **Other**. Build Command dibiarkan kosong.
 4. **Environment Variables**:
    - `GEMINI_API_KEY` = kunci dari https://aistudio.google.com/apikey (**wajib**)
-   - `GEMINI_MODEL` = opsional. Kosong berarti memakai `gemini-flash-lite-latest`.
+   - `GEMINI_MODEL` = opsional. Kosong berarti memakai `gemini-3.5-flash-lite`.
    - `ALLOWED_ORIGINS` = opsional. `https://lailaafadhilah.github.io` sudah otomatis diizinkan.
 5. Klik **Deploy**. Catat alamatnya, misalnya `https://profitquest-ai.vercel.app`.
 6. Cek: buka `https://ALAMAT-KAMU.vercel.app/api/kesehatan` → harus `"ok": true, "kunciTerpasang": true`.
@@ -114,7 +114,9 @@ Pertanyaan yang gagal dikembalikan ke kotak isian agar siswa bisa menekan **Kiri
 ## 8. Model & kuota
 
 - SDK: `@google/genai` **3.6.1** (dipatok tepat). Versi 3.x membutuhkan Node.js 22+.
-- Model bawaan: `gemini-flash-lite-latest` (alias yang otomatis mengikuti versi Flash-Lite terbaru, kuota Free Tier paling longgar). Bila model tidak ditemukan (404), backend otomatis mencoba `gemini-flash-latest`.
+- Model bawaan: `gemini-3.5-flash-lite` (kuota Free Tier paling longgar). Bila model tidak ditemukan (404), backend otomatis mencoba `gemini-3.1-flash-lite`, lalu `gemini-3.8-flash` (`MODEL_CADANGAN` di `backend/lib/konfigurasi.js`).
+- Google rutin mempensiunkan model lama. Bila semua model cadangan sudah tidak ada (galat `MODEL_TIDAK_ADA`), isi `GEMINI_MODEL` di Vercel dengan nama model terbaru dari https://ai.google.dev/gemini-api/docs/models lalu Redeploy, tanpa mengubah kode.
+- Alamat backend produksi: `https://2225250030laila-fadhilah-backend.vercel.app` (tercatat di `app/js/ai/konfigurasi.js`).
 - Kuota Free Tier berubah-ubah dan dihitung **per proyek Google**. Cek angka terbaru di Google AI Studio → *Rate limits* untuk proyek kamu. Untuk satu kelas yang bertanya bersamaan, kuota harian bisa cepat habis. Pertimbangkan memakai satu kunci per kelas atau mengaktifkan *billing*.
 
 ## 9. Pengujian

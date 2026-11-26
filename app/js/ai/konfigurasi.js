@@ -1,6 +1,6 @@
 // Alamat backend AI Tutor (Vercel). BUKAN rahasia: kunci API hanya ada di server Vercel.
 // Setelah deploy ke Vercel, ganti alamat di bawah dengan alamat proyek Vercel kamu.
-const ALAMAT_PRODUKSI = 'https://GANTI-NAMA-PROYEK.vercel.app/api/tutor';
+const ALAMAT_PRODUKSI = 'https://2225250030laila-fadhilah-backend.vercel.app/api/tutor';
 
 /** Saat aplikasi dibuka dari laptop (localhost), pakai backend lokal (npm run dev). */
 const ALAMAT_LOKAL = 'http://localhost:3000/api/tutor';

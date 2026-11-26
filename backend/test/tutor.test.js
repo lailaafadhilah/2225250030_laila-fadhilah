@@ -51,7 +51,7 @@ test('jawaban sukses + header CORS untuk GitHub Pages', async () => {
   assert.equal(r.headers.get('access-control-allow-origin'), ASAL);
   assert.deepEqual(await r.json(), { ok: true, teks: 'Untung = harga jual − modal.' });
   const arg = klien.panggilan[0];
-  assert.equal(arg.model, 'gemini-flash-lite-latest');
+  assert.equal(arg.model, 'gemini-3.5-flash-lite');
   assert.match(arg.config.systemInstruction, /dibagi MODAL/);
   assert.equal(arg.contents.at(-1).parts[0].text, 'Apa itu untung?');
 });
@@ -143,7 +143,7 @@ test('model tidak ada (404) → otomatis mencoba model cadangan', async () => {
   const tangani = buatPenangan({ env: { ...ENV, GEMINI_MODEL: 'model-usang' }, klien, pembatas: tanpaBatas });
   const r = await tangani(minta({ pesan: 'hai' }));
   assert.equal((await r.json()).teks, 'dari cadangan');
-  assert.deepEqual(klien.panggilan.map((p) => p.model), ['model-usang', 'gemini-flash-lite-latest']);
+  assert.deepEqual(klien.panggilan.map((p) => p.model), ['model-usang', 'gemini-3.5-flash-lite']);
 });
 
 test('jawaban kosong karena diblokir → DITOLAK', async () => {
