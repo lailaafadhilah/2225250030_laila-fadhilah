@@ -8,6 +8,7 @@ Memeriksa:
   - pilihan ganda punya tepat satu jawaban benar
   - bank soal tersedia untuk setiap templat yang dipakai wilayah
   - semua berkas di app/ masuk daftar precache service worker (agar offline)
+  - tutor.json (AI Tutor) lengkap dan jenis bantuannya sama dengan backend
 Keluar dengan kode 1 jika ada kesalahan.
 """
 
@@ -238,6 +239,38 @@ def cek_precache() -> None:
     print(f"  Ukuran app/: {ukuran / 1024:.0f} KB")
 
 
+def mode_backend() -> set[str]:
+    """Membaca daftar MODE dari backend/lib/validasi.js agar frontend & backend selalu sama."""
+    jalur = AKAR / "backend" / "lib" / "validasi.js"
+    if not jalur.is_file():
+        return set()
+    cocok = re.search(r"export const MODE = \[([^\]]*)\]", jalur.read_text(encoding="utf-8"))
+    return set(re.findall(r"'(\w+)'", cocok.group(1))) if cocok else set()
+
+
+def cek_tutor(tutor: dict) -> None:
+    """Memeriksa teks & tombol saran AI Tutor."""
+    for kunci in ("sapaan", "pengingat"):
+        if not str(tutor.get(kunci, "")).strip():
+            salah("tutor.json", f"'{kunci}' kosong")
+    mode_sah = mode_backend()
+    if not mode_sah:
+        salah("tutor.json", "daftar MODE di backend/lib/validasi.js tidak terbaca")
+    saran = tutor.get("saran") or []
+    if not saran:
+        salah("tutor.json", "'saran' kosong")
+    for i, s in enumerate(saran):
+        tempat = f"tutor.json saran #{i + 1}"
+        if s.get("mode") not in mode_sah:
+            salah(tempat, f"mode '{s.get('mode')}' tidak dikenal backend {sorted(mode_sah)}")
+        if not str(s.get("label", "")).strip():
+            salah(tempat, "label kosong")
+        if bool(s.get("pesan")) == bool(s.get("templat")):
+            salah(tempat, "isi tepat salah satu: 'pesan' (langsung dikirim) atau 'templat' (diisi ke kotak)")
+        if len(s.get("pesan") or s.get("templat") or "") > 500:
+            salah(tempat, "teks melebihi 500 huruf (batas pesan backend)")
+
+
 def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
@@ -277,6 +310,11 @@ def main() -> None:
                 if data.get("id") != w["id"]:
                     salah(w["berkas"], "id tidak sama dengan wilayah.json")
                 cek_wilayah(data, bank, w["berkas"], id_terpakai, bab_materi)
+
+    tutor = baca_json(KONTEN / "tutor.json")
+    if tutor:
+        cek_tutor(tutor)
+        print(f"  AI Tutor: {len(tutor.get('saran', []))} tombol saran")
 
     cek_precache()
     print(f"  Bank soal: {jumlah_bank} soal")

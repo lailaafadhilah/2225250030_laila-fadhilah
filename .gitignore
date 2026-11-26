@@ -6,3 +6,10 @@ brosur/qr.png
 
 # hasil build (bisa dibuat ulang dengan tools/bundel_satu_file.py)
 dist/
+
+# Backend AI Tutor: rahasia & hasil instalasi (JANGAN di-commit)
+.env
+.env.*
+!.env.example
+node_modules/
+.vercel/

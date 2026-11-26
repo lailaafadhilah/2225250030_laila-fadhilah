@@ -125,6 +125,7 @@ Kartu Situasi → Contoh Terurai (langkah satu per satu) → Contoh Rumpang → 
 | F20 | Pre-test & post-test | Modul tes terpisah untuk keperluan penelitian | Sebaiknya |
 | F21 | Kuesioner beban kognitif & SUS | Formulir singkat di akhir uji coba | Opsional |
 | F22 | Suara narasi | Narasi audio langkah (modalitas ganda) | Opsional |
+| F23 | AI Tutor "Tanya Koko" | Tanya jawab dengan Gemini: penjelasan konsep, rumus, langkah bertahap, petunjuk, contoh soal. Butuh internet; fitur lain tetap offline. Detail: [ai-tutor.md](ai-tutor.md) | Sebaiknya |
 
 ## 7. Kebutuhan Non-Fungsional
 
@@ -145,6 +146,7 @@ Kartu Situasi → Contoh Terurai (langkah satu per satu) → Contoh Rumpang → 
 - **Front-end (JavaScript):** HTML5, CSS3, JavaScript ES Modules *vanilla* (tanpa framework berat), Service Worker, dan Web App Manifest.
 - **Python:** perkakas pengembangan, yaitu generator & validator bank soal, implementasi rujukan rumus untuk uji silang, server pengembangan lokal, generator QR code brosur, dan pengolah data uji coba (opsional, fase 2).
 - **Hosting:** statis HTTPS (GitHub Pages / Netlify / Vercel), gratis.
+- **Backend AI Tutor:** Vercel Functions (Node.js 22) + Google Gemini API Free Tier melalui SDK `@google/genai`. Kunci API hanya di server.
 
 Detail ada di [arsitektur.md](arsitektur.md).
 

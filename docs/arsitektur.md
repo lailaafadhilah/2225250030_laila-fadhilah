@@ -154,6 +154,7 @@ modalDariHargaJual(hargaJual, persen, jenis)     // → number
 - **Service worker:** strategi *cache-first* untuk aset & konten (precache saat install). Nama cache memakai versi (`pq-v1.0.0`) dan cache lama dihapus saat `activate`. Siswa diberi notifikasi "Versi baru tersedia — muat ulang".
 - **Tombol Pasang:** tangkap `beforeinstallprompt` (Android/desktop). Di iOS tampilkan panduan "Bagikan → Tambahkan ke Layar Utama".
 - **Wajib HTTPS** (kecuali `localhost`).
+- **AI Tutor:** service worker hanya menangani permintaan ke origin aplikasi sendiri, jadi panggilan ke backend Vercel selalu lewat jaringan. Layar `#tutor` & kontennya tetap di-precache; saat offline layar menampilkan pemberitahuan. Lihat [ai-tutor.md](ai-tutor.md).
 
 ## 7. Peran Python Secara Rinci
 

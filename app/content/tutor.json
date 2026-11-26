@@ -1,0 +1,31 @@
+{
+  "sapaan": "Halo! Aku Koko, tutor AI ProfitQuest. Tanyakan apa saja tentang untung dan rugi, ya. Pilih bantuan di bawah atau tulis pertanyaanmu sendiri.",
+  "pengingat": "Koko AI bisa keliru. Cek lagi dengan 4 Langkah Juragan. Jangan tulis nama lengkap, alamat, atau nomor HP.",
+  "saran": [
+    {
+      "mode": "tanya",
+      "label": "📘 Jelaskan untung & rugi",
+      "pesan": "Apa bedanya untung dan rugi? Jelaskan dengan contoh jual beli sehari-hari."
+    },
+    {
+      "mode": "tanya",
+      "label": "🧮 Rumus persentase",
+      "pesan": "Bagaimana rumus persentase untung dan rugi? Kenapa dibagi harga beli, bukan harga jual?"
+    },
+    {
+      "mode": "contoh",
+      "label": "🛒 Beri contoh soal",
+      "pesan": "Beri aku satu contoh soal persentase untung atau rugi dari kegiatan jual beli sehari-hari."
+    },
+    {
+      "mode": "langkah",
+      "label": "🪜 Langkah demi langkah",
+      "templat": "Bantu aku langkah demi langkah. Soalnya: "
+    },
+    {
+      "mode": "petunjuk",
+      "label": "💡 Aku butuh petunjuk",
+      "templat": "Aku kesulitan dengan soal ini, beri petunjuk saja: "
+    }
+  ]
+}

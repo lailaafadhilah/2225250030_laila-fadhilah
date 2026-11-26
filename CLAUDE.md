@@ -10,16 +10,20 @@ Baca dulu sebelum mengerjakan fitur:
 - `docs/arsitektur.md` — struktur folder, API `core/`, dan model data
 - `docs/ui-ux.md` — token warna, tata letak, dan gaya bahasa
 - `docs/konten-materi.md` — aturan angka soal & contoh
+- `docs/ai-tutor.md` — AI Tutor "Tanya Koko" (backend Vercel + Gemini), keamanan, deploy
 
 ## Tumpukan Teknologi
 - **App (JavaScript):** HTML + CSS + JavaScript ES Modules *vanilla* di folder `app/`. **Jangan** menambah framework (React/Vue), bundler, atau dependensi npm tanpa persetujuan eksplisit.
 - **Python (3.10+):** hanya untuk perkakas di `tools/` dan uji di `tests/py`. Dependensi dicatat di `requirements.txt`.
-- **PWA:** `app/manifest.webmanifest` + `app/sw.js`. Situs statis, tanpa backend.
+- **PWA:** `app/manifest.webmanifest` + `app/sw.js`. Situs statis di GitHub Pages.
+- **Backend AI Tutor (Node.js 22+):** hanya di folder `backend/` (Vercel Functions + `@google/genai`). Satu-satunya dependensi npm yang disetujui ada di `backend/package.json`. Frontend `app/` tetap tanpa npm.
 
 ## Perintah
 ```bash
 python tools/serve.py --port 8000         # server lokal, buka http://localhost:8000
-node --test tests/js                      # uji rumus JS
+node --test "tests/js/*.test.js"         # uji rumus JS (Node 22 butuh pola glob)
+cd backend && npm test                    # uji backend AI Tutor (Gemini ditiru)
+cd backend && npm run dev                 # backend lokal → http://localhost:3000/api/tutor
 python -m pytest tests/py                 # uji rumus Python
 python tools/validate_content.py          # validasi semua konten JSON
 python tools/generate_soal.py --per-templat 20   # tools/templat-soal.json → app/content/bank-soal.json
@@ -62,7 +66,10 @@ Jalankan **ketiga** perintah uji/validasi setelah mengubah `core/`, `tools/profi
 - Setiap berkas baru di `app/` yang perlu offline harus ditambahkan ke daftar precache di `sw.js`, dan `VERSI` cache dinaikkan.
 
 ## Batasan
-- Tanpa login, tanpa analytics pihak ketiga, dan tanpa mengirim data siswa ke server.
+- Tanpa login, tanpa analytics pihak ketiga, dan tanpa mengirim data siswa ke server. AI Tutor hanya mengirim teks pertanyaan (tanpa nama/kelas/progres).
+- `GEMINI_API_KEY` hanya di environment variable Vercel / `backend/.env`. Jangan pernah menulis kunci API di `app/` atau meng-commit `.env`.
+- `PANDUAN_RMT` di `backend/lib/instruksi.js` hanya diisi dari ringkasan RMT resmi dosen. Jangan mengarang tahapan/istilah RMT.
+- Daftar `MODE` di `backend/lib/validasi.js` harus sama dengan `mode` di `app/content/tutor.json` (dicek `validate_content.py`).
 - Total ukuran `app/` usahakan ≤ 1,5 MB.
 - Harus berjalan di Chrome Android 8+ dengan lebar layar 320 px.
 - Bahasa Indonesia baku tetapi ramah siswa SMP: kalimat pendek, sapaan "kamu".

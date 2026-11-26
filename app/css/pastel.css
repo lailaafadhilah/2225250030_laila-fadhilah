@@ -165,3 +165,62 @@ body.tanpa-kepala .layar { padding: 0 0 5.5rem; max-width: 30rem; }
   :root:not([data-theme="light"]) .nav { background: #2A2420; }
   :root:not([data-theme="light"]) .nav a { color: #F3E6D6; }
 }
+
+/* ---------- AI Tutor "Tanya Koko" ---------- */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.menu-oranye { background: var(--p-oranye); box-shadow: 0 5px 0 var(--p-oranye-tua); --bayang-menu: var(--p-oranye-tua); }
+:root { --p-oranye: #FFCB9A; --p-oranye-tua: #E8A065; }
+
+.tutor { display: flex; flex-direction: column; gap: 0.75rem; min-height: calc(100dvh - 7rem); }
+.tutor-status {
+  margin: 0; padding: 0.6rem 0.8rem; border-radius: var(--radius); border: 2px dashed var(--tepi);
+  background: var(--krem); color: var(--tepi); font-weight: 700; font-size: 0.95rem;
+}
+.tutor-log { flex: 1; display: flex; flex-direction: column; gap: 0.7rem; }
+.tutor-baris { display: flex; align-items: flex-end; gap: 0.45rem; }
+.tutor-siswa { justify-content: flex-end; }
+.tutor-avatar {
+  flex: none; display: grid; place-items: center; width: 2.3rem; height: 2.3rem; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #FFE58A, #F2B33D); border: 2px solid var(--tepi); font-size: 1.15rem;
+}
+.tutor-gelembung {
+  max-width: 85%; padding: 0.6rem 0.85rem; border-radius: 18px; border: 2px solid var(--tepi);
+  line-height: 1.5; overflow-wrap: anywhere;
+}
+.tutor-gelembung p { margin: 0 0 0.45rem; }
+.tutor-gelembung p:last-child, .tutor-gelembung ol:last-child, .tutor-gelembung ul:last-child { margin-bottom: 0; }
+.tutor-gelembung ol, .tutor-gelembung ul { margin: 0 0 0.45rem; padding-left: 1.3rem; }
+.tutor-gelembung li { margin-bottom: 0.25rem; }
+.tutor-koko .tutor-gelembung { background: var(--kartu); color: var(--teks); border-bottom-left-radius: 6px; box-shadow: 0 3px 0 rgb(91 70 54 / 0.18); }
+.tutor-siswa .tutor-gelembung { background: var(--p-kuning); color: var(--tepi); border-bottom-right-radius: 6px; }
+.tutor-galat .tutor-gelembung { background: var(--rugi-muda); color: var(--teks); border-style: dashed; }
+.tutor-label-mode { display: inline-block; margin-bottom: 0.2rem; font-size: 0.8rem; font-weight: 800; opacity: 0.85; }
+.titik-tiga { display: inline-flex; gap: 0.3rem; padding: 0.35rem 0.1rem; }
+.titik-tiga i { width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--tepi); }
+
+.tutor-saran { display: flex; gap: 0.5rem; overflow-x: auto; padding: 0.2rem 0 0.5rem; scrollbar-width: thin; }
+.tutor-chip {
+  flex: none; min-height: var(--sentuh); padding: 0.4rem 0.9rem; border-radius: 999px; border: 2px solid var(--tepi);
+  background: var(--krem); color: var(--tepi); font-family: var(--font-bulat); font-weight: 800; font-size: 0.92rem;
+  box-shadow: 0 3px 0 var(--p-oranye-tua); cursor: pointer;
+}
+.tutor-chip:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--p-oranye-tua); }
+.tutor-chip:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.tutor-form {
+  position: sticky; bottom: 0; z-index: 2; display: grid; gap: 0.4rem;
+  margin: 0 calc(var(--spasi) * -2); padding: 0.6rem calc(var(--spasi) * 2) calc(0.6rem + env(safe-area-inset-bottom));
+  background: var(--latar); border-top: 3px solid var(--tepi); border-radius: 18px 18px 0 0;
+}
+.tutor-isian-bungkus { position: relative; display: grid; gap: 0.3rem; }
+.tutor-isian { resize: none; min-height: var(--sentuh); font-size: 1rem; padding-bottom: 1.4rem; }
+.tutor-hitung { position: absolute; right: 0.7rem; bottom: 0.35rem; font-size: 0.75rem; color: var(--teks-lembut); pointer-events: none; }
+.tutor-hitung-penuh { color: var(--rugi); font-weight: 800; }
+.tutor-pil-mode {
+  justify-self: start; min-height: 2rem; padding: 0.15rem 0.7rem; border-radius: 999px; border: 2px solid var(--tepi);
+  background: var(--p-oranye); color: var(--tepi); font-weight: 800; font-size: 0.85rem; cursor: pointer;
+}
+.tutor-tombol { display: flex; gap: 0.5rem; }
+.tutor-tombol .btn { margin: 0; }
+.tutor-kirim { flex: 1; }
+.tutor-pengingat { margin: 0; font-size: 0.8rem; text-align: center; }

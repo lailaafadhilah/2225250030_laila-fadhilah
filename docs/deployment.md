@@ -8,6 +8,9 @@ Pilih salah satu:
 
 PWA **wajib** disajikan lewat HTTPS. Ketiga layanan di atas menyediakannya otomatis.
 
+### Backend AI Tutor (Vercel)
+Frontend tetap di GitHub Pages. Backend `backend/` di-deploy terpisah ke Vercel (Root Directory = `backend`, environment variable `GEMINI_API_KEY`). Langkah lengkap: [ai-tutor.md §5](ai-tutor.md).
+
 ## 2. Uji di HP Selama Pengembangan
 
 1. Laptop dan HP terhubung ke Wi-Fi yang sama.

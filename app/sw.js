@@ -1,6 +1,6 @@
 // Service worker ProfitQuest: menyimpan semua berkas agar bisa dipakai offline.
 // NAIKKAN VERSI setiap kali ada berkas yang berubah, lalu deploy ulang.
-const VERSI = 'pq-v2.2.0';
+const VERSI = 'pq-v3.0.0';
 
 const PRECACHE = [
   './',
@@ -40,6 +40,10 @@ const PRECACHE = [
   './js/aktivitas/materi.js',
   './js/screens/wilayah.js',
   './js/screens/lainnya.js',
+  './js/screens/tutor.js',
+  './js/ai/konfigurasi.js',
+  './js/ai/tutor-api.js',
+  './js/ai/format-jawaban.js',
   './content/wilayah.json',
   './content/wilayah-1.json',
   './content/wilayah-2.json',
@@ -52,6 +56,7 @@ const PRECACHE = [
   './content/bank-soal.json',
   './content/materi.json',
   './content/simulasi.json',
+  './content/tutor.json',
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png',
   './assets/icons/icon-maskable-512.png',

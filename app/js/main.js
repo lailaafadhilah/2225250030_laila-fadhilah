@@ -10,6 +10,7 @@ import { layarBeranda } from './screens/beranda.js';
 import { layarSimulasi } from './screens/simulasi.js';
 import { layarKuis } from './screens/kuis.js';
 import { layarPencapaian, layarNilai } from './screens/rapor.js';
+import { layarTutor } from './screens/tutor.js';
 import { layarPeta, layarBuku, layarKamus, layarPengaturan, isiKamus, layarMateri } from './screens/lainnya.js';
 
 const akar = document.getElementById('layar');
@@ -31,6 +32,7 @@ const RUTE = [
   { pola: /^#kamus$/, layar: layarKamus, nav: '-' },
   { pola: /^#materi(?:-([\w]+))?$/, layar: layarMateri, nav: '-' },
   { pola: /^#pengaturan$/, layar: layarPengaturan, nav: '-' },
+  { pola: /^#tutor$/, layar: layarTutor, nav: '-' },
 ];
 
 let bersihkan = [];

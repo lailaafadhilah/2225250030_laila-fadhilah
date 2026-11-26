@@ -159,6 +159,7 @@ const IKON = {
   toko: `<rect x="5" y="12" width="16" height="10" fill="#FFF8EE"/><path d="M3 7 h20 l-1 6 h-18 z" fill="#F28B82"/><rect x="11" y="15" width="5" height="7" fill="#A9D4F5"/>`,
   tanya: `<path d="M9 9 q0 -5 5 -5 q5 0 5 5 q0 3 -4 5 v3" fill="none" stroke-width="3.2"/><circle cx="14.5" cy="21" r="1.6" fill="${TEPI}"/>`,
   orang: `<circle cx="13" cy="9" r="5" fill="#FFD98A"/><path d="M4 23 q1 -8 9 -8 q8 0 9 8 z" fill="#FFD98A"/>`,
+  chat: `<path d="M3 5 h20 v12 h-11 l-5 4 v-4 h-4 z" fill="#FFF8EE"/><circle cx="8.5" cy="11" r="1.3" fill="${TEPI}" stroke="none"/><circle cx="13" cy="11" r="1.3" fill="${TEPI}" stroke="none"/><circle cx="17.5" cy="11" r="1.3" fill="${TEPI}" stroke="none"/>`,
   gir: `<circle cx="13" cy="13" r="8" fill="#FFF8EE"/><circle cx="13" cy="13" r="3" fill="#F7A1B5"/>`,
 };
 export function ikonMenu(nama) {

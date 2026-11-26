@@ -17,6 +17,7 @@ export const muatIstilah = () => ambil('istilah.json').then((d) => d.istilah);
 export const muatUmpanBalik = () => ambil('umpan-balik.json').then((d) => d.pesan);
 export const muatBank = () => ambil('bank-soal.json').then((d) => d.soal);
 export const muatMateri = () => ambil('materi.json').then((d) => d.bab);
+export const muatTutor = () => ambil('tutor.json');
 
 /** Memuat semua wilayah sekaligus (untuk Buku Contoh). */
 export async function muatSemuaWilayah() {
